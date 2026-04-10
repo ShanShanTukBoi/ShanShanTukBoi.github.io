@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Gallery</title>
+
+  <link rel="stylesheet" href="../style/gallery.css">
+  <style>
+    #gallery {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section.location {
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #333;
+    }
+
+    section.location:last-child {
+      border-bottom: none;
+    }
+
+    section.location h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #ff7f50;
+    }
+
+    .post {
+      margin-bottom: 30px;
+      padding: 0 0 20px 0;
+    }
+
+    .post h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      margin: 0 0 15px 0;
+      color: #ccc;
+    }
+
+    .post .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .post .gallery img {
+      flex: 1 1 calc(33.333% - 7px);
+      height: auto;
+      object-fit: cover;
+      min-width: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .post .gallery img {
+        flex: 1 1 calc(50% - 5px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .post .gallery img {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="gallery-title">Gallery</h1>
+  <p id="gallery-description"></p>
+  <a href="../index.html" class="btn">← Home</a>
+  <a href="map.html" id="back-link" class="btn">← To map</a>
+</header>
+
+<div id="gallery"></div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+// 3. Lightbox controls - define these first
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
+
+lightboxClose.onclick = () => lightbox.style.display = "none";
+lightbox.onclick = e => { if(e.target === lightbox) lightbox.style.display = "none"; }
+
+// 1. Get the trip name from the URL
+const params = new URLSearchParams(window.location.search);
+const trip = params.get("trip");
+
+if (!trip) {
+  document.getElementById("gallery-title").textContent = "No trip specified";
+} else {
+  // 4. Set back link
+  document.getElementById('back-link').href = `map.html?trip=${trip}`;
+
+  // 2. Fetch the JSON file
+  fetch(`../data/${trip}.json`)
+    .then(res => {
+      if (!res.ok) throw new Error("Trip data not found");
+      return res.json();
+    })
+    .then(data => {
+      document.title = data.title || "Gallery";
+      document.getElementById("gallery-title").textContent = data.title || "Gallery";
+      document.getElementById("gallery-description").textContent = "Photo gallery from " + (data.title || "this trip");
+
+      const galleryDiv = document.getElementById("gallery");
+
+      // Add sections for each location
+      data.locations.forEach(location => {
+        if (!location.posts || location.posts.length === 0) return;
+
+        // Location section
+        const locationSection = document.createElement("section");
+        locationSection.className = "location";
+
+        // Location title
+        const locationTitle = document.createElement("h2");
+        locationTitle.textContent = location.name;
+        locationSection.appendChild(locationTitle);
+
+        // Add each post with its photos
+        location.posts.forEach(post => {
+          // Post wrapper
+          const postDiv = document.createElement("div");
+          postDiv.className = "post";
+
+          // Post title
+          const postTitle = document.createElement("h3");
+          postTitle.textContent = post.title;
+          postDiv.appendChild(postTitle);
+
+          // Post text
+          if (post.text) {
+            const postText = document.createElement("p");
+            postText.textContent = post.text;
+            postDiv.appendChild(postText);
+          }
+
+          // Photos grid for this post
+          const photoGrid = document.createElement("div");
+          photoGrid.className = "gallery";
+
+          post.photos.forEach(url => {
+            const img = document.createElement("img");
+            img.src = url;
+            img.alt = post.title || "";
+            img.loading = "lazy";
+
+            // Click to open lightbox
+            img.addEventListener("click", () => {
+              lightboxImg.src = img.src;
+              lightbox.style.display = "flex";
+            });
+
+            photoGrid.appendChild(img);
+          });
+
+          postDiv.appendChild(photoGrid);
+          locationSection.appendChild(postDiv);
+        });
+
+        galleryDiv.appendChild(locationSection);
+      });
+    })
+    .catch(err => {
+      document.getElementById("gallery-title").textContent = "Gallery not found: " + err.message;
+      console.error(err);
+    });
+}
+
+</script>
+</body>
+</html>
