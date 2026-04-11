@@ -7,6 +7,10 @@
 
   <link rel="stylesheet" href="../style/gallery.css">
   <style>
+    #gallery-title {
+      margin-bottom: 1rem;
+    }
+
     #gallery {
       max-width: 1000px;
       margin: 0 auto;
@@ -74,7 +78,6 @@
 
 <header>
   <h1 id="gallery-title">Gallery</h1>
-  <p id="gallery-description"></p>
   <a href="../index.html" class="btn">← Home</a>
   <a href="map.html" id="back-link" class="btn">← To map</a>
 </header>
@@ -115,7 +118,6 @@ if (!trip) {
     .then(data => {
       document.title = data.title || "Gallery";
       document.getElementById("gallery-title").textContent = data.title || "Gallery";
-      document.getElementById("gallery-description").textContent = "Photo gallery from " + (data.title || "this trip");
 
       const galleryDiv = document.getElementById("gallery");
 
