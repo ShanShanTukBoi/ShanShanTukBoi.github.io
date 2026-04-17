@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
-const trip = params.get("trip") || "europe2024";
-const dataFile = `../data/${trip}.json`;
+const trip = params.get("trip");
+const dataFile = `../data/${trip}/trip.json`;
 
 const map = L.map('map').setView([20, 120], 3);
 

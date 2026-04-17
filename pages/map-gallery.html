@@ -110,7 +110,7 @@ if (!trip) {
   document.getElementById('back-link').href = `map.html?trip=${trip}`;
 
   // 2. Fetch the JSON file
-  fetch(`../data/${trip}.json`)
+  fetch(`../data/${trip}/trip.json`)
     .then(res => {
       if (!res.ok) throw new Error("Trip data not found");
       return res.json();

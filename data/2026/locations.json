@@ -1,0 +1,129 @@
+[
+  {
+    "id": "None",
+    "index": 0,
+    "name":"Australia",
+    "lat": -37.8136,
+    "lng": 144.9631,
+    "current": true
+  },
+  {
+    "id": "None",
+    "index": 1,
+    "name":"Turkey",
+    "lat": 41.0082,
+    "lng": 28.9784
+  },
+  {
+    "id": "None",
+    "index": 2,
+    "name":"Albania",
+    "lat": 41.3275,
+    "lng": 19.8187
+  },
+  {
+    "id": "None",
+    "index": 3,
+    "name":"Montenegro",
+    "lat": 42.4247,
+    "lng": 18.7712
+  },
+  {
+    "id": "None",
+    "index": 4,
+    "name":"Slovenia",
+    "lat": 46.0569,
+    "lng": 14.5058
+  },
+  {
+    "id": "None",
+    "index": 5,
+    "name":"Italy",
+    "lat": 46.4102,
+    "lng": 11.8440
+  },
+  {
+    "id": "None",
+    "index": 6,
+    "name":"Austria",
+    "lat": 48.2082,
+    "lng": 16.3738
+  },
+  {
+    "id": "None",
+    "index": 7,
+    "name":"Slovakia",
+    "lat": 48.1486,
+    "lng": 17.1077
+  },
+  {
+    "id": "None",
+    "index": 8,
+    "name":"Poland",
+    "lat": 50.0647,
+    "lng": 19.9450
+  },
+  {
+    "id": "None",
+    "index": 9,
+    "name":"Czechia",
+    "lat": 50.0755,
+    "lng": 14.4378
+  },
+  {
+    "id": "None",
+    "index": 10,
+    "name":"Georgia",
+    "lat": 41.7151,
+    "lng": 44.8271
+  },
+  {
+    "id": "None",
+    "index": 11,
+    "name":"Armenia",
+    "lat": 40.1792,
+    "lng": 44.4991
+  },  
+  {
+    "id": "None",
+    "index": 12,
+    "name":"Kazakhstan",
+    "lat": 43.2220,
+    "lng": 76.8512
+  },
+  {
+    "id": "None",
+    "index": 13,
+    "name":"Uzbekistan",
+    "lat": 41.2995,
+    "lng": 69.2401
+  },
+  {
+    "id": "None",
+    "index": 14,
+    "name":"India",
+    "lat": 28.6139,
+    "lng": 77.2090
+  },
+  {
+    "id": "None",
+    "index": 15,
+    "name":"Taiwan",
+    "lat": 25.0330,
+    "lng": 121.5654
+  },
+  {
+    "id": "None",
+    "index": 16,
+    "name":"China",
+    "lat": 25.0453,
+    "lng": 102.7097
+  },
+  {
+    "id": "None",
+    "index": 17,
+    "name":"Thailand",
+    "lat": 13.7563,
+    "lng": 100.5018
+  }
+]
