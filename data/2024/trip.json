@@ -13,13 +13,13 @@
     {
       "id": "None",
       "index": 1,
-      "username": "ShanShanTukBoi",
       "name": "Rome, Italy",
       "lat": 41.8967,
       "lng": 12.4822,
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Rome",
           "text": "",
           "photos": [
@@ -33,13 +33,13 @@
     {
       "id": "None",
       "index": 2,
-      "username": "ShanShanTukBoi",
       "name": "Chianti, Italy",
       "lat": 43.5831,
       "lng": 11.3187,
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Hiking around Greve",
           "text": "Yummy wine",
           "photos": [
@@ -53,13 +53,13 @@
     {
       "id": "None",
       "index": 3,
-      "username": "ShanShanTukBoi",
       "name": "Chamonix, France",
       "lat": 45.9237,
       "lng": 6.8694,
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 1",
           "text": "",
           "photos": [
@@ -70,6 +70,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 2",
           "text": "Goats!",
           "photos": [
@@ -80,6 +81,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 3",
           "text": "",
           "photos": [
@@ -93,13 +95,13 @@
     {
       "id": "None",
       "index": 4,
-      "username": "ShanShanTukBoi",
       "name": "Torla-Ordesa, Spain",
       "lat": 42.6287,
       "lng": 0.1127,
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Torla-Ordesa Town",
           "text": "Finally reuinted con Josh and Stella",
           "photos": [
@@ -109,6 +111,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Ordesa y Monte Perdido National Park",
           "text": "",
           "photos": [
@@ -125,13 +128,13 @@
     {
       "id": "None",
       "index": 5,
-      "username": "ShanShanTukBoi",
       "name": "Granada, Spain",
       "lat": 37.1825,
       "lng": -3.6012,
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Alhambra",
           "text": "",
           "photos": [
