@@ -67,6 +67,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.4);
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  padding-bottom: 2rem; /* create space for the footnote */
 }
 
 .travel-card:hover {
@@ -92,4 +94,16 @@ body {
   .hero-content p {
     font-size: 1rem;
   }
+}
+
+.travel-card .last-edited {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 1rem; /* align with your card padding */
+  
+  font-size: 0.8rem;
+  color: #aaa;
+  opacity: 0.8;
+
+  margin: 0; /* remove default <p> spacing */
 }
