@@ -88,7 +88,7 @@
 }
 
 /* Sidebar images */
-#sidebar img {
+#sidebar img:not(.avatar) {
   display: block;
   margin: 10px auto;
   max-width: 100%;
@@ -98,7 +98,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   transition: transform 0.2s;
 }
-#sidebar img:hover { transform: scale(1.03); cursor: pointer; }
+#sidebar img:not(.avatar):hover { transform: scale(1.03); cursor: pointer; }
 
 /* Blog gallery grid */
 .post-photos {
@@ -145,11 +145,11 @@
 /* Map hint popup */
 #map-hint {
   position: fixed;
-  bottom: 20px;        /* move to bottom */
-  left: 50%;           /* center horizontally */
-  transform: translateX(-50%); /* perfect horizontal centering */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1600;
-  background: #fff8e1; /* soft yellow background */
+  background: #fff8e1;
   padding: 0.6rem 0.9rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
@@ -157,7 +157,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 280px;    /* slightly wider for bottom placement */
+  max-width: 280px;
 }
 
 #map-hint-content {
@@ -191,4 +191,62 @@
 
 #map-hint span#map-hint-close:hover {
   color: #ff5733;
+}
+
+/* Post cards */
+.post {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.post:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
+
+/* Post header: avatar + name + date */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.25rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #e8e8e8;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1;
+}
+
+.author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.post-date {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.post h3 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }

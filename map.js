@@ -14,6 +14,13 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
 
+let users = {};
+fetch("../users.json")
+  .then(res => res.json())
+  .then(data => {
+    users = data;
+  });
+
 fetch(dataFile)
   .then(res => res.json())
   .then(data => {
@@ -45,12 +52,44 @@ fetch(dataFile)
     map.fitBounds(route.getBounds());
   });
 
+function getUser(username) {
+  return users[username] || {
+    display_name: username || "Unknown",
+    avatar: `https://github.com/${username}.png`
+  };
+}
+
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-AU', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
+}
+
 function openSidebar(location) {
   let html = `<h2>${location.name}</h2>`;
+
   if (location.posts) {
     location.posts.forEach(post => {
-      html += `<h3>${post.title}</h3>`;
-      html += `<p>${post.text}</p>`;
+      const user = getUser(post.username);
+      const formattedDate = formatDate(post.date);
+
+      html += `
+        <div class="post">
+          <div class="post-header">
+            <img class="avatar" src="${user.avatar}" alt="${user.display_name}">
+            <div class="post-meta">
+              <span class="author">${user.display_name}</span>
+              <span class="post-date">${formattedDate}</span>
+            </div>
+          </div>
+
+          <h3>${post.title}</h3>
+          <p>${post.text}</p>
+      `;
+
       if (post.photos?.length) {
         html += `<div class="post-photos">`;
         post.photos.forEach(photo => {
@@ -58,8 +97,11 @@ function openSidebar(location) {
         });
         html += `</div>`;
       }
+
+      html += `</div>`;
     });
   }
+
   content.innerHTML = html;
   sidebar.classList.add("open");
   sidebar.setAttribute("aria-hidden", "false");
@@ -96,7 +138,7 @@ function closeLightbox() {
   lightbox.classList.add("hidden");
   lightbox.setAttribute("aria-hidden", "true");
   lightboxImg.src = "";
-} 
+}
 
 /* Map hint popup */
 const mapHint = document.getElementById("map-hint");

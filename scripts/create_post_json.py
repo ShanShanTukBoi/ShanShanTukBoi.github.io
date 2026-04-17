@@ -2,6 +2,7 @@ import json
 import os
 import re
 from pathlib import Path
+from common import assert_user_permitted
 
 LOCATION_FIELD_STRING = "Location"
 TITLE_FIELD_STRING = "Post title"
@@ -44,8 +45,14 @@ def get_field(text, key):
 
     return field
 
+
+# Extract the posters username and check they are permitted
+username = issue["user"]["login"]
+assert_user_permitted(username)
+
 data = {
     "id": issue_number,
+    "username": username,
     "location_name": get_field(body, LOCATION_FIELD_STRING),
     "title": get_field(body, TITLE_FIELD_STRING),
     "text": get_field(body, TEXT_FIELD_STRING),

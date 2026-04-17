@@ -39,7 +39,7 @@
     }
 
     .post h3 {
-      margin-top: 0;
+      margin-top: 0.25rem;
       margin-bottom: 10px;
     }
 
@@ -72,6 +72,46 @@
         flex: 1 1 100%;
       }
     }
+
+    /* Post header */
+    .post-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0.25rem;
+      text-align: left;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid #e8e8e8;
+      flex-shrink: 0;
+      object-fit: cover;
+      margin: 0;
+      display: block;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      line-height: 1;
+    }
+
+    .author {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .post-date {
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
   </style>
 </head>
 <body>
@@ -91,7 +131,6 @@
 </div>
 
 <script>
-// 3. Lightbox controls - define these first
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
@@ -99,91 +138,127 @@ const lightboxClose = document.getElementById("lightbox-close");
 lightboxClose.onclick = () => lightbox.style.display = "none";
 lightbox.onclick = e => { if(e.target === lightbox) lightbox.style.display = "none"; }
 
-// 1. Get the trip name from the URL
 const params = new URLSearchParams(window.location.search);
 const trip = params.get("trip");
+
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-AU', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
+}
 
 if (!trip) {
   document.getElementById("gallery-title").textContent = "No trip specified";
 } else {
-  // 4. Set back link
   document.getElementById('back-link').href = `map.html?trip=${trip}`;
 
-  // 2. Fetch the JSON file
-  fetch(`../data/${trip}/trip.json`)
-    .then(res => {
-      if (!res.ok) throw new Error("Trip data not found");
-      return res.json();
-    })
-    .then(data => {
-      document.title = data.title || "Gallery";
-      document.getElementById("gallery-title").textContent = data.title || "Gallery";
+  let users = {};
 
-      const galleryDiv = document.getElementById("gallery");
+  fetch("../users.json")
+    .then(res => res.json())
+    .then(data => { users = data; })
+    .catch(() => {})
+    .finally(() => {
+      fetch(`../data/${trip}/trip.json`)
+        .then(res => {
+          if (!res.ok) throw new Error("Trip data not found");
+          return res.json();
+        })
+        .then(data => {
+          document.title = data.title || "Gallery";
+          document.getElementById("gallery-title").textContent = data.title || "Gallery";
 
-      // Add sections for each location
-      data.locations.forEach(location => {
-        if (!location.posts || location.posts.length === 0) return;
+          const galleryDiv = document.getElementById("gallery");
 
-        // Location section
-        const locationSection = document.createElement("section");
-        locationSection.className = "location";
+          data.locations.forEach(location => {
+            if (!location.posts || location.posts.length === 0) return;
 
-        // Location title
-        const locationTitle = document.createElement("h2");
-        locationTitle.textContent = location.name;
-        locationSection.appendChild(locationTitle);
+            const locationSection = document.createElement("section");
+            locationSection.className = "location";
 
-        // Add each post with its photos
-        location.posts.forEach(post => {
-          // Post wrapper
-          const postDiv = document.createElement("div");
-          postDiv.className = "post";
+            const locationTitle = document.createElement("h2");
+            locationTitle.textContent = location.name;
+            locationSection.appendChild(locationTitle);
 
-          // Post title
-          const postTitle = document.createElement("h3");
-          postTitle.textContent = post.title;
-          postDiv.appendChild(postTitle);
+            location.posts.forEach(post => {
+              const postDiv = document.createElement("div");
+              postDiv.className = "post";
 
-          // Post text
-          if (post.text) {
-            const postText = document.createElement("p");
-            postText.textContent = post.text;
-            postDiv.appendChild(postText);
-          }
+              // Post header: avatar + name + date
+              const user = users[post.username] || {
+                display_name: post.username || "Unknown",
+                avatar: `https://github.com/${post.username}.png`
+              };
 
-          // Photos grid for this post
-          const photoGrid = document.createElement("div");
-          photoGrid.className = "gallery";
+              const postHeader = document.createElement("div");
+              postHeader.className = "post-header";
 
-          post.photos.forEach(url => {
-            const img = document.createElement("img");
-            img.src = url;
-            img.alt = post.title || "";
-            img.loading = "lazy";
+              const avatar = document.createElement("img");
+              avatar.src = user.avatar;
+              avatar.alt = user.display_name;
+              avatar.className = "avatar";
 
-            // Click to open lightbox
-            img.addEventListener("click", () => {
-              lightboxImg.src = img.src;
-              lightbox.style.display = "flex";
+              const postMeta = document.createElement("div");
+              postMeta.className = "post-meta";
+
+              const author = document.createElement("span");
+              author.className = "author";
+              author.textContent = user.display_name;
+
+              const dateEl = document.createElement("span");
+              dateEl.className = "post-date";
+              dateEl.textContent = formatDate(post.date);
+
+              postMeta.appendChild(author);
+              postMeta.appendChild(dateEl);
+              postHeader.appendChild(avatar);
+              postHeader.appendChild(postMeta);
+              postDiv.appendChild(postHeader);
+
+              // Post title
+              const postTitle = document.createElement("h3");
+              postTitle.textContent = post.title;
+              postDiv.appendChild(postTitle);
+
+              // Post text
+              if (post.text) {
+                const postText = document.createElement("p");
+                postText.textContent = post.text;
+                postDiv.appendChild(postText);
+              }
+
+              // Photos grid
+              const photoGrid = document.createElement("div");
+              photoGrid.className = "gallery";
+
+              post.photos.forEach(url => {
+                const img = document.createElement("img");
+                img.src = url;
+                img.alt = post.title || "";
+                img.loading = "lazy";
+                img.addEventListener("click", () => {
+                  lightboxImg.src = img.src;
+                  lightbox.style.display = "flex";
+                });
+                photoGrid.appendChild(img);
+              });
+
+              postDiv.appendChild(photoGrid);
+              locationSection.appendChild(postDiv);
             });
 
-            photoGrid.appendChild(img);
+            galleryDiv.appendChild(locationSection);
           });
-
-          postDiv.appendChild(photoGrid);
-          locationSection.appendChild(postDiv);
+        })
+        .catch(err => {
+          document.getElementById("gallery-title").textContent = "Gallery not found: " + err.message;
+          console.error(err);
         });
-
-        galleryDiv.appendChild(locationSection);
-      });
-    })
-    .catch(err => {
-      document.getElementById("gallery-title").textContent = "Gallery not found: " + err.message;
-      console.error(err);
     });
 }
-
 </script>
 </body>
 </html>

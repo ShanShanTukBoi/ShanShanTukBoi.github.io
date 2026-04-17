@@ -5,6 +5,7 @@
     {
       "id": "None",
       "index": 0,
+      "username": "ShanShanTukBoi",
       "name": "Melbourne",
       "lat": -37.8136,
       "lng": 144.9631
@@ -18,6 +19,7 @@
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Rome",
           "text": "",
           "photos": [
@@ -37,6 +39,7 @@
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Hiking around Greve",
           "text": "Yummy wine",
           "photos": [
@@ -56,6 +59,7 @@
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 1",
           "text": "",
           "photos": [
@@ -66,6 +70,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 2",
           "text": "Goats!",
           "photos": [
@@ -76,6 +81,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Tour du Mont Blanc Day 3",
           "text": "",
           "photos": [
@@ -95,6 +101,7 @@
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Torla-Ordesa Town",
           "text": "Finally reuinted con Josh and Stella",
           "photos": [
@@ -104,6 +111,7 @@
         },
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Ordesa y Monte Perdido National Park",
           "text": "",
           "photos": [
@@ -126,6 +134,7 @@
       "posts": [
         {
           "id": "None",
+          "username": "ShanShanTukBoi",
           "title": "Alhambra",
           "text": "",
           "photos": [
