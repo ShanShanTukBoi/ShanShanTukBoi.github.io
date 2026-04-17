@@ -1,0 +1,68 @@
+name: Handle Location Issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  handle-location:
+    if: contains(github.event.issue.title, '[LOCATION]')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Update locations.json
+        run: |
+          python scripts/update_locations_json.py
+
+      - name: Update post template options
+        run: |
+          python scripts/update_post_template.py
+
+      - name: Rebuild trip.json
+        run: |
+          python scripts/generate_trip_json.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/2026/locations.json data/2026/trip.json .github/ISSUE_TEMPLATE/post.yml
+          git commit -m "Add location for issue ${{ github.event.issue.number }}" || echo "No changes to commit"
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: "✅ Location added successfully."
+            });
+
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number,
+              state: "closed"
+            });

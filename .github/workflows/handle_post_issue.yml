@@ -1,0 +1,60 @@
+name: Handle Post Issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  handle-post:
+    if: contains(github.event.issue.title, '[POST]')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Create post JSON
+        run: |
+          python scripts/create_post_json.py
+
+      - name: Rebuild trip.json
+        run: |
+          python scripts/generate_trip_json.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/2026/posts data/2026/trip.json
+          git commit -m "Add post for issue number ${{ github.event.issue.number }}" || echo "No changes to commit"
+          git push
+
+      - name: Comment and close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: "📝 Post created successfully."
+            });
+
+            await github.rest.issues.update({
+              owner,
+              repo,
+              issue_number,
+              state: "closed"
+            });

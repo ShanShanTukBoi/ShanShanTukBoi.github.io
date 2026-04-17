@@ -1,0 +1,51 @@
+name: New Post
+description: Add or edit a post
+title: '[POST]'
+labels:
+- post
+body:
+- type: dropdown
+  id: location_name
+  attributes:
+    label: Location
+    options:
+    - Australia
+    - Turkey
+    - Albania
+    - Montenegro
+    - Slovenia
+    - Italy
+    - Austria
+    - Slovakia
+    - Poland
+    - Czechia
+    - Georgia
+    - Armenia
+    - Kazakhstan
+    - Uzbekistan
+    - India
+    - Taiwan
+    - China
+    - Thailand
+  validations:
+    required: true
+- type: input
+  id: title
+  attributes:
+    label: Post title
+    placeholder: Colosseum visit
+  validations:
+    required: true
+- type: textarea
+  id: text
+  attributes:
+    label: Post text
+- type: textarea
+  id: photos
+  attributes:
+    label: Photo URLs (one per line)
+    placeholder: 'https://example.com
+
+      https://example.com
+
+      '
