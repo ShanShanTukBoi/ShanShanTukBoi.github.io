@@ -234,7 +234,7 @@ if (!trip) {
               const photoGrid = document.createElement("div");
               photoGrid.className = "gallery";
 
-              post.photos.forEach(url => {
+              (post.photos || []).forEach(url => {
                 const img = document.createElement("img");
                 img.src = url;
                 img.alt = post.title || "";
