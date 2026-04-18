@@ -8,7 +8,7 @@ body:
   id: new_location
   attributes:
     label: New Location
-    description: Enter the location name here. (Required if 'Other' selected)
+    description: Enter the location name here.
     placeholder: e.g., Bejing, China
   validations:
     required: true
@@ -16,7 +16,7 @@ body:
   id: lat
   attributes:
     label: Latitude
-    description: Enter the latitude here. (Required if 'Other' selected)
+    description: Enter the latitude here.
     placeholder: '41.8967'
   validations:
     required: true
@@ -24,7 +24,7 @@ body:
   id: lng
   attributes:
     label: Longitude
-    description: Enter the longitude here. (Required if 'Other' selected)
+    description: Enter the longitude here.
     placeholder: '12.4822'
   validations:
     required: true
