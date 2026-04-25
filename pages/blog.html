@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Gallery</title>
+
+  <link rel="stylesheet" href="../style/gallery.css">
+  <link rel="stylesheet" href="../style/blog.css"/>
+</head>
+<body>
+
+<header>
+  <h1 id="gallery-title">Gallery</h1>
+  <a href="../index.html" class="btn">← Home</a>
+  <a href="map.html" id="back-link" class="btn">← To map</a>
+</header>
+
+<div id="toc">
+  <details>
+    <summary>📍 Locations</summary>
+    <div id="toc-list"></div>
+  </details>
+</div>
+
+<div id="sort-toggle">
+  <span>Order:</span>
+  <button class="sort-btn active" id="btn-newest" onclick="setOrder('newest')">Newest first</button>
+  <button class="sort-btn" id="btn-oldest" onclick="setOrder('oldest')">Oldest first</button>
+</div>
+
+<div id="pagination-top" class="pagination-bar"></div>
+<div id="gallery"></div>
+<div id="pagination-bottom" class="pagination-bar"></div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="lightbox-close">&times;</span>
+  <button id="lightbox-prev">&#8249;</button>
+  <img id="lightbox-img">
+  <button id="lightbox-next">&#8250;</button>
+  <span id="lightbox-counter"></span>
+</div>
+
+<script src="../js/blog.js"></script>
+</body>
+</html>
