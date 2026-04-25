@@ -112,6 +112,174 @@
       margin-top: 2px;
       margin-bottom: 2px;
     }
+
+    /* Shared pagination style for top + bottom */
+    .pagination-bar {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    #pagination-top {
+      margin-bottom: 20px;
+    }
+
+    #pagination-bottom {
+      margin: 0 auto 40px;
+    }
+
+    .pagination-bar button {
+      background: #1a1a1a;
+      color: #ccc;
+      border: 1px solid #333;
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .pagination-bar button:hover:not(:disabled) {
+      background: #2a2a2a;
+      color: #fff;
+      border-color: #555;
+    }
+
+    .pagination-bar button.active {
+      background: #ff7f50;
+      color: #fff;
+      border-color: #ff7f50;
+      font-weight: 600;
+    }
+
+    .pagination-bar button:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+
+    .pagination-bar .page-info {
+      font-size: 0.8rem;
+      color: #888;
+      margin: 0 4px;
+    }
+
+    /* Table of contents */
+    #toc {
+      max-width: 1000px;
+      margin: 0 auto 24px;
+      padding: 0 20px;
+    }
+
+    #toc details {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    #toc summary {
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ccc;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+
+    #toc summary::-webkit-details-marker { display: none; }
+
+    #toc summary::before {
+      content: "▶";
+      font-size: 0.65rem;
+      color: #ff7f50;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    #toc details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    #toc summary:hover {
+      color: #fff;
+    }
+
+    #toc-list {
+      padding: 8px 16px 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    #toc-list button {
+      background: transparent;
+      border: 1px solid #444;
+      color: #ccc;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+
+    #toc-list button:hover {
+      background: #ff7f50;
+      color: #fff;
+      border-color: #ff7f50;
+    }
+
+    #toc-list button.toc-current-page {
+      border-color: #ff7f50;
+      color: #ff7f50;
+    }
+
+    /* Sort toggle */
+    #sort-toggle {
+      max-width: 1000px;
+      margin: 0 auto 12px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #sort-toggle span {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .sort-btn {
+      background: transparent;
+      border: 1px solid #444;
+      color: #aaa;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+
+    .sort-btn.active {
+      background: #ff7f50;
+      color: #fff;
+      border-color: #ff7f50;
+    }
+
+    .sort-btn:not(.active):hover {
+      border-color: #888;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -122,7 +290,22 @@
   <a href="map.html" id="back-link" class="btn">← To map</a>
 </header>
 
+<div id="toc">
+  <details>
+    <summary>📍 Locations</summary>
+    <div id="toc-list"></div>
+  </details>
+</div>
+
+<div id="sort-toggle">
+  <span>Order:</span>
+  <button class="sort-btn active" id="btn-newest" onclick="setOrder('newest')">Newest first</button>
+  <button class="sort-btn" id="btn-oldest" onclick="setOrder('oldest')">Oldest first</button>
+</div>
+
+<div id="pagination-top" class="pagination-bar"></div>
 <div id="gallery"></div>
+<div id="pagination-bottom" class="pagination-bar"></div>
 
 <!-- Lightbox -->
 <div id="lightbox">
@@ -141,6 +324,26 @@ lightbox.onclick = e => { if(e.target === lightbox) lightbox.style.display = "no
 const params = new URLSearchParams(window.location.search);
 const trip = params.get("trip");
 
+const POSTS_PER_PAGE = 5;
+
+let allFlatPosts = [];  // chronological, never mutated
+let allUsers = {};
+let currentOrder = 'newest';
+
+function getSortedPosts() {
+  return currentOrder === 'newest' ? [...allFlatPosts].reverse() : [...allFlatPosts];
+}
+
+function setOrder(order) {
+  if (order === currentOrder) return;
+  currentOrder = order;
+  document.getElementById('btn-newest').classList.toggle('active', order === 'newest');
+  document.getElementById('btn-oldest').classList.toggle('active', order === 'oldest');
+  const sorted = getSortedPosts();
+  renderTOC(sorted, 0, allUsers);
+  goToPage(sorted, 0, allUsers);
+}
+
 function formatDate(dateString) {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-AU', {
@@ -148,6 +351,198 @@ function formatDate(dateString) {
     month: 'short',
     year: 'numeric'
   });
+}
+
+// Flatten all posts across locations into a single list,
+// keeping track of which location each post belongs to.
+function flattenPosts(locations) {
+  const flat = [];
+  for (const location of locations) {
+    if (!location.posts || location.posts.length === 0) continue;
+    for (const post of location.posts) {
+      flat.push({ location, post });
+    }
+  }
+  return flat;
+}
+
+// Build a map of locationName -> first page index it appears on
+function buildLocationPageMap(flatPosts) {
+  const map = {}; // locationName -> page index
+  flatPosts.forEach(({ location }, i) => {
+    const page = Math.floor(i / POSTS_PER_PAGE);
+    if (!(location.name in map)) map[location.name] = page;
+  });
+  return map;
+}
+
+function renderTOC(flatPosts, currentPage, users) {
+  const tocList = document.getElementById("toc-list");
+  tocList.innerHTML = "";
+  const locationPageMap = buildLocationPageMap(flatPosts);
+
+  for (const [name, page] of Object.entries(locationPageMap)) {
+    const btn = document.createElement("button");
+    btn.textContent = name;
+    if (page === currentPage) btn.classList.add("toc-current-page");
+    btn.onclick = () => goToPage(flatPosts, page, users);
+    tocList.appendChild(btn);
+  }
+}
+
+function renderPage(flatPosts, users, page) {
+  const galleryDiv = document.getElementById("gallery");
+  galleryDiv.innerHTML = "";
+
+  const start = page * POSTS_PER_PAGE;
+  const end = Math.min(start + POSTS_PER_PAGE, flatPosts.length);
+  const pagePosts = flatPosts.slice(start, end);
+
+  // Group consecutive posts that share the same location
+  let currentLocationName = null;
+  let locationSection = null;
+
+  for (const { location, post } of pagePosts) {
+    if (location.name !== currentLocationName) {
+      currentLocationName = location.name;
+      locationSection = document.createElement("section");
+      locationSection.className = "location";
+
+      const locationTitle = document.createElement("h2");
+      locationTitle.textContent = location.name;
+      locationSection.appendChild(locationTitle);
+
+      galleryDiv.appendChild(locationSection);
+    }
+
+    const postDiv = document.createElement("div");
+    postDiv.className = "post";
+
+    const user = users[post.username] || {
+      display_name: post.username || "Unknown",
+      avatar: `https://github.com/${post.username}.png`
+    };
+
+    const postHeader = document.createElement("div");
+    postHeader.className = "post-header";
+
+    const avatar = document.createElement("img");
+    avatar.src = user.avatar;
+    avatar.alt = user.display_name;
+    avatar.className = "avatar";
+
+    const postMeta = document.createElement("div");
+    postMeta.className = "post-meta";
+
+    const author = document.createElement("span");
+    author.className = "author";
+    author.textContent = user.display_name;
+
+    const dateEl = document.createElement("span");
+    dateEl.className = "post-date";
+    dateEl.textContent = formatDate(post.date);
+
+    postMeta.appendChild(author);
+    postMeta.appendChild(dateEl);
+    postHeader.appendChild(avatar);
+    postHeader.appendChild(postMeta);
+    postDiv.appendChild(postHeader);
+
+    const postTitle = document.createElement("h3");
+    postTitle.textContent = post.title;
+    postDiv.appendChild(postTitle);
+
+    if (post.text) {
+      const postText = document.createElement("p");
+      postText.textContent = post.text;
+      postDiv.appendChild(postText);
+    }
+
+    const photoGrid = document.createElement("div");
+    photoGrid.className = "gallery";
+
+    (post.photos || []).forEach(url => {
+      const img = document.createElement("img");
+      img.src = url;
+      img.alt = post.title || "";
+      img.loading = "lazy";
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+      photoGrid.appendChild(img);
+    });
+
+    postDiv.appendChild(photoGrid);
+    locationSection.appendChild(postDiv);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function buildPaginationBar(container, flatPosts, currentPage, users) {
+  container.innerHTML = "";
+  const totalPages = Math.ceil(flatPosts.length / POSTS_PER_PAGE);
+  if (totalPages <= 1) return;
+
+  const prevBtn = document.createElement("button");
+  prevBtn.textContent = "← Prev";
+  prevBtn.disabled = currentPage === 0;
+  prevBtn.onclick = () => goToPage(flatPosts, currentPage - 1, users);
+  container.appendChild(prevBtn);
+
+  for (const p of getPageRange(currentPage, totalPages)) {
+    if (p === "...") {
+      const ellipsis = document.createElement("span");
+      ellipsis.className = "page-info";
+      ellipsis.textContent = "…";
+      container.appendChild(ellipsis);
+    } else {
+      const btn = document.createElement("button");
+      btn.textContent = p + 1;
+      if (p === currentPage) btn.classList.add("active");
+      btn.onclick = () => goToPage(flatPosts, p, users);
+      container.appendChild(btn);
+    }
+  }
+
+  const nextBtn = document.createElement("button");
+  nextBtn.textContent = "Next →";
+  nextBtn.disabled = currentPage === totalPages - 1;
+  nextBtn.onclick = () => goToPage(flatPosts, currentPage + 1, users);
+  container.appendChild(nextBtn);
+
+  const info = document.createElement("span");
+  info.className = "page-info";
+  const start = currentPage * POSTS_PER_PAGE + 1;
+  const end = Math.min((currentPage + 1) * POSTS_PER_PAGE, flatPosts.length);
+  info.textContent = `${start}–${end} of ${flatPosts.length} posts`;
+  container.appendChild(info);
+}
+
+function renderPagination(flatPosts, currentPage, users) {
+  buildPaginationBar(document.getElementById("pagination-top"), flatPosts, currentPage, users);
+  buildPaginationBar(document.getElementById("pagination-bottom"), flatPosts, currentPage, users);
+}
+
+// Returns an array of page indices (numbers) and "..." strings
+function getPageRange(current, total) {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i);
+  const pages = [];
+  pages.push(0);
+  if (current > 2) pages.push("...");
+  for (let i = Math.max(1, current - 1); i <= Math.min(total - 2, current + 1); i++) {
+    pages.push(i);
+  }
+  if (current < total - 3) pages.push("...");
+  pages.push(total - 1);
+  return pages;
+}
+
+function goToPage(flatPosts, page, users) {
+  renderPage(flatPosts, users, page);
+  renderPagination(flatPosts, page, users);
+  renderTOC(flatPosts, page, users);
 }
 
 if (!trip) {
@@ -171,87 +566,11 @@ if (!trip) {
           document.title = data.title || "Gallery";
           document.getElementById("gallery-title").textContent = data.title || "Gallery";
 
-          const galleryDiv = document.getElementById("gallery");
-
-          data.locations.forEach(location => {
-            if (!location.posts || location.posts.length === 0) return;
-
-            const locationSection = document.createElement("section");
-            locationSection.className = "location";
-
-            const locationTitle = document.createElement("h2");
-            locationTitle.textContent = location.name;
-            locationSection.appendChild(locationTitle);
-
-            location.posts.forEach(post => {
-              const postDiv = document.createElement("div");
-              postDiv.className = "post";
-
-              // Post header: avatar + name + date
-              const user = users[post.username] || {
-                display_name: post.username || "Unknown",
-                avatar: `https://github.com/${post.username}.png`
-              };
-
-              const postHeader = document.createElement("div");
-              postHeader.className = "post-header";
-
-              const avatar = document.createElement("img");
-              avatar.src = user.avatar;
-              avatar.alt = user.display_name;
-              avatar.className = "avatar";
-
-              const postMeta = document.createElement("div");
-              postMeta.className = "post-meta";
-
-              const author = document.createElement("span");
-              author.className = "author";
-              author.textContent = user.display_name;
-
-              const dateEl = document.createElement("span");
-              dateEl.className = "post-date";
-              dateEl.textContent = formatDate(post.date);
-
-              postMeta.appendChild(author);
-              postMeta.appendChild(dateEl);
-              postHeader.appendChild(avatar);
-              postHeader.appendChild(postMeta);
-              postDiv.appendChild(postHeader);
-
-              // Post title
-              const postTitle = document.createElement("h3");
-              postTitle.textContent = post.title;
-              postDiv.appendChild(postTitle);
-
-              // Post text
-              if (post.text) {
-                const postText = document.createElement("p");
-                postText.textContent = post.text;
-                postDiv.appendChild(postText);
-              }
-
-              // Photos grid
-              const photoGrid = document.createElement("div");
-              photoGrid.className = "gallery";
-
-              (post.photos || []).forEach(url => {
-                const img = document.createElement("img");
-                img.src = url;
-                img.alt = post.title || "";
-                img.loading = "lazy";
-                img.addEventListener("click", () => {
-                  lightboxImg.src = img.src;
-                  lightbox.style.display = "flex";
-                });
-                photoGrid.appendChild(img);
-              });
-
-              postDiv.appendChild(photoGrid);
-              locationSection.appendChild(postDiv);
-            });
-
-            galleryDiv.appendChild(locationSection);
-          });
+          allFlatPosts = flattenPosts(data.locations);
+          allUsers = users;
+          const sorted = getSortedPosts();
+          renderTOC(sorted, 0, allUsers);
+          goToPage(sorted, 0, allUsers);
         })
         .catch(err => {
           document.getElementById("gallery-title").textContent = "Gallery not found: " + err.message;
