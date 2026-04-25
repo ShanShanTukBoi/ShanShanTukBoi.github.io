@@ -51,7 +51,7 @@ for location in locations:
     location["posts"].sort(key=lambda item: (parse_iso_date(item.get("date")), item.get("id", 0)))
 
 master = {
-    "Title": "2026",
+    "title": "2026",
     "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
     "locations": locations,
 }
