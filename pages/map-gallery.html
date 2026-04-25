@@ -280,6 +280,46 @@
       border-color: #888;
       color: #fff;
     }
+
+    /* Lightbox arrows */
+    #lightbox-prev,
+    #lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      font-size: 1.75rem;
+      line-height: 1;
+      padding: 12px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.15s;
+      user-select: none;
+      z-index: 10;
+    }
+
+    #lightbox-prev { left: 16px; }
+    #lightbox-next { right: 16px; }
+
+    #lightbox-prev:hover,
+    #lightbox-next:hover { background: rgba(0,0,0,0.85); }
+
+    #lightbox-prev:disabled,
+    #lightbox-next:disabled { opacity: 0.2; cursor: default; }
+
+    #lightbox-counter {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      color: #aaa;
+      background: rgba(0,0,0,0.5);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
   </style>
 </head>
 <body>
@@ -310,16 +350,48 @@
 <!-- Lightbox -->
 <div id="lightbox">
   <span id="lightbox-close">&times;</span>
+  <button id="lightbox-prev">&#8249;</button>
   <img id="lightbox-img">
+  <button id="lightbox-next">&#8250;</button>
+  <span id="lightbox-counter"></span>
 </div>
 
 <script>
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
+const lightboxPrev = document.getElementById("lightbox-prev");
+const lightboxNext = document.getElementById("lightbox-next");
+const lightboxCounter = document.getElementById("lightbox-counter");
+
+let lightboxPhotos = [];  // all photo URLs on the current page
+let lightboxIndex = 0;
+
+function openLightbox(photos, index) {
+  lightboxPhotos = photos;
+  lightboxIndex = index;
+  updateLightbox();
+  lightbox.style.display = "flex";
+}
+
+function updateLightbox() {
+  lightboxImg.src = lightboxPhotos[lightboxIndex];
+  lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxPhotos.length}`;
+  lightboxPrev.disabled = lightboxIndex === 0;
+  lightboxNext.disabled = lightboxIndex === lightboxPhotos.length - 1;
+}
 
 lightboxClose.onclick = () => lightbox.style.display = "none";
-lightbox.onclick = e => { if(e.target === lightbox) lightbox.style.display = "none"; }
+lightbox.onclick = e => { if (e.target === lightbox) lightbox.style.display = "none"; }
+lightboxPrev.onclick = e => { e.stopPropagation(); lightboxIndex--; updateLightbox(); };
+lightboxNext.onclick = e => { e.stopPropagation(); lightboxIndex++; updateLightbox(); };
+
+document.addEventListener("keydown", e => {
+  if (lightbox.style.display !== "flex") return;
+  if (e.key === "ArrowLeft"  && lightboxIndex > 0) { lightboxIndex--; updateLightbox(); }
+  if (e.key === "ArrowRight" && lightboxIndex < lightboxPhotos.length - 1) { lightboxIndex++; updateLightbox(); }
+  if (e.key === "Escape") lightbox.style.display = "none";
+});
 
 const params = new URLSearchParams(window.location.search);
 const trip = params.get("trip");
@@ -460,16 +532,14 @@ function renderPage(flatPosts, users, page) {
 
     const photoGrid = document.createElement("div");
     photoGrid.className = "gallery";
+    const postPhotos = post.photos || [];
 
-    (post.photos || []).forEach(url => {
+    postPhotos.forEach((url, i) => {
       const img = document.createElement("img");
       img.src = url;
       img.alt = post.title || "";
       img.loading = "lazy";
-      img.addEventListener("click", () => {
-        lightboxImg.src = img.src;
-        lightbox.style.display = "flex";
-      });
+      img.addEventListener("click", () => openLightbox(postPhotos, i));
       photoGrid.appendChild(img);
     });
 

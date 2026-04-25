@@ -13,6 +13,45 @@ const closeBtn = document.getElementById("close");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const lightboxClose = document.getElementById("lightbox-close");
+const lightboxPrev = document.getElementById("lightbox-prev");
+const lightboxNext = document.getElementById("lightbox-next");
+const lightboxCounter = document.getElementById("lightbox-counter");
+
+let lightboxPhotos = [];
+let lightboxIndex = 0;
+
+function openLightbox(photos, index) {
+  lightboxPhotos = photos;
+  lightboxIndex = index;
+  updateLightbox();
+  lightbox.classList.remove("hidden");
+  lightbox.setAttribute("aria-hidden", "false");
+}
+
+function updateLightbox() {
+  lightboxImg.src = lightboxPhotos[lightboxIndex];
+  lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxPhotos.length}`;
+  lightboxPrev.disabled = lightboxIndex === 0;
+  lightboxNext.disabled = lightboxIndex === lightboxPhotos.length - 1;
+}
+
+function closeLightbox() {
+  lightbox.classList.add("hidden");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImg.src = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
+lightboxPrev.addEventListener("click", e => { e.stopPropagation(); lightboxIndex--; updateLightbox(); });
+lightboxNext.addEventListener("click", e => { e.stopPropagation(); lightboxIndex++; updateLightbox(); });
+
+document.addEventListener("keydown", e => {
+  if (lightbox.classList.contains("hidden")) return;
+  if (e.key === "ArrowLeft"  && lightboxIndex > 0) { lightboxIndex--; updateLightbox(); }
+  if (e.key === "ArrowRight" && lightboxIndex < lightboxPhotos.length - 1) { lightboxIndex++; updateLightbox(); }
+  if (e.key === "Escape") closeLightbox();
+});
 
 let users = {};
 fetch("../users.json")
@@ -92,8 +131,8 @@ function openSidebar(location) {
 
       if (post.photos?.length) {
         html += `<div class="post-photos">`;
-        post.photos.forEach(photo => {
-          html += `<img src="${photo}" alt="Photo from ${location.name}">`;
+        post.photos.forEach((photo, i) => {
+          html += `<img src="${photo}" alt="Photo from ${location.name}" data-index="${i}">`;
         });
         html += `</div>`;
       }
@@ -106,11 +145,13 @@ function openSidebar(location) {
   sidebar.classList.add("open");
   sidebar.setAttribute("aria-hidden", "false");
 
-  document.querySelectorAll("#sidebar img").forEach(img => {
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
-      lightbox.classList.remove("hidden");
-      lightbox.setAttribute("aria-hidden", "false");
+  // Attach lightbox listeners scoped per post
+  document.querySelectorAll("#sidebar .post").forEach(postEl => {
+    const imgs = postEl.querySelectorAll(".post-photos img");
+    if (!imgs.length) return;
+    const photos = Array.from(imgs).map(img => img.src);
+    imgs.forEach((img, i) => {
+      img.addEventListener("click", () => openLightbox(photos, i));
     });
   });
 
@@ -130,15 +171,6 @@ closeBtn.onclick = () => {
   expandBtn.textContent = "⤢";
   setTimeout(() => map.invalidateSize(), 350);
 };
-
-lightboxClose.addEventListener("click", closeLightbox);
-lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
-
-function closeLightbox() {
-  lightbox.classList.add("hidden");
-  lightbox.setAttribute("aria-hidden", "true");
-  lightboxImg.src = "";
-}
 
 /* Map hint popup */
 const mapHint = document.getElementById("map-hint");

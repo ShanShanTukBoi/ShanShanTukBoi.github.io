@@ -129,11 +129,53 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 #lightbox-close {
-  position:absolute; top:20px; right:30px;
-  font-size:40px;
-  color:white;
-  cursor:pointer;
-  user-select:none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Lightbox arrows */
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+  user-select: none;
+  z-index: 10;
+}
+
+#lightbox-prev { left: 16px; }
+#lightbox-next { right: 16px; }
+
+#lightbox-prev:hover,
+#lightbox-next:hover { background: rgba(0,0,0,0.85); }
+
+#lightbox-prev:disabled,
+#lightbox-next:disabled { opacity: 0.2; cursor: default; }
+
+#lightbox-counter {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #aaa;
+  background: rgba(0,0,0,0.5);
+  padding: 3px 10px;
+  border-radius: 20px;
 }
 
 /* Responsive tweaks */
