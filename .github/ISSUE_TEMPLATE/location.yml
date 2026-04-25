@@ -28,3 +28,29 @@ body:
     placeholder: '12.4822'
   validations:
     required: true
+- type: dropdown
+  id: insert_after
+  attributes:
+    label: Insert After
+    description: The new location will be placed after the selected location.
+    options:
+    - Australia
+    - Turkey
+    - Albania
+    - Montenegro
+    - Slovenia
+    - Italy
+    - Austria
+    - Slovakia
+    - Poland
+    - Czechia
+    - Georgia
+    - Armenia
+    - Kazakhstan
+    - Uzbekistan
+    - India
+    - Taiwan
+    - China
+    - Thailand
+  validations:
+    required: true

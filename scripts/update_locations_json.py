@@ -22,8 +22,9 @@ def get_field(label):
 location_name = get_field("New Location")
 lat = float(get_field("Latitude") or 0)
 lng = float(get_field("Longitude") or 0)
+insert_after = get_field("Insert After")
 
-# --- Build JSON ---
+# --- Load existing locations ---
 json_path = Path(__file__).parent.parent / "data" / "2026" / "locations.json"
 try:
     with open(json_path, "r") as f:
@@ -31,20 +32,30 @@ try:
 except (FileNotFoundError, json.JSONDecodeError):
     locations = []
 
-next_index = max((loc.get("index", loc.get("id", 0)) for loc in locations), default=0) + 1
+# --- Determine insertion position ---
+# Find the index of the named location and insert after it
+insert_pos = next(
+    (i + 1 for i, loc in enumerate(locations) if loc["name"] == insert_after),
+    len(locations)  # fall back to end if name not found
+)
 
-data = {
+# --- Build new location entry ---
+new_location = {
     "id": issue_number,
-    "index": next_index,
+    "index": insert_pos,  # will be corrected by reindex below
     "name": location_name,
     "lat": lat,
     "lng": lng,
 }
 
+# --- Insert and reindex ---
+locations.insert(insert_pos, new_location)
+
+for i, loc in enumerate(locations):
+    loc["index"] = i
+
 # --- Write file ---
-locations.append(data)
-locations.sort(key=lambda x: (x.get("index", x.get("id", 0)), x.get("id", 0)))
 with open(json_path, "w") as f:
     json.dump(locations, f, indent=2)
 
-print(f"✅ Appended to {json_path}")
+print(f"✅ Inserted '{location_name}' at position {insert_pos} in {json_path}")
