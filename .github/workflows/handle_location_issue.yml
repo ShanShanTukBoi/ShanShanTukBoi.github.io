@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/2026/locations.json data/2026/trip.json .github/ISSUE_TEMPLATE/post.yml
+          git add data/2026/locations.json data/2026/trip.json .github/ISSUE_TEMPLATE/post.yml .github/ISSUE_TEMPLATE/location.yml
           git commit -m "Add location for issue ${{ github.event.issue.number }}" || echo "No changes to commit"
           git push
 
