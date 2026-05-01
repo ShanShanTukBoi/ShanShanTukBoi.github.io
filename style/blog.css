@@ -1,313 +1,212 @@
-    #gallery-title {
-      margin-bottom: 1rem;
-    }
+/* =============================================================
+   blog.css — styles specific to blog.html
+   ============================================================= */
 
-    #gallery {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/* ── Header ── */
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 24px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#gallery-title {
+  flex: 1;
+  font-size: 2rem;
+}
 
-    section.location {
-      margin-bottom: 40px;
-      padding-bottom: 30px;
-      border-bottom: 2px solid #333;
-    }
+/* ── Gallery container ── */
+#gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    section.location:last-child {
-      border-bottom: none;
-    }
+/* ── Location sections ── */
+section.location {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #333;
+}
+section.location:last-child { border-bottom: none; }
+section.location h2 {
+  margin-bottom: 20px;
+  color: #ff7f50;
+}
 
-    section.location h2 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      color: #ff7f50;
-    }
+/* ── Post ── */
+.post {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.post p {
+  margin: 0 0 15px;
+  color: #ccc;
+}
 
-    .post {
-      margin-bottom: 30px;
-      padding: 0 0 20px 0;
-    }
+/* ── Post photo grid ── */
+.post .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.post .gallery img {
+  flex: 1 1 calc(33.333% - 7px);
+  height: auto;
+  object-fit: cover;
+  min-width: 200px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.post .gallery img:hover { opacity: 0.85; }
 
-    .post h3 {
-      margin-top: 0.25rem;
-      margin-bottom: 10px;
-    }
+/* ── Table of contents ── */
+#toc {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+  padding: 0 20px;
+}
+#toc details {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#toc summary {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ccc;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+#toc summary::-webkit-details-marker { display: none; }
+#toc summary::before {
+  content: "▶";
+  font-size: 0.65rem;
+  color: #ff7f50;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+#toc details[open] summary::before { transform: rotate(90deg); }
+#toc summary:hover { color: #fff; }
+#toc-list {
+  padding: 8px 16px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-top: 1px solid #2a2a2a;
+}
+#toc-list button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+#toc-list button:hover,
+#toc-list button.toc-current-page:hover {
+  background: #ff7f50;
+  color: #fff;
+  border-color: #ff7f50;
+}
+#toc-list button.toc-current-page {
+  border-color: #ff7f50;
+  color: #ff7f50;
+}
 
-    .post p {
-      margin: 0 0 15px 0;
-      color: #ccc;
-    }
+/* ── Sort toggle ── */
+#sort-toggle {
+  max-width: 1000px;
+  margin: 0 auto 12px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#sort-toggle span {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sort-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #aaa;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.sort-btn.active {
+  background: #ff7f50;
+  color: #fff;
+  border-color: #ff7f50;
+}
+.sort-btn:not(.active):hover {
+  border-color: #888;
+  color: #fff;
+}
 
-    .post .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+/* ── Pagination ── */
+.pagination-bar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+#pagination-top    { margin-bottom: 20px; }
+#pagination-bottom { margin-bottom: 40px; }
 
-    .post .gallery img {
-      flex: 1 1 calc(33.333% - 7px);
-      height: auto;
-      object-fit: cover;
-      min-width: 200px;
-    }
+.pagination-bar button {
+  background: #1a1a1a;
+  color: #ccc;
+  border: 1px solid #333;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.pagination-bar button:hover:not(:disabled) {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #555;
+}
+.pagination-bar button.active {
+  background: #ff7f50;
+  color: #fff;
+  border-color: #ff7f50;
+  font-weight: 600;
+}
+.pagination-bar button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.pagination-bar .page-info {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0 4px;
+}
 
-    @media (max-width: 768px) {
-      .post .gallery img {
-        flex: 1 1 calc(50% - 5px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .post .gallery img {
-        flex: 1 1 100%;
-      }
-    }
-
-    /* Post header */
-    .post-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 0.25rem;
-      text-align: left;
-    }
-
-    .avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      border: 1.5px solid #e8e8e8;
-      flex-shrink: 0;
-      object-fit: cover;
-      margin: 0;
-      display: block;
-    }
-
-    .post-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      line-height: 1;
-    }
-
-    .author {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #ffffff;
-    }
-
-    .post-date {
-      font-size: 0.75rem;
-      color: #aaa;
-      margin-top: 2px;
-      margin-bottom: 2px;
-    }
-
-    /* Shared pagination style for top + bottom */
-    .pagination-bar {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    #pagination-top {
-      margin-bottom: 20px;
-    }
-
-    #pagination-bottom {
-      margin: 0 auto 40px;
-    }
-
-    .pagination-bar button {
-      background: #1a1a1a;
-      color: #ccc;
-      border: 1px solid #333;
-      padding: 6px 14px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 0.875rem;
-      transition: background 0.15s, color 0.15s, border-color 0.15s;
-    }
-
-    .pagination-bar button:hover:not(:disabled) {
-      background: #2a2a2a;
-      color: #fff;
-      border-color: #555;
-    }
-
-    .pagination-bar button.active {
-      background: #ff7f50;
-      color: #fff;
-      border-color: #ff7f50;
-      font-weight: 600;
-    }
-
-    .pagination-bar button:disabled {
-      opacity: 0.35;
-      cursor: default;
-    }
-
-    .pagination-bar .page-info {
-      font-size: 0.8rem;
-      color: #888;
-      margin: 0 4px;
-    }
-
-    /* Table of contents */
-    #toc {
-      max-width: 1000px;
-      margin: 0 auto 24px;
-      padding: 0 20px;
-    }
-
-    #toc details {
-      background: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    #toc summary {
-      padding: 10px 16px;
-      cursor: pointer;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #ccc;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      user-select: none;
-    }
-
-    #toc summary::-webkit-details-marker { display: none; }
-
-    #toc summary::before {
-      content: "▶";
-      font-size: 0.65rem;
-      color: #ff7f50;
-      transition: transform 0.2s;
-      display: inline-block;
-    }
-
-    #toc details[open] summary::before {
-      transform: rotate(90deg);
-    }
-
-    #toc summary:hover {
-      color: #fff;
-    }
-
-    #toc-list {
-      padding: 8px 16px 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      border-top: 1px solid #2a2a2a;
-    }
-
-    #toc-list button {
-      background: transparent;
-      border: 1px solid #444;
-      color: #ccc;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: background 0.15s, color 0.15s, border-color 0.15s;
-      white-space: nowrap;
-    }
-
-    #toc-list button:hover {
-      background: #ff7f50;
-      color: #fff;
-      border-color: #ff7f50;
-    }
-
-    #toc-list button.toc-current-page {
-      border-color: #ff7f50;
-      color: #ff7f50;
-    }
-
-    /* Sort toggle */
-    #sort-toggle {
-      max-width: 1000px;
-      margin: 0 auto 12px;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    #sort-toggle span {
-      font-size: 0.8rem;
-      color: #888;
-    }
-
-    .sort-btn {
-      background: transparent;
-      border: 1px solid #444;
-      color: #aaa;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: background 0.15s, color 0.15s, border-color 0.15s;
-    }
-
-    .sort-btn.active {
-      background: #ff7f50;
-      color: #fff;
-      border-color: #ff7f50;
-    }
-
-    .sort-btn:not(.active):hover {
-      border-color: #888;
-      color: #fff;
-    }
-
-    /* Lightbox arrows */
-    #lightbox-prev,
-    #lightbox-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      color: #fff;
-      border: none;
-      font-size: 1.75rem;
-      line-height: 1;
-      padding: 12px 16px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background 0.15s;
-      user-select: none;
-      z-index: 10;
-    }
-
-    #lightbox-prev { left: 16px; }
-    #lightbox-next { right: 16px; }
-
-    #lightbox-prev:hover,
-    #lightbox-next:hover { background: rgba(0,0,0,0.85); }
-
-    #lightbox-prev:disabled,
-    #lightbox-next:disabled { opacity: 0.2; cursor: default; }
-
-    #lightbox-counter {
-      position: absolute;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.8rem;
-      color: #aaa;
-      background: rgba(0,0,0,0.5);
-      padding: 3px 10px;
-      border-radius: 20px;
-    }
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .post .gallery img { flex: 1 1 calc(50% - 5px); }
+}
+@media (max-width: 480px) {
+  .post .gallery img { flex: 1 1 100%; }
+}

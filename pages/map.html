@@ -4,20 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Map</title>
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-  <link rel="stylesheet" href="../style/map.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="../style/shared.css">
+  <link rel="stylesheet" href="../style/map.css">
 </head>
 <body>
 
   <a href="../index.html" class="btn map-back" title="Back to homepage">← Home</a>
 
   <main>
-    <!-- Map -->
     <div id="map" role="region" aria-label="Travel Map"></div>
 
-    <!-- Map hint popup -->
     <div id="map-hint">
       <span id="map-hint-close" aria-label="Close hint">×</span>
       <div id="map-hint-content">
@@ -26,11 +23,10 @@
       </div>
     </div>
 
-    <!-- Sidebar -->
     <aside id="sidebar" aria-hidden="true">
       <div id="sidebar-controls">
         <button id="expand" aria-label="Expand sidebar">⤢</button>
-        <button id="close" aria-label="Close sidebar">×</button>
+        <button id="close"  aria-label="Close sidebar">×</button>
       </div>
       <div id="content">
         <h2>Travel Map</h2>
@@ -38,8 +34,7 @@
       </div>
     </aside>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="hidden" aria-hidden="true">
+    <div id="lightbox" aria-hidden="true">
       <span id="lightbox-close" role="button" aria-label="Close image">&times;</span>
       <button id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
       <img id="lightbox-img" src="" alt="Expanded photo">
@@ -48,7 +43,6 @@
     </div>
   </main>
 
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="../js/map.js"></script>
 

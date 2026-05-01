@@ -1,75 +1,31 @@
-  /* General styling */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-  }
-  header {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
-  header p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #ccc;
-  }
+/* =============================================================
+   gallery.css — styles specific to gallery.html
+   ============================================================= */
 
-  .btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background-color: #ff7f50;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.2s ease;
-  }
+/* ── Header ── */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+header h1 {
+  font-size: 2.5em;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
+}
 
-  .btn:hover {
-    background-color: #ff5733;
-    transform: translateY(-1px);
-  }
-
-  /* Gallery grid */
-  .gallery {
-    column-count: 3; /* number of columns */
-    column-gap: 10px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    break-inside: avoid;
-  }
-  .gallery img:hover {
-    transform: scale(1.03);
-  }
-
-  /* Lightbox */
-  #lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  #lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-  }
-  #lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    cursor: pointer;
-    color: white;
-  }
+/* ── Masonry photo grid ── */
+.gallery {
+  column-count: 3;
+  column-gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  transition: transform 0.2s;
+}
+.gallery img:hover { transform: scale(1.03); }

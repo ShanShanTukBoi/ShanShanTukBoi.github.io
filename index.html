@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grace and Rushan</title>
-  <link rel="stylesheet" href="./style/homepage.css">
   <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/homepage.css">
 </head>
-
-<body class="landing">
+<body>
 
   <header class="hero">
     <div class="hero-content">
@@ -21,60 +22,50 @@
     <section class="travel-card" data-json="data/2024/trip.json">
       <h2>2024</h2>
       <p>This is an example travel map of our trip to Europe in 2024 used to prototype the format for this website.</p>
-      <a href="pages/map.html?trip=2024" class="btn">Explore the map</a>
+      <a href="pages/map.html?trip=2024"  class="btn">Explore the map</a>
       <a href="pages/blog.html?trip=2024" class="btn">No map (boring)</a>
-      <h2></h2>
     </section>
 
     <section class="travel-card" data-json="data/nepal_2025.json">
       <h2>2025</h2>
       <a href="pages/gallery.html?gallery=nepal_2025" class="btn">Nepal 2025 gallery</a>
-      <h2></h2>
     </section>
 
     <section class="travel-card" data-json="data/2026/trip.json">
       <h2>2026</h2>
-      <a href="pages/map.html?trip=2026" class="btn">Explore the map</a>
+      <a href="pages/map.html?trip=2026"  class="btn">Explore the map</a>
       <a href="pages/blog.html?trip=2026" class="btn">No map (boring)</a>
-      <h2></h2>
     </section>
   </main>
 
-<script>
-async function addLastEditedTags() {
-  const cards = document.querySelectorAll('.travel-card');
+  <script>
+    async function addLastEditedTags() {
+      const cards = document.querySelectorAll(".travel-card[data-json]");
 
-  for (const card of cards) {
-    const jsonPath = card.dataset.json;
-    if (!jsonPath) continue;
+      for (const card of cards) {
+        try {
+          const res = await fetch(card.dataset.json);
+          if (!res.ok) throw new Error(`Failed to load ${card.dataset.json}`);
 
-    try {
-      const res = await fetch(jsonPath);
-      if (!res.ok) throw new Error(`Failed to load ${jsonPath}`);
+          const data = await res.json();
+          if (!data.generated_at) continue;
 
-      const data = await res.json();
-      if (!data.generated_at) continue;
+          const formatted = new Date(data.generated_at).toLocaleDateString("en-AU", {
+            day: "numeric", month: "short", year: "numeric"
+          });
 
-      const date = new Date(data.generated_at);
-      const formatted = date.toLocaleDateString('en-AU', {
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric'
-      });
-
-      const tag = document.createElement('p');
-      tag.className = 'last-edited';
-      tag.textContent = `Last edited: ${formatted}`;
-
-      card.appendChild(tag);
-    } catch (err) {
-      console.warn(err);
+          const tag = document.createElement("p");
+          tag.className   = "last-edited";
+          tag.textContent = `Last edited: ${formatted}`;
+          card.appendChild(tag);
+        } catch (err) {
+          console.warn(err);
+        }
+      }
     }
-  }
-}
 
-document.addEventListener('DOMContentLoaded', addLastEditedTags);
-</script>
+    document.addEventListener("DOMContentLoaded", addLastEditedTags);
+  </script>
 
 </body>
 </html>

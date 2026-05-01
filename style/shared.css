@@ -1,0 +1,147 @@
+/* =============================================================
+   shared.css — styles used across two or more pages
+   ============================================================= */
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ── Button ── */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background-color: #ff5733;
+  transform: translateY(-1px);
+}
+
+/* ── Post cards ── */
+.post {
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.post:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
+
+/* ── Post header: avatar + name + date ── */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #e8e8e8;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1;
+}
+.author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+.post-date {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 2px;
+}
+.post h3 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ── Lightbox ── */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+#lightbox.open { display: flex; }
+#lightbox-img {
+  max-width: 95vw;
+  max-height: 95vh;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+}
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+  user-select: none;
+  z-index: 10;
+}
+#lightbox-prev { left: 16px; }
+#lightbox-next { right: 16px; }
+#lightbox-prev:hover,
+#lightbox-next:hover { background: rgba(0, 0, 0, 0.85); }
+#lightbox-prev:disabled,
+#lightbox-next:disabled { opacity: 0.2; cursor: default; }
+#lightbox-counter {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 10px;
+  border-radius: 20px;
+}

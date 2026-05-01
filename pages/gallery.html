@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Gallery</title>
-<link rel="stylesheet" href="../style/gallery.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../style/shared.css">
+  <link rel="stylesheet" href="../style/gallery.css">
 </head>
-
 <body>
 
-<header>
-  <h1 id="gallery-title">Gallery</h1>
-  <p id="gallery-description"></p>
-  <a href="../index.html" class="btn">← Home</a>
-</header>
+  <header>
+    <h1 id="gallery-title">Gallery</h1>
+    <p  id="gallery-description"></p>
+    <a href="../index.html" class="btn">← Home</a>
+  </header>
 
-<div class="gallery" id="gallery"></div>
+  <div class="gallery" id="gallery"></div>
 
-<!-- Lightbox -->
-<div id="lightbox">
-  <span id="lightbox-close">&times;</span>
-  <img id="lightbox-img">
-</div>
+  <div id="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img  id="lightbox-img" alt="Expanded photo">
+  </div>
 
-<script>
-// 1. Get the gallery name from the URL
-const params = new URLSearchParams(window.location.search);
-const galleryName = params.get("gallery") || "default_gallery"; // fallback
+  <script>
+    const params      = new URLSearchParams(window.location.search);
+    const galleryName = params.get("gallery") || "default_gallery";
 
-// 2. Fetch the JSON file
-fetch(`../data/${galleryName}.json`)
-  .then(res => {
-    if (!res.ok) throw new Error("Gallery JSON not found");
-    return res.json();
-  })
-  .then(data => {
-    document.title = data.title || "Gallery";
-    document.getElementById("gallery-title").textContent = data.title || "Gallery";
-    document.getElementById("gallery-description").textContent = data.description || "";
+    const lightbox      = document.getElementById("lightbox");
+    const lightboxImg   = document.getElementById("lightbox-img");
+    const lightboxClose = document.getElementById("lightbox-close");
+    const galleryDiv    = document.getElementById("gallery");
 
-    const galleryDiv = document.getElementById("gallery");
+    lightboxClose.onclick = () => { lightbox.classList.remove("open"); };
+    lightbox.onclick      = e  => { if (e.target === lightbox) lightbox.classList.remove("open"); };
 
-    // Add photos
-    data.photos.forEach(photo => {
-      const img = document.createElement("img");
-      img.src = photo.url ? photo.url : `../images/${galleryName.replace("_gallery","")}/${photo.file}`;
-      img.alt = photo.caption || "";
-      img.loading = "lazy";
+    fetch(`../data/${galleryName}.json`)
+      .then(res => {
+        if (!res.ok) throw new Error("Gallery JSON not found");
+        return res.json();
+      })
+      .then(data => {
+        document.title = data.title || "Gallery";
+        document.getElementById("gallery-title").textContent       = data.title || "Gallery";
+        document.getElementById("gallery-description").textContent = data.description || "";
 
-      // Click to open lightbox
-      img.addEventListener("click", () => {
-        lightboxImg.src = img.src;
-        lightbox.style.display = "flex";
+        data.photos.forEach(photo => {
+          const img    = document.createElement("img");
+          img.src      = photo.url ?? `../images/${galleryName.replace("_gallery", "")}/${photo.file}`;
+          img.alt      = photo.caption || "";
+          img.loading  = "lazy";
+          img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.classList.add("open");
+          });
+          galleryDiv.appendChild(img);
+        });
+      })
+      .catch(err => {
+        document.getElementById("gallery-title").textContent       = "Gallery not found";
+        document.getElementById("gallery-description").textContent = "";
+        console.error(err);
       });
-
-      galleryDiv.appendChild(img);
-    });
-  })
-  .catch(err => {
-    document.getElementById("gallery-title").textContent = "Gallery not found";
-    document.getElementById("gallery-description").textContent = "";
-    console.error(err);
-  });
-
-// 3. Lightbox controls
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const lightboxClose = document.getElementById("lightbox-close");
-
-lightboxClose.onclick = () => lightbox.style.display = "none";
-lightbox.onclick = e => { if(e.target === lightbox) lightbox.style.display = "none"; }
-
-</script>
+  </script>
 
 </body>
 </html>
