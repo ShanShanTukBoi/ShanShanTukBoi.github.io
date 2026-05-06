@@ -5,27 +5,45 @@
 /* ── Header ── */
 header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 4rem 2rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
 }
 header h1 {
-  font-size: 2.5em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
 }
 header p {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #ccc;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.7;
 }
 
 /* ── Masonry photo grid ── */
 .gallery {
   column-count: 3;
-  column-gap: 10px;
+  column-gap: 4px;
+  padding: 0 4px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .gallery img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   break-inside: avoid;
-  transition: transform 0.2s;
+  display: block;
+  transition: opacity 0.2s;
+  cursor: pointer;
 }
-.gallery img:hover { transform: scale(1.03); }
+.gallery img:hover { opacity: 0.85; }
+
+@media (max-width: 900px)  { .gallery { column-count: 2; } }
+@media (max-width: 500px)  { .gallery { column-count: 1; } }

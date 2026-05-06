@@ -8,45 +8,67 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  padding: 24px 20px;
+  padding: 2rem 2.5rem;
   max-width: 1000px;
   margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
 }
 #gallery-title {
   flex: 1;
-  font-size: 2rem;
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 /* ── Gallery container ── */
 #gallery {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 2.5rem 3rem;
 }
 
 /* ── Location sections ── */
 section.location {
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-  border-bottom: 2px solid #333;
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
 }
 section.location:last-child { border-bottom: none; }
 section.location h2 {
-  margin-bottom: 20px;
-  color: #ff7f50;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+section.location h2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 
 /* ── Post ── */
 .post {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .post p {
-  margin: 0 0 15px;
-  color: #ccc;
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
-/* ── Post photo grid ── */
+/* ── Post photo grid — original fluid layout restored ── */
 .post .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -65,146 +87,157 @@ section.location h2 {
 /* ── Table of contents ── */
 #toc {
   max-width: 1000px;
-  margin: 0 auto 24px;
-  padding: 0 20px;
+  margin: 0 auto 1.5rem;
+  padding: 0 2.5rem;
 }
 #toc details {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   overflow: hidden;
 }
 #toc summary {
-  padding: 10px 16px;
+  padding: 0.65rem 1rem;
   cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #ccc;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
   list-style: none;
   display: flex;
   align-items: center;
   gap: 8px;
   user-select: none;
+  transition: color 0.15s;
 }
 #toc summary::-webkit-details-marker { display: none; }
 #toc summary::before {
   content: "▶";
-  font-size: 0.65rem;
-  color: #ff7f50;
+  font-size: 0.5rem;
+  color: var(--accent);
   transition: transform 0.2s;
   display: inline-block;
 }
 #toc details[open] summary::before { transform: rotate(90deg); }
-#toc summary:hover { color: #fff; }
+#toc summary:hover { color: var(--text); }
 #toc-list {
-  padding: 8px 16px 12px;
+  padding: 0.6rem 1rem 0.8rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  border-top: 1px solid #2a2a2a;
+  gap: 5px;
+  border-top: 1px solid var(--border);
 }
 #toc-list button {
   background: transparent;
-  border: 1px solid #444;
-  color: #ccc;
-  padding: 4px 12px;
+  border: 1px solid var(--border-mid);
+  color: var(--text-muted);
+  padding: 3px 12px;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 #toc-list button:hover,
 #toc-list button.toc-current-page:hover {
-  background: #ff7f50;
-  color: #fff;
-  border-color: #ff7f50;
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
 }
 #toc-list button.toc-current-page {
-  border-color: #ff7f50;
-  color: #ff7f50;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ── Sort toggle ── */
 #sort-toggle {
   max-width: 1000px;
-  margin: 0 auto 12px;
-  padding: 0 20px;
+  margin: 0 auto 1rem;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 #sort-toggle span {
-  font-size: 0.8rem;
-  color: #888;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .sort-btn {
   background: transparent;
-  border: 1px solid #444;
-  color: #aaa;
-  padding: 4px 12px;
+  border: 1px solid var(--border-mid);
+  color: var(--text-muted);
+  padding: 3px 12px;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
+  letter-spacing: 0.02em;
 }
 .sort-btn.active {
-  background: #ff7f50;
-  color: #fff;
-  border-color: #ff7f50;
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
 }
 .sort-btn:not(.active):hover {
-  border-color: #888;
-  color: #fff;
+  border-color: var(--text-muted);
+  color: var(--text);
 }
 
 /* ── Pagination ── */
 .pagination-bar {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
 }
-#pagination-top    { margin-bottom: 20px; }
-#pagination-bottom { margin-bottom: 40px; }
+#pagination-top    { margin-bottom: 2rem; }
+#pagination-bottom { margin-top: 1rem; margin-bottom: 3rem; }
 
 .pagination-bar button {
-  background: #1a1a1a;
-  color: #ccc;
-  border: 1px solid #333;
-  padding: 6px 14px;
-  border-radius: 4px;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: var(--radius);
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 0.78rem;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
+  letter-spacing: 0.03em;
 }
 .pagination-bar button:hover:not(:disabled) {
-  background: #2a2a2a;
-  color: #fff;
-  border-color: #555;
+  border-color: var(--border-mid);
+  color: var(--text);
 }
 .pagination-bar button.active {
-  background: #ff7f50;
-  color: #fff;
-  border-color: #ff7f50;
-  font-weight: 600;
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  font-weight: 500;
 }
 .pagination-bar button:disabled {
-  opacity: 0.35;
+  opacity: 0.25;
   cursor: default;
 }
 .pagination-bar .page-info {
-  font-size: 0.8rem;
-  color: #888;
+  font-size: 0.7rem;
+  color: var(--text-dim);
   margin: 0 4px;
+  letter-spacing: 0.04em;
 }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
+  header { padding: 1.5rem; }
+  #gallery { padding: 0 1.5rem 2rem; }
+  #toc, #sort-toggle, .pagination-bar { padding: 0 1.5rem; }
   .post .gallery img { flex: 1 1 calc(50% - 5px); }
 }
 @media (max-width: 480px) {
