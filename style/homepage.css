@@ -1,109 +1,208 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* =============================================================
+   homepage.css — styles specific to index.html
+   ============================================================= */
 
 body {
-  background: #0f172a; /* deep navy */
-  color: #e5e7eb;
-  line-height: 1.6;
+  background: var(--bg);
 }
 
-/* Hero Section */
+/* ── Hero ── */
 .hero {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  background: 
-    linear-gradient(rgba(42, 127, 255, 0.5), rgba(108, 184, 255, 0.5)),
-    url("https://i.imgur.com/Rz3YtQX.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 0 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 92vh;
+  overflow: hidden;
+  padding: 0 0 5rem 5rem;
+  background:
+    url("https://i.imgur.com/Rz3YtQX.jpg") center / cover no-repeat;
+}
+
+/* Dark gradient overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.72) 0%,
+    rgba(0,0,0,0.30) 60%,
+    rgba(0,0,0,0.15) 100%
+  );
+}
+
+/* Thin gold rule at the bottom of hero */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent 60%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.01em;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  max-width: 380px;
+  line-height: 1.7;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background-color: #ff7f50;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+.hero .btn {
+  font-size: 0.72rem;
+  padding: 0.55rem 1.3rem;
 }
 
-.btn:hover {
-  background-color: #ff5733;
-  transform: translateY(-2px);
+/* ── Section label above cards ── */
+.sections-label {
+  max-width: 1000px;
+  margin: 4rem auto 1.5rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sections-label span {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.sections-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
-/* Sections */
+/* ── Trip cards ── */
 .sections {
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 0 20px;
+  margin: 0 auto 6rem;
+  padding: 0 2rem;
   display: grid;
-  gap: 30px;
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .travel-card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--bg-surface);
+  padding: 2rem 2.5rem;
   position: relative;
-  padding-bottom: 2rem; /* create space for the footnote */
+  display: flex;
+  align-items: baseline;
+  gap: 2.5rem;
+  transition: background var(--transition);
+  border-bottom: 1px solid var(--border);
 }
+.travel-card:last-child { border-bottom: none; }
+.travel-card:hover { background: var(--bg-raised); }
 
-.travel-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.travel-card-year {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  width: 5rem;
+  line-height: 1;
+  transition: color var(--transition);
+}
+.travel-card:hover .travel-card-year { color: var(--accent); }
+
+.travel-card-body {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
 }
 
 .travel-card h2 {
-  color: #60a5fa;
-  margin-bottom: 15px;
+  /* hide the original h2, year shown separately */
+  display: none;
 }
 
 .travel-card p {
-  margin-bottom: 20px;
+  width: 100%;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
+.travel-card .btn {
+  margin-right: 0;
 }
 
 .travel-card .last-edited {
-  position: absolute;
-  bottom: 0.6rem;
-  left: 1rem; /* align with your card padding */
-  
-  font-size: 0.8rem;
-  color: #aaa;
-  opacity: 0.8;
+  width: 100%;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  margin-top: 0.5rem;
+}
 
-  margin: 0; /* remove default <p> spacing */
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero { padding: 0 0 3rem 2rem; }
+  .hero-content h1 { font-size: 2.6rem; }
+  .travel-card { flex-direction: column; gap: 0.75rem; padding: 1.5rem; }
+  .travel-card-year { width: auto; font-size: 1.5rem; }
+  .sections-label { margin-top: 3rem; }
+}
+
+/* ── Animated scroll indicator ── */
+.hero-scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.3);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  animation: bob 2.4s ease-in-out infinite;
+}
+.hero-scroll::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+}
+@keyframes bob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
 }
