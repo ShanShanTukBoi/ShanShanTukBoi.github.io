@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-04-17T08:53:47Z",
+  "generated_at": "2026-05-11T04:19:50Z",
   "locations": [
     {
       "id": "None",
@@ -8,7 +8,6 @@
       "name": "Australia",
       "lat": -37.8136,
       "lng": 144.9631,
-      "current": true,
       "posts": []
     },
     {
@@ -17,6 +16,7 @@
       "name": "Turkey",
       "lat": 41.0082,
       "lng": 28.9784,
+      "current": true,
       "posts": []
     },
     {
