@@ -4,15 +4,15 @@
     "index": 0,
     "name":"Australia",
     "lat": -37.8136,
-    "lng": 144.9631,
-    "current": true
+    "lng": 144.9631
   },
   {
     "id": "None",
     "index": 1,
     "name":"Turkey",
     "lat": 41.0082,
-    "lng": 28.9784
+    "lng": 28.9784,
+    "current": true
   },
   {
     "id": "None",
