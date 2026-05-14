@@ -11,15 +11,15 @@
     "index": 1,
     "name":"Istanbul, Turkey",
     "lat": 41.0082,
-    "lng": 28.9784,
-    "current": true
+    "lng": 28.9784
   },
   {
     "id": "None",
     "index": 2,
     "name":"Tiranë, Albania",
     "lat": 41.3275,
-    "lng": 19.8187
+    "lng": 19.8187,
+    "current": true
   },
   {
     "id": "None",
