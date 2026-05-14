@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-14T20:12:34Z",
+  "generated_at": "2026-05-14T20:21:02Z",
   "locations": [
     {
       "id": "None",
@@ -16,7 +16,6 @@
       "name": "Istanbul, Turkey",
       "lat": 41.0082,
       "lng": 28.9784,
-      "current": true,
       "posts": [
         {
           "id": 8,
@@ -66,6 +65,7 @@
       "name": "Tiran\u00eb, Albania",
       "lat": 41.3275,
       "lng": 19.8187,
+      "current": true,
       "posts": [
         {
           "id": 11,
