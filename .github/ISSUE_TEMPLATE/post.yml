@@ -9,9 +9,9 @@ body:
   attributes:
     label: Location
     options:
-    - Australia
-    - Turkey
-    - Albania
+    - Melbourne, Australia
+    - Istanbul, Turkey
+    - "Tiran\xEB, Albania"
     - Montenegro
     - Slovenia
     - Italy
