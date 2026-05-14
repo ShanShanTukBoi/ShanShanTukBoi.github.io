@@ -2,14 +2,14 @@
   {
     "id": "None",
     "index": 0,
-    "name":"Australia",
+    "name":"Melbourne, Australia",
     "lat": -37.8136,
     "lng": 144.9631
   },
   {
     "id": "None",
     "index": 1,
-    "name":"Turkey",
+    "name":"Istanbul, Turkey",
     "lat": 41.0082,
     "lng": 28.9784,
     "current": true
@@ -17,7 +17,7 @@
   {
     "id": "None",
     "index": 2,
-    "name":"Albania",
+    "name":"Tiranë, Albania",
     "lat": 41.3275,
     "lng": 19.8187
   },
