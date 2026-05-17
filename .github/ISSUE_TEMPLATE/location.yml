@@ -34,9 +34,9 @@ body:
     label: Insert After
     description: The new location will be placed after the selected location.
     options:
-    - Australia
-    - Turkey
-    - Albania
+    - Melbourne, Australia
+    - Istanbul, Turkey
+    - "Tiran\xEB, Albania"
     - Montenegro
     - Slovenia
     - Italy
