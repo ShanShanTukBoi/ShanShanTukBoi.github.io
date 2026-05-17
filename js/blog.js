@@ -39,7 +39,7 @@ document.addEventListener("keydown", e => {
 });
 
 // ── Config & state ────────────────────────────────────────────
-const POSTS_PER_PAGE = 5;
+const POSTS_PER_PAGE = 3;
 
 const params = new URLSearchParams(window.location.search);
 const trip   = params.get("trip");
