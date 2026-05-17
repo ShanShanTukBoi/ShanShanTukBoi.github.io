@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-17T13:57:36Z",
+  "generated_at": "2026-05-17T14:01:27Z",
   "locations": [
     {
       "id": "None",
@@ -65,7 +65,6 @@
       "name": "Tiran\u00eb, Albania",
       "lat": 41.3275,
       "lng": 19.8187,
-      "current": true,
       "posts": [
         {
           "id": 11,
@@ -110,6 +109,7 @@
       "name": "Kor\u00e7\u00eb, Albania",
       "lat": 40.6161,
       "lng": 20.7802,
+      "current": true,
       "posts": []
     },
     {
