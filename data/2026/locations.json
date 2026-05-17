@@ -18,15 +18,15 @@
     "index": 2,
     "name": "Tiran\u00eb, Albania",
     "lat": 41.3275,
-    "lng": 19.8187,
-    "current": true
+    "lng": 19.8187
   },
   {
     "id": 14,
     "index": 3,
     "name": "Kor\u00e7\u00eb, Albania",
     "lat": 40.6161,
-    "lng": 20.7802
+    "lng": 20.7802,
+    "current": true
   },
   {
     "id": "None",
