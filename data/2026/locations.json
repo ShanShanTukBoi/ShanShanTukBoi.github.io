@@ -25,15 +25,15 @@
     "index": 3,
     "name": "Kor\u00e7\u00eb, Albania",
     "lat": 40.6161,
-    "lng": 20.7802,
-    "current": true
+    "lng": 20.7802
   },
   {
     "id": 20,
     "index": 4,
     "name": "Berat, Albania",
     "lat": 40.70583,
-    "lng": 19.95222
+    "lng": 19.95222,
+    "current": true
   },
   {
     "id": "None",
