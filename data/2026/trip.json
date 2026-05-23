@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-22T07:33:59Z",
+  "generated_at": "2026-05-23T07:09:41Z",
   "locations": [
     {
       "id": "None",
@@ -120,7 +120,6 @@
       "name": "Kor\u00e7\u00eb, Albania",
       "lat": 40.6161,
       "lng": 20.7802,
-      "current": true,
       "posts": [
         {
           "id": 16,
@@ -172,6 +171,16 @@
             "https://imgur.com/Vs2Q2QQ.jpeg"
           ],
           "date": "2026-05-21T20:36:32Z"
+        },
+        {
+          "id": 21,
+          "username": "ShanShanTukBoi",
+          "title": "Chicken disposal unit",
+          "text": "My mum accidentally ordered four whole chickens so I fed them to this cat",
+          "photos": [
+            "https://imgur.com/adb2Sef.jpeg"
+          ],
+          "date": "2026-05-23T07:09:33Z"
         }
       ]
     },
@@ -181,6 +190,7 @@
       "name": "Berat, Albania",
       "lat": 40.70583,
       "lng": 19.95222,
+      "current": true,
       "posts": []
     },
     {
