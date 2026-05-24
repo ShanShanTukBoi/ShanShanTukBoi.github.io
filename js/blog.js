@@ -152,7 +152,7 @@ function renderPage(flatPosts, page) {
         </div>
       </div>
       <h3>${post.title}</h3>
-      ${post.text ? `<p>${post.text}</p>` : ""}
+      ${post.text ? `<md-block>${post.text}</md-block>` : ""}
     `;
 
     const photoGrid    = document.createElement("div");
