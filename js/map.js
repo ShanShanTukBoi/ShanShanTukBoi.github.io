@@ -86,7 +86,7 @@ function openSidebar(location, users) {
           </div>
         </div>
         <h3>${post.title}</h3>
-        <p>${post.text}</p>
+        <md-block>${post.text}</md-block>
         ${post.photos?.length ? `
           <div class="post-photos">
             ${post.photos.map((src, i) => `<img src="${src}" alt="Photo from ${location.name}" data-index="${i}">`).join("")}
