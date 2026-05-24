@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-24T08:25:53Z",
+  "generated_at": "2026-05-24T08:32:20Z",
   "locations": [
     {
       "id": "None",
@@ -223,8 +223,8 @@
       "id": 26,
       "index": 5,
       "name": "The Accursed Mountains",
-      "lat": 42.556340400520384,
-      "lng": 20.0779337,
+      "lat": 42.4793,
+      "lng": 19.8503,
       "posts": []
     },
     {
