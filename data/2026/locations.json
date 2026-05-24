@@ -32,15 +32,15 @@
     "index": 4,
     "name": "Berat, Albania",
     "lat": 40.70583,
-    "lng": 19.95222,
-    "current": true
+    "lng": 19.95222
   },
   {
     "id": 26,
     "index": 5,
     "name": "The Accursed Mountains",
     "lat": 42.4793,
-    "lng": 19.8503
+    "lng": 19.8503,
+    "current": true
   },
   {
     "id": "None",
