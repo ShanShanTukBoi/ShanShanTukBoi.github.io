@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-24T08:32:20Z",
+  "generated_at": "2026-05-25T16:07:18Z",
   "locations": [
     {
       "id": "None",
@@ -190,7 +190,6 @@
       "name": "Berat, Albania",
       "lat": 40.70583,
       "lng": 19.95222,
-      "current": true,
       "posts": [
         {
           "id": 22,
@@ -225,6 +224,7 @@
       "name": "The Accursed Mountains",
       "lat": 42.4793,
       "lng": 19.8503,
+      "current": true,
       "posts": []
     },
     {
