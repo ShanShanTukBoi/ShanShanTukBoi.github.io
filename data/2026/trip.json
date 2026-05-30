@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-05-29T18:25:21Z",
+  "generated_at": "2026-05-30T09:42:21Z",
   "locations": [
     {
       "id": "None",
@@ -224,7 +224,6 @@
       "name": "The Accursed Mountains",
       "lat": 42.4793,
       "lng": 19.8503,
-      "current": true,
       "posts": [
         {
           "id": 27,
@@ -286,9 +285,10 @@
     {
       "id": "None",
       "index": 6,
-      "name": "Montenegro",
-      "lat": 42.4247,
-      "lng": 18.7712,
+      "name": "Budva, Montenegro",
+      "lat": 42.2911,
+      "lng": 18.8403,
+      "current": true,
       "posts": []
     },
     {
