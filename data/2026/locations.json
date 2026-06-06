@@ -46,15 +46,15 @@
     "index": 6,
     "name": "Budva, Montenegro",
     "lat": 42.2911,
-    "lng": 18.8403,
-    "current": true
+    "lng": 18.8403
   },
   {
     "id": 34,
     "index": 7,
     "name": "Podgorica, Montenegro",
     "lat": 42.4304,
-    "lng": 19.2594
+    "lng": 19.2594,
+    "current": true
   },
   {
     "id": "None",
