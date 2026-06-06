@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-06T13:02:32Z",
+  "generated_at": "2026-06-06T13:09:56Z",
   "locations": [
     {
       "id": "None",
@@ -301,7 +301,6 @@
       "name": "Budva, Montenegro",
       "lat": 42.2911,
       "lng": 18.8403,
-      "current": true,
       "posts": [
         {
           "id": 32,
@@ -336,7 +335,22 @@
       "name": "Podgorica, Montenegro",
       "lat": 42.4304,
       "lng": 19.2594,
-      "posts": []
+      "current": true,
+      "posts": [
+        {
+          "id": 35,
+          "username": "ShanShanTukBoi",
+          "title": "Podgorica exceeded my low expectations",
+          "text": "",
+          "photos": [
+            "https://imgur.com/sGi51ua.jpeg",
+            "https://imgur.com/oWPIuAS.jpeg",
+            "https://imgur.com/mbXc0sb.jpeg",
+            "https://imgur.com/7sXhuHB.jpeg"
+          ],
+          "date": "2026-06-06T13:09:49Z"
+        }
+      ]
     },
     {
       "id": "None",
