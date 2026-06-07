@@ -53,15 +53,15 @@
     "index": 7,
     "name": "Podgorica, Montenegro",
     "lat": 42.4304,
-    "lng": 19.2594,
-    "current": true
+    "lng": 19.2594
   },
   {
     "id": "None",
     "index": 8,
     "name": "Ljubljana, Slovenia",
     "lat": 46.0569,
-    "lng": 14.5058
+    "lng": 14.5058,
+    "current": true
   },
   {
     "id": "None",
