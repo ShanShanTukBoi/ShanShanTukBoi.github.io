@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-06T13:25:36Z",
+  "generated_at": "2026-06-07T06:00:30Z",
   "locations": [
     {
       "id": "None",
@@ -335,7 +335,6 @@
       "name": "Podgorica, Montenegro",
       "lat": 42.4304,
       "lng": 19.2594,
-      "current": true,
       "posts": [
         {
           "id": 35,
@@ -368,6 +367,7 @@
       "name": "Ljubljana, Slovenia",
       "lat": 46.0569,
       "lng": 14.5058,
+      "current": true,
       "posts": []
     },
     {
