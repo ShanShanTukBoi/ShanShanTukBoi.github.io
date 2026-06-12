@@ -60,15 +60,15 @@
     "index": 8,
     "name": "Ljubljana, Slovenia",
     "lat": 46.0569,
-    "lng": 14.5058,
-    "current": true
+    "lng": 14.5058
   },
   {
     "id": 39,
     "index": 9,
     "name": "Bohinj, Slovenia",
     "lat": 46.2970919,
-    "lng": 13.9260094
+    "lng": 13.9260094,
+    "current": true
   },
   {
     "id": "None",
