@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-12T09:36:23Z",
+  "generated_at": "2026-06-13T19:13:19Z",
   "locations": [
     {
       "id": "None",
@@ -367,7 +367,6 @@
       "name": "Ljubljana, Slovenia",
       "lat": 46.0569,
       "lng": 14.5058,
-      "current": true,
       "posts": [
         {
           "id": 37,
@@ -405,7 +404,19 @@
       "name": "Bohinj, Slovenia",
       "lat": 46.2970919,
       "lng": 13.9260094,
-      "posts": []
+      "current": true,
+      "posts": [
+        {
+          "id": 40,
+          "username": "graciemq",
+          "title": "Bohinj lake",
+          "text": "**Grace\u2019s corner** I was actually in a horrible mood on this day - I think I was just a bit tired, sleep deprived and warn down. Rushan was very lovely, patient and managed to cheer me up. Anyways, here he is looking good in Lake Bohinj and drinking a local beer.",
+          "photos": [
+            "https://imgur.com/G4lNhsJ.jpeg"
+          ],
+          "date": "2026-06-13T19:13:05Z"
+        }
+      ]
     },
     {
       "id": "None",
