@@ -67,15 +67,15 @@
     "index": 9,
     "name": "Bohinj, Slovenia",
     "lat": 46.2970919,
-    "lng": 13.9260094,
-    "current": true
+    "lng": 13.9260094
   },
   {
     "id": 42,
     "index": 10,
     "name": "Julian Alps, Slovenia",
     "lat": 46.3783,
-    "lng": 13.8369
+    "lng": 13.8369,
+    "current": true
   },
   {
     "id": "None",
