@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-14T05:48:50Z",
+  "generated_at": "2026-06-14T05:50:27Z",
   "locations": [
     {
       "id": "None",
@@ -404,7 +404,6 @@
       "name": "Bohinj, Slovenia",
       "lat": 46.2970919,
       "lng": 13.9260094,
-      "current": true,
       "posts": [
         {
           "id": 40,
@@ -436,6 +435,7 @@
       "name": "Julian Alps, Slovenia",
       "lat": 46.3783,
       "lng": 13.8369,
+      "current": true,
       "posts": []
     },
     {
