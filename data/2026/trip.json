@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-14T05:50:27Z",
+  "generated_at": "2026-06-14T19:43:21Z",
   "locations": [
     {
       "id": "None",
@@ -436,7 +436,21 @@
       "lat": 46.3783,
       "lng": 13.8369,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 43,
+          "username": "ShanShanTukBoi",
+          "title": "Triglavski Dom",
+          "text": "Highest hut in Slovenia, just below the summit of Triglav",
+          "photos": [
+            "https://i.ibb.co/tPZCvLw2/1080790.jpg",
+            "https://i.ibb.co/wFnz6c56/1080705.jpg",
+            "https://i.ibb.co/vCF8qLm1/1080713.jpg",
+            "https://i.ibb.co/KcV7ZC9p/1080744.jpg"
+          ],
+          "date": "2026-06-14T19:43:12Z"
+        }
+      ]
     },
     {
       "id": "None",
