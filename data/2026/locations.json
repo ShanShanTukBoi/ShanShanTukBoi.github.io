@@ -74,15 +74,15 @@
     "index": 10,
     "name": "Julian Alps, Slovenia",
     "lat": 46.3783,
-    "lng": 13.8369,
-    "current": true
+    "lng": 13.8369
   },
   {
     "id": 47,
     "index": 11,
     "name": "Vipava Valley, Slovenia",
     "lat": 45.8456,
-    "lng": 13.9626
+    "lng": 13.9626,
+    "current": true
   },
   {
     "id": "None",
