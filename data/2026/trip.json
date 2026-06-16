@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-16T20:28:35Z",
+  "generated_at": "2026-06-16T20:34:35Z",
   "locations": [
     {
       "id": "None",
@@ -435,7 +435,6 @@
       "name": "Julian Alps, Slovenia",
       "lat": 46.3783,
       "lng": 13.8369,
-      "current": true,
       "posts": [
         {
           "id": 43,
@@ -483,6 +482,18 @@
             "https://imgur.com/fT6GB0N.jpeg"
           ],
           "date": "2026-06-16T20:07:26Z"
+        },
+        {
+          "id": 48,
+          "username": "ShanShanTukBoi",
+          "title": "Korbarid and Dre\u017enica",
+          "text": "",
+          "photos": [
+            "https://imgur.com/8EJr4KY.jpeg",
+            "https://imgur.com/DKQC7GC.jpeg",
+            "https://imgur.com/I7REGrf.jpeg"
+          ],
+          "date": "2026-06-16T20:34:17Z"
         }
       ]
     },
@@ -492,6 +503,7 @@
       "name": "Vipava Valley, Slovenia",
       "lat": 45.8456,
       "lng": 13.9626,
+      "current": true,
       "posts": []
     },
     {
