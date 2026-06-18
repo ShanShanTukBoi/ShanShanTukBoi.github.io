@@ -81,22 +81,15 @@
     "index": 11,
     "name": "Vipava Valley, Slovenia",
     "lat": 45.8456,
-    "lng": 13.9626,
-    "current": true
+    "lng": 13.9626
   },
   {
     "id": 49,
     "index": 12,
     "name": "Trieste, Italy",
     "lat": 45.6508,
-    "lng": 13.7674
-  },
-  {
-    "id": "None",
-    "index": 13,
-    "name": "Italy",
-    "lat": 46.4102,
-    "lng": 11.844
+    "lng": 13.7674,
+    "current": true
   },
   {
     "id": "None",
