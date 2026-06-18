@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-18T16:45:24Z",
+  "generated_at": "2026-06-18T16:47:29Z",
   "locations": [
     {
       "id": "None",
@@ -503,7 +503,6 @@
       "name": "Vipava Valley, Slovenia",
       "lat": 45.8456,
       "lng": 13.9626,
-      "current": true,
       "posts": [
         {
           "id": 50,
@@ -526,14 +525,7 @@
       "name": "Trieste, Italy",
       "lat": 45.6508,
       "lng": 13.7674,
-      "posts": []
-    },
-    {
-      "id": "None",
-      "index": 13,
-      "name": "Italy",
-      "lat": 46.4102,
-      "lng": 11.844,
+      "current": true,
       "posts": []
     },
     {
