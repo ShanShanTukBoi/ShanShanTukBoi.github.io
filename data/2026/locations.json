@@ -88,15 +88,15 @@
     "index": 12,
     "name": "Trieste, Italy",
     "lat": 45.6508,
-    "lng": 13.7674,
-    "current": true
+    "lng": 13.7674
   },
   {
     "id": 52,
     "index": 13,
     "name": "Valpolicella, Italy",
     "lat": 45.533,
-    "lng": 10.933
+    "lng": 10.933,
+    "current": true
   },
   {
     "id": "None",
