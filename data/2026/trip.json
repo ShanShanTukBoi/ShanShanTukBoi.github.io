@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-19T07:42:44Z",
+  "generated_at": "2026-06-19T14:09:23Z",
   "locations": [
     {
       "id": "None",
@@ -540,6 +540,14 @@
           "date": "2026-06-19T07:42:35Z"
         }
       ]
+    },
+    {
+      "id": 52,
+      "index": 13,
+      "name": "Valpolicella, Italy",
+      "lat": 45.533,
+      "lng": 10.933,
+      "posts": []
     },
     {
       "id": "None",

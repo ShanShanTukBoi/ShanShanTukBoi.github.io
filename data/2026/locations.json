@@ -92,6 +92,13 @@
     "current": true
   },
   {
+    "id": 52,
+    "index": 13,
+    "name": "Valpolicella, Italy",
+    "lat": 45.533,
+    "lng": 10.933
+  },
+  {
     "id": "None",
     "index": 14,
     "name": "Austria",
