@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-19T14:47:08Z",
+  "generated_at": "2026-06-21T21:17:26Z",
   "locations": [
     {
       "id": "None",
@@ -557,7 +557,20 @@
       "lat": 45.533,
       "lng": 10.933,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 54,
+          "username": "ShanShanTukBoi",
+          "title": "Lago di Garda",
+          "text": "",
+          "photos": [
+            "https://imgur.com/HH9hXiY.jpeg",
+            "https://imgur.com/uyn0VjF.jpeg",
+            "https://imgur.com/hOhLmnw.jpeg"
+          ],
+          "date": "2026-06-21T21:17:16Z"
+        }
+      ]
     },
     {
       "id": "None",
