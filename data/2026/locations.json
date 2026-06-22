@@ -95,15 +95,15 @@
     "index": 13,
     "name": "Valpolicella, Italy",
     "lat": 45.533,
-    "lng": 10.933,
-    "current": true
+    "lng": 10.933
   },
   {
     "id": 55,
     "index": 14,
     "name": "Dolomites, Italy",
     "lat": 46.4102,
-    "lng": 11.844
+    "lng": 11.844,
+    "current": true
   },
   {
     "id": "None",
