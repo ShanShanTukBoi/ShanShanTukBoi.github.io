@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-22T17:14:03Z",
+  "generated_at": "2026-06-22T20:43:58Z",
   "locations": [
     {
       "id": "None",
@@ -556,7 +556,6 @@
       "name": "Valpolicella, Italy",
       "lat": 45.533,
       "lng": 10.933,
-      "current": true,
       "posts": [
         {
           "id": 54,
@@ -569,6 +568,18 @@
             "https://imgur.com/hOhLmnw.jpeg"
           ],
           "date": "2026-06-21T21:17:16Z"
+        },
+        {
+          "id": 56,
+          "username": "ShanShanTukBoi",
+          "title": "Valpolicella and Verona",
+          "text": "",
+          "photos": [
+            "https://imgur.com/pBlPWcM.jpeg",
+            "https://imgur.com/WzHrZHs.jpeg",
+            "https://imgur.com/vb4nSfh.jpeg"
+          ],
+          "date": "2026-06-22T20:43:49Z"
         }
       ]
     },
@@ -578,6 +589,7 @@
       "name": "Dolomites, Italy",
       "lat": 46.4102,
       "lng": 11.844,
+      "current": true,
       "posts": []
     },
     {
