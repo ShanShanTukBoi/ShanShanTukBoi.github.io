@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-22T20:43:58Z",
+  "generated_at": "2026-06-25T21:26:13Z",
   "locations": [
     {
       "id": "None",
@@ -590,7 +590,20 @@
       "lat": 46.4102,
       "lng": 11.844,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 57,
+          "username": "ShanShanTukBoi",
+          "title": "Seceda",
+          "text": "",
+          "photos": [
+            "https://i.ibb.co/RGZd294B/1090435.jpg",
+            "https://i.ibb.co/5XQWK9Cx/1090487.jpg",
+            "https://i.ibb.co/8LmwB2W0/1090531.jpg"
+          ],
+          "date": "2026-06-25T21:26:05Z"
+        }
+      ]
     },
     {
       "id": "None",
