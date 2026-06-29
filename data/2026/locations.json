@@ -106,85 +106,92 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 61,
     "index": 15,
+    "name": "Munich, Germany",
+    "lat": 48.1351,
+    "lng": 11.582
+  },
+  {
+    "id": "None",
+    "index": 16,
     "name": "Austria",
     "lat": 48.2082,
     "lng": 16.3738
   },
   {
     "id": "None",
-    "index": 16,
+    "index": 17,
     "name": "Slovakia",
     "lat": 48.1486,
     "lng": 17.1077
   },
   {
     "id": "None",
-    "index": 17,
+    "index": 18,
     "name": "Poland",
     "lat": 50.0647,
     "lng": 19.945
   },
   {
     "id": "None",
-    "index": 18,
+    "index": 19,
     "name": "Czechia",
     "lat": 50.0755,
     "lng": 14.4378
   },
   {
     "id": "None",
-    "index": 19,
+    "index": 20,
     "name": "Georgia",
     "lat": 41.7151,
     "lng": 44.8271
   },
   {
     "id": "None",
-    "index": 20,
+    "index": 21,
     "name": "Armenia",
     "lat": 40.1792,
     "lng": 44.4991
   },
   {
     "id": "None",
-    "index": 21,
+    "index": 22,
     "name": "Kazakhstan",
     "lat": 43.222,
     "lng": 76.8512
   },
   {
     "id": "None",
-    "index": 22,
+    "index": 23,
     "name": "Uzbekistan",
     "lat": 41.2995,
     "lng": 69.2401
   },
   {
     "id": "None",
-    "index": 23,
+    "index": 24,
     "name": "India",
     "lat": 28.6139,
     "lng": 77.209
   },
   {
     "id": "None",
-    "index": 24,
+    "index": 25,
     "name": "Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": "None",
-    "index": 25,
+    "index": 26,
     "name": "China",
     "lat": 25.0453,
     "lng": 102.7097
   },
   {
     "id": "None",
-    "index": 26,
+    "index": 27,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
