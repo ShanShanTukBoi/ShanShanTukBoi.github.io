@@ -102,41 +102,34 @@
     "index": 14,
     "name": "Dolomites, Italy",
     "lat": 46.4102,
-    "lng": 11.844,
-    "current": true
+    "lng": 11.844
   },
   {
     "id": 61,
     "index": 15,
     "name": "Munich, Germany",
     "lat": 48.1351,
-    "lng": 11.582
+    "lng": 11.582,
+    "current": true
   },
   {
     "id": "None",
     "index": 16,
-    "name": "Austria",
+    "name": "Vienna, Austria",
     "lat": 48.2082,
     "lng": 16.3738
   },
   {
     "id": "None",
-    "index": 17,
-    "name": "Slovakia",
-    "lat": 48.1486,
-    "lng": 17.1077
-  },
-  {
-    "id": "None",
     "index": 18,
-    "name": "Poland",
+    "name": "Krakow, Poland",
     "lat": 50.0647,
     "lng": 19.945
   },
   {
     "id": "None",
     "index": 19,
-    "name": "Czechia",
+    "name": "Prague, Czechia",
     "lat": 50.0755,
     "lng": 14.4378
   },
