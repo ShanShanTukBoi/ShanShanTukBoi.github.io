@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-29T08:02:19Z",
+  "generated_at": "2026-06-29T08:12:14Z",
   "locations": [
     {
       "id": "None",
@@ -657,6 +657,14 @@
       "name": "Vienna, Austria",
       "lat": 48.2082,
       "lng": 16.3738,
+      "posts": []
+    },
+    {
+      "id": 62,
+      "index": 17,
+      "name": "Tatra Mountains, Slovakia",
+      "lat": 49.055187,
+      "lng": 20.301434,
       "posts": []
     },
     {
