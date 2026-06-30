@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-30T09:27:49Z",
+  "generated_at": "2026-06-30T10:02:00Z",
   "locations": [
     {
       "id": "None",
@@ -648,7 +648,21 @@
       "name": "Munich, Germany",
       "lat": 48.1351,
       "lng": 11.582,
-      "posts": []
+      "posts": [
+        {
+          "id": 67,
+          "username": "ShanShanTukBoi",
+          "title": "I am in a situationship with FlixBus",
+          "text": "",
+          "photos": [
+            "https://imgur.com/ASYKkv6.jpeg",
+            "https://imgur.com/Z5j0Pas.jpeg",
+            "https://imgur.com/mnK05xl.jpeg",
+            "https://imgur.com/JtM7Xgm.jpeg"
+          ],
+          "date": "2026-06-30T10:01:51Z"
+        }
+      ]
     },
     {
       "id": "None",
