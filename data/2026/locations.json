@@ -109,15 +109,15 @@
     "index": 15,
     "name": "Munich, Germany",
     "lat": 48.1351,
-    "lng": 11.582,
-    "current": true
+    "lng": 11.582
   },
   {
     "id": "None",
     "index": 16,
     "name": "Vienna, Austria",
     "lat": 48.2082,
-    "lng": 16.3738
+    "lng": 16.3738,
+    "current": true
   },
   {
     "id": 62,
@@ -157,7 +157,7 @@
   {
     "id": "None",
     "index": 22,
-    "name": "Georgia",
+    "name": "Tbilisi, Georgia",
     "lat": 41.7151,
     "lng": 44.8271
   },
