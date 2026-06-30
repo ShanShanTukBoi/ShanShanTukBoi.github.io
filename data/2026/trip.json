@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-06-30T09:24:49Z",
+  "generated_at": "2026-06-30T09:27:49Z",
   "locations": [
     {
       "id": "None",
@@ -708,8 +708,16 @@
       "posts": []
     },
     {
-      "id": "None",
+      "id": 66,
       "index": 23,
+      "name": "Svaneti, Georgia",
+      "lat": 43.040666504,
+      "lng": 42.724497102,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 24,
       "name": "Tbilisi, Georgia",
       "lat": 41.7151,
       "lng": 44.8271,
@@ -717,7 +725,7 @@
     },
     {
       "id": "None",
-      "index": 24,
+      "index": 25,
       "name": "Armenia",
       "lat": 40.1792,
       "lng": 44.4991,
@@ -725,7 +733,7 @@
     },
     {
       "id": "None",
-      "index": 25,
+      "index": 26,
       "name": "Kazakhstan",
       "lat": 43.222,
       "lng": 76.8512,
@@ -733,7 +741,7 @@
     },
     {
       "id": "None",
-      "index": 26,
+      "index": 27,
       "name": "Uzbekistan",
       "lat": 41.2995,
       "lng": 69.2401,
@@ -741,7 +749,7 @@
     },
     {
       "id": "None",
-      "index": 27,
+      "index": 28,
       "name": "India",
       "lat": 28.6139,
       "lng": 77.209,
@@ -749,7 +757,7 @@
     },
     {
       "id": "None",
-      "index": 28,
+      "index": 29,
       "name": "Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -757,7 +765,7 @@
     },
     {
       "id": "None",
-      "index": 29,
+      "index": 30,
       "name": "China",
       "lat": 25.0453,
       "lng": 102.7097,
@@ -765,7 +773,7 @@
     },
     {
       "id": "None",
-      "index": 30,
+      "index": 31,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
