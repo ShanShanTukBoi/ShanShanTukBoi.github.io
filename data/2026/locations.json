@@ -116,15 +116,15 @@
     "index": 16,
     "name": "Vienna, Austria",
     "lat": 48.2082,
-    "lng": 16.3738,
-    "current": true
+    "lng": 16.3738
   },
   {
     "id": 62,
     "index": 17,
     "name": "Tatra Mountains, Slovakia",
     "lat": 49.055187,
-    "lng": 20.301434
+    "lng": 20.301434,
+    "current": true
   },
   {
     "id": "None",
