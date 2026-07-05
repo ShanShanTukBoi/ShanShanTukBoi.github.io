@@ -123,15 +123,15 @@
     "index": 17,
     "name": "Tatra Mountains, Slovakia",
     "lat": 49.055187,
-    "lng": 20.301434,
-    "current": true
+    "lng": 20.301434
   },
   {
     "id": "None",
     "index": 18,
     "name": "Krakow, Poland",
     "lat": 50.0647,
-    "lng": 19.945
+    "lng": 19.945,
+    "current": true
   },
   {
     "id": 63,
