@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-01T09:59:14Z",
+  "generated_at": "2026-07-05T14:09:04Z",
   "locations": [
     {
       "id": "None",
@@ -702,8 +702,21 @@
       "name": "Tatra Mountains, Slovakia",
       "lat": 49.055187,
       "lng": 20.301434,
-      "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 70,
+          "username": "ShanShanTukBoi",
+          "title": "2D1N hiking in the Tatras",
+          "text": "",
+          "photos": [
+            "https://imgur.com/aYUnJws.jpeg",
+            "https://imgur.com/2HhM6dw.jpeg",
+            "https://imgur.com/hfYQjBS.jpeg",
+            "https://imgur.com/4WWW9ET.jpeg"
+          ],
+          "date": "2026-07-05T14:08:56Z"
+        }
+      ]
     },
     {
       "id": "None",
@@ -711,6 +724,7 @@
       "name": "Krakow, Poland",
       "lat": 50.0647,
       "lng": 19.945,
+      "current": true,
       "posts": []
     },
     {
