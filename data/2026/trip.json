@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-06T11:40:43Z",
+  "generated_at": "2026-07-08T09:07:59Z",
   "locations": [
     {
       "id": "None",
@@ -735,7 +735,20 @@
       "lat": 50.0647,
       "lng": 19.945,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 72,
+          "username": "ShanShanTukBoi",
+          "title": "Krakow",
+          "text": "",
+          "photos": [
+            "https://imgur.com/4bGXFMj.jpeg",
+            "https://imgur.com/Ohc42mf.jpeg",
+            "https://imgur.com/7zU9PLI.jpeg"
+          ],
+          "date": "2026-07-08T09:07:48Z"
+        }
+      ]
     },
     {
       "id": 63,
