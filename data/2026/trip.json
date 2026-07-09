@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-08T09:07:59Z",
+  "generated_at": "2026-07-09T09:52:52Z",
   "locations": [
     {
       "id": "None",
@@ -734,7 +734,6 @@
       "name": "Krakow, Poland",
       "lat": 50.0647,
       "lng": 19.945,
-      "current": true,
       "posts": [
         {
           "id": 72,
@@ -756,6 +755,7 @@
       "name": "Pohoda festival, Slovakia",
       "lat": 48.8849,
       "lng": 18.0335,
+      "current": true,
       "posts": []
     },
     {
