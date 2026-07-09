@@ -130,15 +130,15 @@
     "index": 18,
     "name": "Krakow, Poland",
     "lat": 50.0647,
-    "lng": 19.945,
-    "current": true
+    "lng": 19.945
   },
   {
     "id": 63,
     "index": 19,
     "name": "Pohoda festival, Slovakia",
     "lat": 48.8849,
-    "lng": 18.0335
+    "lng": 18.0335,
+    "current": true
   },
   {
     "id": "None",
