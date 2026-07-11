@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-09T09:52:52Z",
+  "generated_at": "2026-07-11T12:40:39Z",
   "locations": [
     {
       "id": "None",
@@ -756,7 +756,21 @@
       "lat": 48.8849,
       "lng": 18.0335,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 73,
+          "username": "ShanShanTukBoi",
+          "title": "Pohoda",
+          "text": "",
+          "photos": [
+            "https://imgur.com/dXwWV5a.jpeg",
+            "https://imgur.com/9KSKpnC.jpeg",
+            "https://imgur.com/SzHK0C3.jpeg",
+            "https://imgur.com/Em4BuBf.jpeg"
+          ],
+          "date": "2026-07-11T12:40:28Z"
+        }
+      ]
     },
     {
       "id": "None",
