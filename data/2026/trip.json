@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-13T13:13:40Z",
+  "generated_at": "2026-07-13T13:15:11Z",
   "locations": [
     {
       "id": "None",
@@ -755,7 +755,6 @@
       "name": "Pohoda festival, Slovakia",
       "lat": 48.8849,
       "lng": 18.0335,
-      "current": true,
       "posts": [
         {
           "id": 73,
@@ -791,6 +790,7 @@
       "name": "Prague, Czechia",
       "lat": 50.0755,
       "lng": 14.4378,
+      "current": true,
       "posts": []
     },
     {
