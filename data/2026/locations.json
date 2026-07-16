@@ -144,15 +144,15 @@
     "index": 20,
     "name": "Prague, Czechia",
     "lat": 50.0755,
-    "lng": 14.4378,
-    "current": true
+    "lng": 14.4378
   },
   {
     "id": 64,
     "index": 21,
     "name": "Tupesy, Czechia",
     "lat": 49.0843,
-    "lng": 17.3698
+    "lng": 17.3698,
+    "current": true
   },
   {
     "id": 65,
