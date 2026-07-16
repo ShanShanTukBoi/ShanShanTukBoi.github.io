@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-16T13:55:55Z",
+  "generated_at": "2026-07-16T14:12:34Z",
   "locations": [
     {
       "id": "None",
@@ -790,7 +790,20 @@
       "name": "Prague, Czechia",
       "lat": 50.0755,
       "lng": 14.4378,
-      "posts": []
+      "posts": [
+        {
+          "id": 75,
+          "username": "ShanShanTukBoi",
+          "title": "Prague Castle",
+          "text": "",
+          "photos": [
+            "https://i.ibb.co/bgSRNJHy/IMG-8763.jpg",
+            "https://i.ibb.co/JR830X8r/IMG-8787.jpg",
+            "https://i.ibb.co/S46HJg6s/1090886.jpg"
+          ],
+          "date": "2026-07-16T14:12:17Z"
+        }
+      ]
     },
     {
       "id": 64,
