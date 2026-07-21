@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-18T12:03:52Z",
+  "generated_at": "2026-07-21T10:11:18Z",
   "locations": [
     {
       "id": "None",
@@ -836,7 +836,20 @@
       "lat": 49.0843,
       "lng": 17.3698,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 78,
+          "username": "ShanShanTukBoi",
+          "title": "Hor\u0148\u00e1ck\u00e9 Slavnosti",
+          "text": "A regional Moravian folklore festival",
+          "photos": [
+            "https://imgur.com/Ft0BYFJ.jpeg",
+            "https://imgur.com/dy8vxFQ.jpeg",
+            "https://imgur.com/5tmhbQx.jpeg"
+          ],
+          "date": "2026-07-21T10:11:10Z"
+        }
+      ]
     },
     {
       "id": 65,
