@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-24T09:43:47Z",
+  "generated_at": "2026-07-24T19:02:13Z",
   "locations": [
     {
       "id": "None",
@@ -835,7 +835,6 @@
       "name": "Tupesy, Czechia",
       "lat": 49.0843,
       "lng": 17.3698,
-      "current": true,
       "posts": [
         {
           "id": 78,
@@ -910,6 +909,7 @@
       "name": "Kutaisi, Georgia",
       "lat": 42.2679,
       "lng": 42.6946,
+      "current": true,
       "posts": []
     },
     {
