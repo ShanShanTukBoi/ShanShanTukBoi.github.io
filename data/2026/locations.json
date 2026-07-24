@@ -151,15 +151,15 @@
     "index": 21,
     "name": "Tupesy, Czechia",
     "lat": 49.0843,
-    "lng": 17.3698,
-    "current": true
+    "lng": 17.3698
   },
   {
     "id": 65,
     "index": 22,
     "name": "Kutaisi, Georgia",
     "lat": 42.2679,
-    "lng": 42.6946
+    "lng": 42.6946,
+    "current": true
   },
   {
     "id": 66,
