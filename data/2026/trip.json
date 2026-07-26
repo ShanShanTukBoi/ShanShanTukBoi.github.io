@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-26T03:53:27Z",
+  "generated_at": "2026-07-26T06:18:20Z",
   "locations": [
     {
       "id": "None",
@@ -923,8 +923,21 @@
       "name": "Kutaisi, Georgia",
       "lat": 42.2679,
       "lng": 42.6946,
-      "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 84,
+          "username": "ShanShanTukBoi",
+          "title": "Quick stopover in Kutaisi",
+          "text": "",
+          "photos": [
+            "https://i.ibb.co/ymmc8HMb/IMG-9067.jpg",
+            "https://i.ibb.co/60t6CbqH/IMG-9103.jpg",
+            "https://i.ibb.co/2YcVVpC2/IMG-9114.jpg",
+            "https://i.ibb.co/gbnt7P2g/IMG-9118.jpg"
+          ],
+          "date": "2026-07-26T06:18:12Z"
+        }
+      ]
     },
     {
       "id": 66,
@@ -932,6 +945,7 @@
       "name": "Svaneti, Georgia",
       "lat": 43.040666504,
       "lng": 42.724497102,
+      "current": true,
       "posts": []
     },
     {
