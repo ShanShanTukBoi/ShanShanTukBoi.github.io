@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-26T06:18:20Z",
+  "generated_at": "2026-07-27T13:12:28Z",
   "locations": [
     {
       "id": "None",
@@ -946,7 +946,21 @@
       "lat": 43.040666504,
       "lng": 42.724497102,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 85,
+          "username": "graciemq",
+          "title": "Hiking in Georgia",
+          "text": "**Grace\u2019s corner** I LOVE Georgia! Probably my favourite country so far. Today was the first day of a four day hike. We stopped for lunch and were lucky enough to be shown an 800yo tower by a local man (pictured steadying the ladder that Rushan is on). We were told these towers were used for defence and revenge.",
+          "photos": [
+            "https://imgur.com/QrO7PDE.jpeg",
+            "https://imgur.com/kSS7Vvk.jpeg",
+            "https://imgur.com/OFK7NEx.jpeg",
+            "https://imgur.com/e3ofv6n.jpeg"
+          ],
+          "date": "2026-07-27T13:12:18Z"
+        }
+      ]
     },
     {
       "id": "None",
