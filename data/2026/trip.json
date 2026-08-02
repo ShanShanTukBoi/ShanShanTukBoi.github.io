@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-07-27T13:29:55Z",
+  "generated_at": "2026-08-02T10:20:17Z",
   "locations": [
     {
       "id": "None",
@@ -945,7 +945,6 @@
       "name": "Svaneti, Georgia",
       "lat": 43.040666504,
       "lng": 42.724497102,
-      "current": true,
       "posts": [
         {
           "id": 85,
@@ -981,6 +980,7 @@
       "name": "Tbilisi, Georgia",
       "lat": 41.7151,
       "lng": 44.8271,
+      "current": true,
       "posts": []
     },
     {
