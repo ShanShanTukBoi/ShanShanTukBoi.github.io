@@ -165,15 +165,15 @@
     "index": 23,
     "name": "Svaneti, Georgia",
     "lat": 43.040666504,
-    "lng": 42.724497102,
-    "current": true
+    "lng": 42.724497102
   },
   {
     "id": "None",
     "index": 24,
     "name": "Tbilisi, Georgia",
     "lat": 41.7151,
-    "lng": 44.8271
+    "lng": 44.8271,
+    "current": true
   },
   {
     "id": "None",
