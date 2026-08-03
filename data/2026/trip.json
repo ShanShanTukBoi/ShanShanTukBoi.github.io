@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-03T09:10:19Z",
+  "generated_at": "2026-08-03T09:19:26Z",
   "locations": [
     {
       "id": "None",
@@ -1018,9 +1018,9 @@
     {
       "id": "None",
       "index": 29,
-      "name": "India",
-      "lat": 28.6139,
-      "lng": 77.209,
+      "name": "South Korea",
+      "lat": 37.5326,
+      "lng": 127.024612,
       "posts": []
     },
     {
@@ -1045,6 +1045,14 @@
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 33,
+      "name": "Indonesia",
+      "lat": -0.2333,
+      "lng": 130.5167,
       "posts": []
     }
   ]
