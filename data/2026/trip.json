@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-02T10:20:17Z",
+  "generated_at": "2026-08-03T09:04:24Z",
   "locations": [
     {
       "id": "None",
@@ -975,8 +975,16 @@
       ]
     },
     {
-      "id": "None",
+      "id": 87,
       "index": 24,
+      "name": "Yerevan, Armenia",
+      "lat": 40.1772,
+      "lng": 44.5035,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 25,
       "name": "Tbilisi, Georgia",
       "lat": 41.7151,
       "lng": 44.8271,
@@ -985,7 +993,7 @@
     },
     {
       "id": "None",
-      "index": 25,
+      "index": 26,
       "name": "Armenia",
       "lat": 40.1792,
       "lng": 44.4991,
@@ -993,7 +1001,7 @@
     },
     {
       "id": "None",
-      "index": 26,
+      "index": 27,
       "name": "Kazakhstan",
       "lat": 43.222,
       "lng": 76.8512,
@@ -1001,7 +1009,7 @@
     },
     {
       "id": "None",
-      "index": 27,
+      "index": 28,
       "name": "Uzbekistan",
       "lat": 41.2995,
       "lng": 69.2401,
@@ -1009,7 +1017,7 @@
     },
     {
       "id": "None",
-      "index": 28,
+      "index": 29,
       "name": "India",
       "lat": 28.6139,
       "lng": 77.209,
@@ -1017,7 +1025,7 @@
     },
     {
       "id": "None",
-      "index": 29,
+      "index": 30,
       "name": "Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -1025,7 +1033,7 @@
     },
     {
       "id": "None",
-      "index": 30,
+      "index": 31,
       "name": "China",
       "lat": 25.0453,
       "lng": 102.7097,
@@ -1033,7 +1041,7 @@
     },
     {
       "id": "None",
-      "index": 31,
+      "index": 32,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
