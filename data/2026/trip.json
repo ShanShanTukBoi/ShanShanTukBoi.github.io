@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-03T10:40:11Z",
+  "generated_at": "2026-08-03T10:43:31Z",
   "locations": [
     {
       "id": "None",
@@ -971,6 +971,19 @@
             "https://imgur.com/EEjnruc.jpeg"
           ],
           "date": "2026-08-03T10:39:55Z"
+        },
+        {
+          "id": 88,
+          "username": "ShanShanTukBoi",
+          "title": "Some scenery from the hike",
+          "text": "",
+          "photos": [
+            "https://imgur.com/esMKAJi.jpeg",
+            "https://imgur.com/R4V0Efs.jpeg",
+            "https://imgur.com/giLBYjV.jpeg",
+            "https://imgur.com/Cg6kNze.jpeg"
+          ],
+          "date": "2026-08-03T10:43:17Z"
         }
       ]
     },
