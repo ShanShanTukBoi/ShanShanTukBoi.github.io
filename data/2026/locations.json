@@ -172,29 +172,29 @@
     "index": 24,
     "name": "Yerevan, Armenia",
     "lat": 40.1772,
-    "lng": 44.5035
+    "lng": 44.5035,
+    "current": true
   },
   {
     "id": "None",
     "index": 25,
     "name": "Tbilisi, Georgia",
     "lat": 41.7151,
-    "lng": 44.8271,
-    "current": true
+    "lng": 44.8271
   },
   {
     "id": "None",
     "index": 26,
-    "name": "Armenia",
-    "lat": 40.1792,
-    "lng": 44.4991
+    "name": "Kazakhstan",
+    "lat": 43.222,
+    "lng": 76.8512
   },
   {
     "id": "None",
     "index": 27,
-    "name": "Kazakhstan",
-    "lat": 43.222,
-    "lng": 76.8512
+    "name": "Kyrgyzstan",
+    "lat": 42.882004,
+    "lng": 74.582748
   },
   {
     "id": "None",
