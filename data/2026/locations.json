@@ -206,9 +206,9 @@
   {
     "id": "None",
     "index": 29,
-    "name": "India",
-    "lat": 28.6139,
-    "lng": 77.209
+    "name": "South Korea",
+    "lat": 37.532600,
+    "lng": 127.024612
   },
   {
     "id": "None",
@@ -230,5 +230,12 @@
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
+  },
+  {
+    "id": "None",
+    "index": 33,
+    "name": "Indonesia",
+    "lat": -0.2333,
+    "lng": 130.5167
   }
 ]
