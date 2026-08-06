@@ -59,13 +59,15 @@ body:
     - Kutaisi, Georgia
     - Svaneti, Georgia
     - Yerevan, Armenia
+    - Stepantsminda, Georgia
     - Tbilisi, Georgia
-    - Armenia
     - Kazakhstan
+    - Kyrgyzstan
     - Uzbekistan
-    - India
+    - South Korea
     - Taiwan
     - China
     - Thailand
+    - Indonesia
   validations:
     required: true

@@ -176,64 +176,71 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 90,
     "index": 25,
+    "name": "Stepantsminda, Georgia",
+    "lat": 42.6567,
+    "lng": 44.6433
+  },
+  {
+    "id": "None",
+    "index": 26,
     "name": "Tbilisi, Georgia",
     "lat": 41.7151,
     "lng": 44.8271
   },
   {
     "id": "None",
-    "index": 26,
+    "index": 27,
     "name": "Kazakhstan",
     "lat": 43.222,
     "lng": 76.8512
   },
   {
     "id": "None",
-    "index": 27,
+    "index": 28,
     "name": "Kyrgyzstan",
     "lat": 42.882004,
     "lng": 74.582748
   },
   {
     "id": "None",
-    "index": 28,
+    "index": 29,
     "name": "Uzbekistan",
     "lat": 41.2995,
     "lng": 69.2401
   },
   {
     "id": "None",
-    "index": 29,
+    "index": 30,
     "name": "South Korea",
-    "lat": 37.532600,
+    "lat": 37.5326,
     "lng": 127.024612
   },
   {
     "id": "None",
-    "index": 30,
+    "index": 31,
     "name": "Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": "None",
-    "index": 31,
+    "index": 32,
     "name": "China",
     "lat": 25.0453,
     "lng": 102.7097
   },
   {
     "id": "None",
-    "index": 32,
+    "index": 33,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 33,
+    "index": 34,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
