@@ -172,15 +172,15 @@
     "index": 24,
     "name": "Yerevan, Armenia",
     "lat": 40.1772,
-    "lng": 44.5035,
-    "current": true
+    "lng": 44.5035
   },
   {
     "id": 90,
     "index": 25,
     "name": "Stepantsminda, Georgia",
     "lat": 42.6567,
-    "lng": 44.6433
+    "lng": 44.6433,
+    "current": true
   },
   {
     "id": "None",
