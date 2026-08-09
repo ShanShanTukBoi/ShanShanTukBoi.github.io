@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-09T08:29:18Z",
+  "generated_at": "2026-08-09T08:31:24Z",
   "locations": [
     {
       "id": "None",
@@ -1057,6 +1057,19 @@
             "https://imgur.com/UmDvJNv.jpeg"
           ],
           "date": "2026-08-09T08:29:11Z"
+        },
+        {
+          "id": 94,
+          "username": "ShanShanTukBoi",
+          "title": "Mount Kazbegi",
+          "text": "",
+          "photos": [
+            "https://imgur.com/hxWlmpl.jpeg",
+            "https://imgur.com/feCJEkM.jpeg",
+            "https://imgur.com/ALZ6EkU.jpeg",
+            "https://imgur.com/DqHAEvF.jpeg"
+          ],
+          "date": "2026-08-09T08:31:16Z"
         }
       ]
     },
