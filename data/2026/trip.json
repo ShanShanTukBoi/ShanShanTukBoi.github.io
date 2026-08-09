@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-06T14:21:08Z",
+  "generated_at": "2026-08-09T08:24:48Z",
   "locations": [
     {
       "id": "None",
@@ -1043,8 +1043,22 @@
       "name": "Stepantsminda, Georgia",
       "lat": 42.6567,
       "lng": 44.6433,
-      "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 93,
+          "username": "ShanShanTukBoi",
+          "title": "Long commute",
+          "text": "Eleven hours on the road from Yerevan to Stepantsminda. The last part of the drive was along the Georgian Military Highway, which was full of trucks carrying luxury European cars into Russia despite the sanctions.",
+          "photos": [
+            "https://imgur.com/s9ycb2.jpeg",
+            "https://imgur.com/ZhyQfAs.jpeg",
+            "https://imgur.com/jtrE9s1.jpeg",
+            "https://imgur.com/nUGAPDk.jpeg",
+            "https://imgur.com/UmDvJNv.jpeg"
+          ],
+          "date": "2026-08-09T08:24:41Z"
+        }
+      ]
     },
     {
       "id": "None",
@@ -1052,12 +1066,13 @@
       "name": "Tbilisi, Georgia",
       "lat": 41.7151,
       "lng": 44.8271,
+      "current": true,
       "posts": []
     },
     {
       "id": "None",
       "index": 27,
-      "name": "Kazakhstan",
+      "name": "Almaty, Kazakhstan",
       "lat": 43.222,
       "lng": 76.8512,
       "posts": []
