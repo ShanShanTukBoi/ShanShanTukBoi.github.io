@@ -186,15 +186,15 @@
     "index": 26,
     "name": "Tbilisi, Georgia",
     "lat": 41.7151,
-    "lng": 44.8271,
-    "current": true
+    "lng": 44.8271
   },
   {
     "id": "None",
     "index": 27,
     "name": "Almaty, Kazakhstan",
     "lat": 43.222,
-    "lng": 76.8512
+    "lng": 76.8512,
+    "current": true
   },
   {
     "id": "None",
