@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-16T05:38:13Z",
+  "generated_at": "2026-08-16T15:13:18Z",
   "locations": [
     {
       "id": "None",
@@ -1144,7 +1144,21 @@
       "name": "Almaty, Kazakhstan",
       "lat": 43.222,
       "lng": 76.8512,
-      "posts": []
+      "posts": [
+        {
+          "id": 99,
+          "username": "ShanShanTukBoi",
+          "title": "Almaty",
+          "text": "",
+          "photos": [
+            "https://imgur.com/YuNQWsq.jpeg",
+            "https://imgur.com/MlVUWFq.jpeg",
+            "https://imgur.com/3FqmvDN.jpeg",
+            "https://imgur.com/LeIn332.jpeg"
+          ],
+          "date": "2026-08-16T15:13:11Z"
+        }
+      ]
     },
     {
       "id": "None",
