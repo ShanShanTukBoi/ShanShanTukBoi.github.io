@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-12T16:23:59Z",
+  "generated_at": "2026-08-16T05:38:13Z",
   "locations": [
     {
       "id": "None",
@@ -1144,15 +1144,15 @@
       "name": "Almaty, Kazakhstan",
       "lat": 43.222,
       "lng": 76.8512,
-      "current": true,
       "posts": []
     },
     {
       "id": "None",
       "index": 28,
-      "name": "Kyrgyzstan",
-      "lat": 42.882004,
-      "lng": 74.582748,
+      "name": "Karakol, Kyrgyzstan",
+      "lat": 42.49068,
+      "lng": 78.39362,
+      "current": true,
       "posts": []
     },
     {
