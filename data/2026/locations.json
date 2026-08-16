@@ -193,15 +193,15 @@
     "index": 27,
     "name": "Almaty, Kazakhstan",
     "lat": 43.222,
-    "lng": 76.8512,
-    "current": true
+    "lng": 76.8512
   },
   {
     "id": "None",
     "index": 28,
-    "name": "Kyrgyzstan",
-    "lat": 42.882004,
-    "lng": 74.582748
+    "name": "Karakol, Kyrgyzstan",
+    "lat": 42.49068,
+    "lng": 78.39362,
+    "current": true
   },
   {
     "id": "None",
