@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-16T15:13:18Z",
+  "generated_at": "2026-08-17T06:06:47Z",
   "locations": [
     {
       "id": "None",
@@ -1167,7 +1167,23 @@
       "lat": 42.49068,
       "lng": 78.39362,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 100,
+          "username": "ShanShanTukBoi",
+          "title": "Kazakhstan to Kyrgyzstan",
+          "text": "Our bus from Almaty to Karakol broke down just outside of Almaty. After waiting 90 minutes on the side of the highway in 37-degree heat for a replacement bus to arrive, the new bus immediately broke down in the same place, seemingly with the same issue. After another hour of the two bus drivers (and several passengers) fiddling around with the engine, we were on the road again. There were a few more breakdowns along the way, but we eventually made it through the border crossing and arrived in Karakol after around 11 hours on the road (it should have been ~5 hours).",
+          "photos": [
+            "https://imgur.com/rFZc8oL.jpeg",
+            "https://imgur.com/hEqPSES.jpeg",
+            "https://imgur.com/ZtVLPlk.jpeg",
+            "https://imgur.com/PRxx1eL.jpeg",
+            "https://imgur.com/Sy29siZ.jpeg",
+            "https://imgur.com/lB0LUgn.jpeg"
+          ],
+          "date": "2026-08-17T06:06:38Z"
+        }
+      ]
     },
     {
       "id": "None",
