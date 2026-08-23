@@ -204,43 +204,50 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 105,
     "index": 29,
+    "name": "Bishkek, Kyrgyzstan",
+    "lat": 42.882004,
+    "lng": 74.582748
+  },
+  {
+    "id": "None",
+    "index": 30,
     "name": "Uzbekistan",
     "lat": 41.2995,
     "lng": 69.2401
   },
   {
     "id": "None",
-    "index": 30,
+    "index": 31,
     "name": "South Korea",
     "lat": 37.5326,
     "lng": 127.024612
   },
   {
     "id": "None",
-    "index": 31,
+    "index": 32,
     "name": "Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": "None",
-    "index": 32,
+    "index": 33,
     "name": "China",
     "lat": 25.0453,
     "lng": 102.7097
   },
   {
     "id": "None",
-    "index": 33,
+    "index": 34,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 34,
+    "index": 35,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
