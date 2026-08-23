@@ -200,15 +200,15 @@
     "index": 28,
     "name": "Karakol, Kyrgyzstan",
     "lat": 42.49068,
-    "lng": 78.39362,
-    "current": true
+    "lng": 78.39362
   },
   {
     "id": 105,
     "index": 29,
     "name": "Bishkek, Kyrgyzstan",
     "lat": 42.882004,
-    "lng": 74.582748
+    "lng": 74.582748,
+    "current": true
   },
   {
     "id": "None",
