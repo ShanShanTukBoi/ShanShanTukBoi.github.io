@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-23T10:35:11Z",
+  "generated_at": "2026-08-23T10:50:08Z",
   "locations": [
     {
       "id": "None",
@@ -1166,7 +1166,6 @@
       "name": "Karakol, Kyrgyzstan",
       "lat": 42.49068,
       "lng": 78.39362,
-      "current": true,
       "posts": [
         {
           "id": 100,
@@ -1235,6 +1234,20 @@
             "https://imgur.com/PupO3c7.jpeg"
           ],
           "date": "2026-08-23T10:32:49Z"
+        },
+        {
+          "id": 106,
+          "username": "graciemq",
+          "title": "Yurt life",
+          "text": "**Grace\u2019s corner** spent 2 nights sleeping in yurts in between all the hiking. They are surprisingly warm and cosy. Both were hosted by lovely local families.",
+          "photos": [
+            "https://imgur.com/oonR0Ur.jpeg",
+            "https://imgur.com/qPYA5XL.jpeg",
+            "https://imgur.com/xjLANJl.jpeg",
+            "https://imgur.com/eOoEXKX.jpeg",
+            "https://imgur.com/WsH8Nza.jpeg"
+          ],
+          "date": "2026-08-23T10:49:58Z"
         }
       ]
     },
@@ -1244,6 +1257,7 @@
       "name": "Bishkek, Kyrgyzstan",
       "lat": 42.882004,
       "lng": 74.582748,
+      "current": true,
       "posts": []
     },
     {
