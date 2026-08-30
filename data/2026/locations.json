@@ -218,50 +218,43 @@
     "lng": 77.08225
   },
   {
-    "id": 110,
-    "index": 31,
-    "name": "Cholpon-Ata",
-    "lat": 42.64944,
-    "lng": 77.08225
-  },
-  {
     "id": "None",
-    "index": 32,
+    "index": 31,
     "name": "Uzbekistan",
     "lat": 41.2995,
     "lng": 69.2401
   },
   {
     "id": "None",
-    "index": 33,
+    "index": 32,
     "name": "South Korea",
     "lat": 37.5326,
     "lng": 127.024612
   },
   {
     "id": "None",
-    "index": 34,
+    "index": 33,
     "name": "Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": "None",
-    "index": 35,
+    "index": 34,
     "name": "China",
     "lat": 25.0453,
     "lng": 102.7097
   },
   {
     "id": "None",
-    "index": 36,
+    "index": 35,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 37,
+    "index": 36,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
