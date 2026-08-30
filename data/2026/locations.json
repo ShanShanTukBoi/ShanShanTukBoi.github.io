@@ -207,15 +207,15 @@
     "index": 29,
     "name": "Bishkek, Kyrgyzstan",
     "lat": 42.882004,
-    "lng": 74.582748,
-    "current": true
+    "lng": 74.582748
   },
   {
     "id": 110,
     "index": 30,
     "name": "Cholpon-Ata, Kyrgyzstan",
     "lat": 42.64944,
-    "lng": 77.08225
+    "lng": 77.08225,
+    "current": true
   },
   {
     "id": "None",
