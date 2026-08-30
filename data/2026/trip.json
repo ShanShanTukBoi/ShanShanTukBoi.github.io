@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-30T04:56:48Z",
+  "generated_at": "2026-08-30T06:08:07Z",
   "locations": [
     {
       "id": "None",
@@ -1286,8 +1286,16 @@
       ]
     },
     {
-      "id": "None",
+      "id": 110,
       "index": 30,
+      "name": "Cholpon-Ata",
+      "lat": 42.64944,
+      "lng": 77.08225,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 31,
       "name": "Uzbekistan",
       "lat": 41.2995,
       "lng": 69.2401,
@@ -1295,7 +1303,7 @@
     },
     {
       "id": "None",
-      "index": 31,
+      "index": 32,
       "name": "South Korea",
       "lat": 37.5326,
       "lng": 127.024612,
@@ -1303,7 +1311,7 @@
     },
     {
       "id": "None",
-      "index": 32,
+      "index": 33,
       "name": "Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -1311,7 +1319,7 @@
     },
     {
       "id": "None",
-      "index": 33,
+      "index": 34,
       "name": "China",
       "lat": 25.0453,
       "lng": 102.7097,
@@ -1319,7 +1327,7 @@
     },
     {
       "id": "None",
-      "index": 34,
+      "index": 35,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1327,7 +1335,7 @@
     },
     {
       "id": "None",
-      "index": 35,
+      "index": 36,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
