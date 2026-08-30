@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-08-30T06:14:36Z",
+  "generated_at": "2026-08-30T06:18:59Z",
   "locations": [
     {
       "id": "None",
@@ -1256,7 +1256,6 @@
       "name": "Bishkek, Kyrgyzstan",
       "lat": 42.882004,
       "lng": 74.582748,
-      "current": true,
       "posts": [
         {
           "id": 108,
@@ -1291,14 +1290,15 @@
       "name": "Cholpon-Ata, Kyrgyzstan",
       "lat": 42.64944,
       "lng": 77.08225,
+      "current": true,
       "posts": []
     },
     {
-      "id": 110,
+      "id": 111,
       "index": 31,
-      "name": "Cholpon-Ata",
-      "lat": 42.64944,
-      "lng": 77.08225,
+      "name": "Pamir-Alay Mountains, Kyrgyzstan",
+      "lat": 39.7233,
+      "lng": 72.9063,
       "posts": []
     },
     {
