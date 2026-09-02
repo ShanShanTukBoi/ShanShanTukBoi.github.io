@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-02T03:07:02Z",
+  "generated_at": "2026-09-02T12:14:12Z",
   "locations": [
     {
       "id": "None",
@@ -1303,7 +1303,22 @@
       "lat": 42.64944,
       "lng": 77.08225,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 113,
+          "username": "graciemq",
+          "title": "Chills before the Nomad Games",
+          "text": "**Grace\u2019s corner** we have had a lovely couple of days hanging out with Noah in the resort town of Cholpon Ata. Nice to recharge before going to the Nomad Games (an international sporting and cultural festival of Nomadic countries)!",
+          "photos": [
+            "https://imgur.com/t5IQjOj.jpeg",
+            "https://imgur.com/2GDa0LF.jpeg",
+            "https://imgur.com/PPycrJt.jpeg",
+            "https://imgur.com/S8JV92C.jpeg",
+            "https://imgur.com/8RyLj9u.jpeg"
+          ],
+          "date": "2026-09-02T12:14:00Z"
+        }
+      ]
     },
     {
       "id": 111,
