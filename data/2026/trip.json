@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-04T09:05:52Z",
+  "generated_at": "2026-09-05T15:17:38Z",
   "locations": [
     {
       "id": "None",
@@ -1302,7 +1302,6 @@
       "name": "Cholpon-Ata, Kyrgyzstan",
       "lat": 42.64944,
       "lng": 77.08225,
-      "current": true,
       "posts": [
         {
           "id": 113,
@@ -1366,6 +1365,7 @@
       "name": "Pamir-Alay Mountains, Kyrgyzstan",
       "lat": 39.7233,
       "lng": 72.9063,
+      "current": true,
       "posts": []
     },
     {
