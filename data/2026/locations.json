@@ -214,15 +214,15 @@
     "index": 30,
     "name": "Cholpon-Ata, Kyrgyzstan",
     "lat": 42.64944,
-    "lng": 77.08225,
-    "current": true
+    "lng": 77.08225
   },
   {
     "id": 111,
     "index": 31,
     "name": "Pamir-Alay Mountains, Kyrgyzstan",
     "lat": 39.7233,
-    "lng": 72.9063
+    "lng": 72.9063,
+    "current": true
   },
   {
     "id": "None",
