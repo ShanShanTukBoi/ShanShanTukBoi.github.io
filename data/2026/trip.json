@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-05T15:17:38Z",
+  "generated_at": "2026-09-05T15:52:43Z",
   "locations": [
     {
       "id": "None",
@@ -1366,7 +1366,22 @@
       "lat": 39.7233,
       "lng": 72.9063,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 117,
+          "username": "ShanShanTukBoi",
+          "title": "Pamir highway from Osh to Sary-Mogol",
+          "text": "Got a small taste of the Pamir Highway on our way to the Pamir-Alay mountains. Unfortunately, there\u2019s been quite a bit of snow over the last day or two, so we had to cancel our 4-day hike. Hopefully, we\u2019ll be able to do a couple of day hikes higher up in the mountains once the snow melts.",
+          "photos": [
+            "https://imgur.com/64vtxj2.jpeg",
+            "https://imgur.com/nppOrpk.jpeg",
+            "https://imgur.com/nJxrF53.jpeg",
+            "https://imgur.com/UfYQsdH.jpeg",
+            "https://imgur.com/mxYeWaM.jpeg"
+          ],
+          "date": "2026-09-05T15:52:32Z"
+        }
+      ]
     },
     {
       "id": "None",
