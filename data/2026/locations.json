@@ -227,41 +227,83 @@
   {
     "id": "None",
     "index": 32,
-    "name": "Uzbekistan",
-    "lat": 41.2995,
-    "lng": 69.2401
+    "name": "Kashgar, China",
+    "lat": 39.470402,
+    "lng": 75.989754
   },
   {
     "id": "None",
     "index": 33,
-    "name": "South Korea",
-    "lat": 37.5326,
-    "lng": 127.024612
+    "name": "Turpan, China",
+    "lat": 42.94769,
+    "lng": 89.17886
   },
   {
     "id": "None",
     "index": 34,
-    "name": "Taiwan",
+    "name": "Dunhuang, China",
+    "lat": 40.142132,
+    "lng": 94.661880
+  },
+  {
+    "id": "None",
+    "index": 35,
+    "name": "Zhangye, China",
+    "lat": 38.913769,
+    "lng": 100.133240
+  },
+  {
+    "id": "None",
+    "index": 36,
+    "name": "Lanzhou, China",
+    "lat": 36.05701,
+    "lng": 103.83987
+  },
+  {
+    "id": "None",
+    "index": 37,
+    "name": "Taipei, Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": "None",
-    "index": 35,
-    "name": "China",
-    "lat": 25.0453,
-    "lng": 102.7097
+    "index": 38,
+    "name": "Hong Kong",
+    "lat": 22.302711,
+    "lng": 114.177216
   },
   {
     "id": "None",
-    "index": 36,
+    "index": 39,
+    "name": "Hong Kong",
+    "lat": 22.302711,
+    "lng": 114.177216
+  },
+  {
+    "id": "None",
+    "index": 40,
+    "name": "Chongqing, China",
+    "lat": 29.439325,
+    "lng": 106.887703
+  },
+  {
+    "id": "None",
+    "index": 41,
+    "name": "Chengdu, China",
+    "lat": 30.657000,
+    "lng": 104.066002
+  },
+  {
+    "id": "None",
+    "index": 42,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 37,
+    "index": 43,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
