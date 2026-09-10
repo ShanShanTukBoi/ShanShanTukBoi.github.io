@@ -276,34 +276,27 @@
   {
     "id": "None",
     "index": 39,
-    "name": "Hong Kong",
-    "lat": 22.302711,
-    "lng": 114.177216
-  },
-  {
-    "id": "None",
-    "index": 40,
     "name": "Chongqing, China",
     "lat": 29.439325,
     "lng": 106.887703
   },
   {
     "id": "None",
-    "index": 41,
+    "index": 40,
     "name": "Chengdu, China",
     "lat": 30.657000,
     "lng": 104.066002
   },
   {
     "id": "None",
-    "index": 42,
+    "index": 41,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 43,
+    "index": 42,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
