@@ -221,15 +221,15 @@
     "index": 31,
     "name": "Pamir-Alay Mountains, Kyrgyzstan",
     "lat": 39.7233,
-    "lng": 72.9063,
-    "current": true
+    "lng": 72.9063
   },
   {
     "id": "None",
     "index": 32,
     "name": "Kashgar, China",
     "lat": 39.470402,
-    "lng": 75.989754
+    "lng": 75.989754,
+    "current": true
   },
   {
     "id": "None",
