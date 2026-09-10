@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-09T07:45:39Z",
+  "generated_at": "2026-09-10T05:08:16Z",
   "locations": [
     {
       "id": "None",
@@ -1365,7 +1365,6 @@
       "name": "Pamir-Alay Mountains, Kyrgyzstan",
       "lat": 39.7233,
       "lng": 72.9063,
-      "current": true,
       "posts": [
         {
           "id": 117,
@@ -1389,6 +1388,7 @@
       "name": "Kashgar, China",
       "lat": 39.470402,
       "lng": 75.989754,
+      "current": true,
       "posts": []
     },
     {
@@ -1442,14 +1442,6 @@
     {
       "id": "None",
       "index": 39,
-      "name": "Hong Kong",
-      "lat": 22.302711,
-      "lng": 114.177216,
-      "posts": []
-    },
-    {
-      "id": "None",
-      "index": 40,
       "name": "Chongqing, China",
       "lat": 29.439325,
       "lng": 106.887703,
@@ -1457,7 +1449,7 @@
     },
     {
       "id": "None",
-      "index": 41,
+      "index": 40,
       "name": "Chengdu, China",
       "lat": 30.657,
       "lng": 104.066002,
@@ -1465,7 +1457,7 @@
     },
     {
       "id": "None",
-      "index": 42,
+      "index": 41,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1473,7 +1465,7 @@
     },
     {
       "id": "None",
-      "index": 43,
+      "index": 42,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
