@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-11T02:55:55Z",
+  "generated_at": "2026-09-11T02:58:23Z",
   "locations": [
     {
       "id": "None",
@@ -1444,8 +1444,16 @@
       ]
     },
     {
-      "id": "None",
+      "id": 122,
       "index": 33,
+      "name": "Tashkurgan, China",
+      "lat": 37.77278,
+      "lng": 75.22444,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 34,
       "name": "Turpan, China",
       "lat": 42.94769,
       "lng": 89.17886,
@@ -1453,7 +1461,7 @@
     },
     {
       "id": "None",
-      "index": 34,
+      "index": 35,
       "name": "Dunhuang, China",
       "lat": 40.142132,
       "lng": 94.66188,
@@ -1461,7 +1469,7 @@
     },
     {
       "id": "None",
-      "index": 35,
+      "index": 36,
       "name": "Zhangye, China",
       "lat": 38.913769,
       "lng": 100.13324,
@@ -1469,7 +1477,7 @@
     },
     {
       "id": "None",
-      "index": 36,
+      "index": 37,
       "name": "Lanzhou, China",
       "lat": 36.05701,
       "lng": 103.83987,
@@ -1477,7 +1485,7 @@
     },
     {
       "id": "None",
-      "index": 37,
+      "index": 38,
       "name": "Taipei, Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -1485,7 +1493,7 @@
     },
     {
       "id": "None",
-      "index": 38,
+      "index": 39,
       "name": "Hong Kong",
       "lat": 22.302711,
       "lng": 114.177216,
@@ -1493,7 +1501,7 @@
     },
     {
       "id": "None",
-      "index": 39,
+      "index": 40,
       "name": "Chongqing, China",
       "lat": 29.439325,
       "lng": 106.887703,
@@ -1501,7 +1509,7 @@
     },
     {
       "id": "None",
-      "index": 40,
+      "index": 41,
       "name": "Chengdu, China",
       "lat": 30.657,
       "lng": 104.066002,
@@ -1509,7 +1517,7 @@
     },
     {
       "id": "None",
-      "index": 41,
+      "index": 42,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1517,7 +1525,7 @@
     },
     {
       "id": "None",
-      "index": 42,
+      "index": 43,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
