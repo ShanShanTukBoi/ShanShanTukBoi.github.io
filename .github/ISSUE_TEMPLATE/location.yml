@@ -66,10 +66,15 @@ body:
     - Bishkek, Kyrgyzstan
     - Cholpon-Ata, Kyrgyzstan
     - Pamir-Alay Mountains, Kyrgyzstan
-    - Uzbekistan
-    - South Korea
-    - Taiwan
-    - China
+    - Kashgar, China
+    - Turpan, China
+    - Dunhuang, China
+    - Zhangye, China
+    - Lanzhou, China
+    - Taipei, Taiwan
+    - Hong Kong
+    - Chongqing, China
+    - Chengdu, China
     - Thailand
     - Indonesia
   validations:
