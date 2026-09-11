@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-10T12:57:29Z",
+  "generated_at": "2026-09-11T02:51:02Z",
   "locations": [
     {
       "id": "None",
@@ -1425,7 +1425,23 @@
       "lat": 39.470402,
       "lng": 75.989754,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 121,
+          "username": "ShanShanTukBoi",
+          "title": "Bus to China",
+          "text": "In Sary-Mogol we heard that it was possible to catch a weekly bus to Kashgar (in Xinjiang). So, we ended up ditching our plans to go to Uzbekistan.\n\nOn the Kyrgyz side, we drove past a ~40 km-long queue of trucks heading for the border. I\u2019m surprised the drivers don\u2019t get altitude sickness while stuck in bumper-to-bumper traffic on the 3800 m mountain pass.\n\nThe customs and immigration process was fairly intense, but when I showed the immigration officer my itinerary (translated into Mandarin using ChatGPT), he asked, \u201cDid a guide plan this for you?\u201d :).\n\nAll up, it took around 10 hours.",
+          "photos": [
+            "https://imgur.com/LW3yspL.jpeg",
+            "https://imgur.com/uWywoeM.jpeg",
+            "https://imgur.com/HKwqCzN.jpeg",
+            "https://imgur.com/FWzNpsi.jpeg",
+            "https://imgur.com/9fAOqpd.jpeg",
+            "https://imgur.com/4u9KZfH.jepg"
+          ],
+          "date": "2026-09-11T02:50:54Z"
+        }
+      ]
     },
     {
       "id": "None",
