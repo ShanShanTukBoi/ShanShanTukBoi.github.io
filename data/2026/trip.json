@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-11T02:58:23Z",
+  "generated_at": "2026-09-12T07:59:42Z",
   "locations": [
     {
       "id": "None",
@@ -1440,6 +1440,20 @@
             "https://imgur.com/4u9KZfH.jpeg"
           ],
           "date": "2026-09-11T02:55:42Z"
+        },
+        {
+          "id": 123,
+          "username": "ShanShanTukBoi",
+          "title": "New cuisine just dropped",
+          "text": "While the reconstructed Kashgar old town was quite touristy, we still had some great food. After a month of carb-heavy Central Asian vegetarian options, I am glad to be reunited with tofu.",
+          "photos": [
+            "https://imgur.com/yPooR08.jpeg",
+            "https://imgur.com/5LmNcmX.jpeg",
+            "https://imgur.com/kNr9aGG.jpeg",
+            "https://imgur.com/YMwC8i6.jpeg",
+            "https://imgur.com/jSPG5XH.jpeg"
+          ],
+          "date": "2026-09-12T07:59:32Z"
         }
       ]
     },
