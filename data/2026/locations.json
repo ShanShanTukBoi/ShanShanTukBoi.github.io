@@ -228,8 +228,7 @@
     "index": 32,
     "name": "Kashgar, China",
     "lat": 39.470402,
-    "lng": 75.989754,
-    "current": true
+    "lng": 75.989754
   },
   {
     "id": 122,
@@ -243,7 +242,8 @@
     "index": 34,
     "name": "Turpan, China",
     "lat": 42.94769,
-    "lng": 89.17886
+    "lng": 89.17886,
+    "current": true
   },
   {
     "id": "None",
