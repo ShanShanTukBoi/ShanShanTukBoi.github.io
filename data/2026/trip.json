@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-12T15:01:38Z",
+  "generated_at": "2026-09-14T06:13:25Z",
   "locations": [
     {
       "id": "None",
@@ -1424,7 +1424,6 @@
       "name": "Kashgar, China",
       "lat": 39.470402,
       "lng": 75.989754,
-      "current": true,
       "posts": [
         {
           "id": 121,
@@ -1463,7 +1462,22 @@
       "name": "Tashkurgan, China",
       "lat": 37.77278,
       "lng": 75.22444,
-      "posts": []
+      "posts": [
+        {
+          "id": 124,
+          "username": "ShanShanTukBoi",
+          "title": "Tashkurgan",
+          "text": "We took an overnight trip to Tashkurgan Tajik Autonomous County, which borders Tajikistan, Pakistan and Afghanistan. The town of Tashkurgan is up in the arid eastern Pamir Mountains. We thought there would be some good hiking here, but we couldn\u2019t find any trails. Most tourists seem to just make short stops along the highway.",
+          "photos": [
+            "https://imgur.com/V4Et3Qx.jpeg",
+            "https://imgur.com/KNH5tLk.jpeg",
+            "https://imgur.com/NxQloHt.jpeg",
+            "https://imgur.com/mB9IDmq.jpeg",
+            "https://imgur.com/iKhcYmy.jpeg"
+          ],
+          "date": "2026-09-14T06:13:15Z"
+        }
+      ]
     },
     {
       "id": "None",
@@ -1471,6 +1485,7 @@
       "name": "Turpan, China",
       "lat": 42.94769,
       "lng": 89.17886,
+      "current": true,
       "posts": []
     },
     {
