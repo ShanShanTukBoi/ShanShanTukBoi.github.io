@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-16T06:39:00Z",
+  "generated_at": "2026-09-16T09:53:45Z",
   "locations": [
     {
       "id": "None",
@@ -1485,7 +1485,6 @@
       "name": "Turpan, China",
       "lat": 42.94769,
       "lng": 89.17886,
-      "current": true,
       "posts": [
         {
           "id": 125,
@@ -1536,6 +1535,7 @@
       "name": "Dunhuang, China",
       "lat": 40.142132,
       "lng": 94.66188,
+      "current": true,
       "posts": []
     },
     {
