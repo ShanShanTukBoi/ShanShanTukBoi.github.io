@@ -242,15 +242,15 @@
     "index": 34,
     "name": "Turpan, China",
     "lat": 42.94769,
-    "lng": 89.17886,
-    "current": true
+    "lng": 89.17886
   },
   {
     "id": "None",
     "index": 35,
     "name": "Dunhuang, China",
     "lat": 40.142132,
-    "lng": 94.66188
+    "lng": 94.66188,
+    "current": true
   },
   {
     "id": "None",
