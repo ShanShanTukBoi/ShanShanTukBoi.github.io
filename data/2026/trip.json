@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-16T06:24:19Z",
+  "generated_at": "2026-09-16T06:30:53Z",
   "locations": [
     {
       "id": "None",
@@ -1533,8 +1533,16 @@
       "posts": []
     },
     {
-      "id": "None",
+      "id": 127,
       "index": 37,
+      "name": "Xi\u2019an, China",
+      "lat": 34.274342,
+      "lng": 108.889191,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 38,
       "name": "Lanzhou, China",
       "lat": 36.05701,
       "lng": 103.83987,
@@ -1542,7 +1550,7 @@
     },
     {
       "id": "None",
-      "index": 38,
+      "index": 39,
       "name": "Taipei, Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -1550,7 +1558,7 @@
     },
     {
       "id": "None",
-      "index": 39,
+      "index": 40,
       "name": "Hong Kong",
       "lat": 22.302711,
       "lng": 114.177216,
@@ -1558,7 +1566,7 @@
     },
     {
       "id": "None",
-      "index": 40,
+      "index": 41,
       "name": "Chongqing, China",
       "lat": 29.439325,
       "lng": 106.887703,
@@ -1566,7 +1574,7 @@
     },
     {
       "id": "None",
-      "index": 41,
+      "index": 42,
       "name": "Chengdu, China",
       "lat": 30.657,
       "lng": 104.066002,
@@ -1574,7 +1582,7 @@
     },
     {
       "id": "None",
-      "index": 42,
+      "index": 43,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1582,7 +1590,7 @@
     },
     {
       "id": "None",
-      "index": 43,
+      "index": 44,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
