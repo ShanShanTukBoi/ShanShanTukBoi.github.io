@@ -249,15 +249,15 @@
     "index": 35,
     "name": "Dunhuang, China",
     "lat": 40.142132,
-    "lng": 94.66188,
-    "current": true
+    "lng": 94.66188
   },
   {
     "id": "None",
     "index": 36,
     "name": "Zhangye, China",
     "lat": 38.913769,
-    "lng": 100.13324
+    "lng": 100.13324,
+    "current": true
   },
   {
     "id": 127,
