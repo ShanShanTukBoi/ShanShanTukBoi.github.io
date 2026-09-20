@@ -256,15 +256,15 @@
     "index": 36,
     "name": "Zhangye, China",
     "lat": 38.913769,
-    "lng": 100.13324,
-    "current": true
+    "lng": 100.13324
   },
   {
     "id": 127,
     "index": 37,
     "name": "Xi\u2019an, China",
     "lat": 34.274342,
-    "lng": 108.889191
+    "lng": 108.889191,
+    "current": true
   },
   {
     "id": "None",
