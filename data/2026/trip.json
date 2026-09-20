@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-18T08:02:18Z",
+  "generated_at": "2026-09-20T10:09:14Z",
   "locations": [
     {
       "id": "None",
@@ -1582,7 +1582,6 @@
       "name": "Zhangye, China",
       "lat": 38.913769,
       "lng": 100.13324,
-      "current": true,
       "posts": []
     },
     {
@@ -1591,6 +1590,7 @@
       "name": "Xi\u2019an, China",
       "lat": 34.274342,
       "lng": 108.889191,
+      "current": true,
       "posts": []
     },
     {
