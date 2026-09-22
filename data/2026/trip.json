@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-20T10:09:14Z",
+  "generated_at": "2026-09-22T02:40:48Z",
   "locations": [
     {
       "id": "None",
@@ -1582,7 +1582,21 @@
       "name": "Zhangye, China",
       "lat": 38.913769,
       "lng": 100.13324,
-      "posts": []
+      "posts": [
+        {
+          "id": 132,
+          "username": "graciemq",
+          "title": "Great Wall visit",
+          "text": "**Grace\u2019s corner** it is true what they say, the wall is indeed great",
+          "photos": [
+            "https://imgur.com/PCeqjTs.jpeg",
+            "https://imgur.com/P0BrjIK.jpeg",
+            "https://imgur.com/HpUggDj.jpeg",
+            "https://imgur.com/U0LeBSf.jpeg"
+          ],
+          "date": "2026-09-22T02:40:11Z"
+        }
+      ]
     },
     {
       "id": 127,
