@@ -1,4 +1,4 @@
-PERMITTED_USERS = ['ShanShanTukBoi', 'graciemq']
+PERMITTED_USERS = ['ShanShanTukBoi', 'graciemq', 'thrall-space']
 
 
 def assert_user_permitted(username):
