@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-09-22T07:46:44Z",
+  "generated_at": "2026-09-25T07:36:04Z",
   "locations": [
     {
       "id": "None",
@@ -1623,14 +1623,6 @@
     {
       "id": "None",
       "index": 38,
-      "name": "Lanzhou, China",
-      "lat": 36.05701,
-      "lng": 103.83987,
-      "posts": []
-    },
-    {
-      "id": "None",
-      "index": 39,
       "name": "Taipei, Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
@@ -1638,7 +1630,7 @@
     },
     {
       "id": "None",
-      "index": 40,
+      "index": 39,
       "name": "Hong Kong",
       "lat": 22.302711,
       "lng": 114.177216,
@@ -1646,7 +1638,7 @@
     },
     {
       "id": "None",
-      "index": 41,
+      "index": 40,
       "name": "Chongqing, China",
       "lat": 29.439325,
       "lng": 106.887703,
@@ -1654,7 +1646,7 @@
     },
     {
       "id": "None",
-      "index": 42,
+      "index": 41,
       "name": "Chengdu, China",
       "lat": 30.657,
       "lng": 104.066002,
@@ -1662,7 +1654,7 @@
     },
     {
       "id": "None",
-      "index": 43,
+      "index": 42,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1670,7 +1662,7 @@
     },
     {
       "id": "None",
-      "index": 44,
+      "index": 43,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
