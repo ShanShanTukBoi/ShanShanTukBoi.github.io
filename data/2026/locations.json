@@ -263,15 +263,15 @@
     "index": 37,
     "name": "Xi\u2019an, China",
     "lat": 34.274342,
-    "lng": 108.889191,
-    "current": true
+    "lng": 108.889191
   },
   {
     "id": "None",
     "index": 38,
     "name": "Taipei, Taiwan",
     "lat": 25.033,
-    "lng": 121.5654
+    "lng": 121.5654,
+    "current": true
   },
   {
     "id": "None",
