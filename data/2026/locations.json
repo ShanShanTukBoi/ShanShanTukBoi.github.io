@@ -270,15 +270,15 @@
     "index": 38,
     "name": "Taipei, Taiwan",
     "lat": 25.033,
-    "lng": 121.5654,
-    "current": true
+    "lng": 121.5654
   },
   {
     "id": 140,
     "index": 39,
     "name": "Taitung, Taiwan",
     "lat": 22.7583,
-    "lng": 121.1444
+    "lng": 121.1444,
+    "current": true
   },
   {
     "id": "None",
