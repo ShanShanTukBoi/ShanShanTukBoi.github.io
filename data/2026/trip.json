@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-10T12:00:56Z",
+  "generated_at": "2026-10-10T15:20:01Z",
   "locations": [
     {
       "id": "None",
@@ -1757,8 +1757,21 @@
       "name": "Hong Kong",
       "lat": 22.302711,
       "lng": 114.177216,
-      "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 144,
+          "username": "ShanShanTukBoi",
+          "title": "Dragon\u2019s Back Trail",
+          "text": "A short hike on Hong Kong Island",
+          "photos": [
+            "https://imgur.com/zybqGno.jpeg",
+            "https://imgur.com/fRaRHW9.jpeg",
+            "https://imgur.com/JwrhMCu.jpeg",
+            "https://imgur.com/uJL6ODr.jpeg"
+          ],
+          "date": "2026-10-10T15:19:52Z"
+        }
+      ]
     },
     {
       "id": "None",
@@ -1766,6 +1779,7 @@
       "name": "Chongqing, China",
       "lat": 29.439325,
       "lng": 106.887703,
+      "current": true,
       "posts": []
     },
     {
