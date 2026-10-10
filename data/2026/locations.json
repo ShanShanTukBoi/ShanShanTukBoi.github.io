@@ -291,15 +291,15 @@
     "index": 41,
     "name": "Hong Kong",
     "lat": 22.302711,
-    "lng": 114.177216,
-    "current": true
+    "lng": 114.177216
   },
   {
     "id": "None",
     "index": 42,
     "name": "Chongqing, China",
     "lat": 29.439325,
-    "lng": 106.887703
+    "lng": 106.887703,
+    "current": true
   },
   {
     "id": "None",
