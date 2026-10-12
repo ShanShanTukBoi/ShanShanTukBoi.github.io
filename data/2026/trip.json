@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-12T06:24:56Z",
+  "generated_at": "2026-10-12T15:42:28Z",
   "locations": [
     {
       "id": "None",
@@ -1806,7 +1806,21 @@
       "lat": 29.439325,
       "lng": 106.887703,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 147,
+          "username": "ShanShanTukBoi",
+          "title": "Teahouse paparazzi",
+          "text": "Coming to this teahouse made me feel like a celebrity. The locals were filming us and taking photos. One (lovely) guy spent 20 minutes with his tripod set up next to our table as we played cards and sipped tea. The last picture is one he took.",
+          "photos": [
+            "https://imgur.com/v14gZZy.jpeg",
+            "https://imgur.com/R2frNyJ.jpeg",
+            "https://imgur.com/mCvEDqf.jpeg",
+            "https://imgur.com/aQSA9AE.jpeg"
+          ],
+          "date": "2026-10-12T15:42:18Z"
+        }
+      ]
     },
     {
       "id": "None",
