@@ -298,15 +298,15 @@
     "index": 42,
     "name": "Chongqing, China",
     "lat": 29.439325,
-    "lng": 106.887703,
-    "current": true
+    "lng": 106.887703
   },
   {
     "id": "None",
     "index": 43,
     "name": "Chengdu, China",
     "lat": 30.657,
-    "lng": 104.066002
+    "lng": 104.066002,
+    "current": true
   },
   {
     "id": "None",
