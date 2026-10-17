@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-14T06:59:33Z",
+  "generated_at": "2026-10-17T16:15:04Z",
   "locations": [
     {
       "id": "None",
@@ -1854,7 +1854,22 @@
       "lat": 30.657,
       "lng": 104.066002,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 150,
+          "username": "ShanShanTukBoi",
+          "title": "Reunited with Daniel",
+          "text": "Daniel + dan dan noodles in Chengdu",
+          "photos": [
+            "https://imgur.com/qdjswIy.jpeg",
+            "https://imgur.com/YbKGiRj.jpeg",
+            "https://imgur.com/PuniYex.jpeg",
+            "https://imgur.com/0J8Re0S.jpeg",
+            "https://imgur.com/dSqlo0R.jpeg"
+          ],
+          "date": "2026-10-17T16:14:54Z"
+        }
+      ]
     },
     {
       "id": "None",
