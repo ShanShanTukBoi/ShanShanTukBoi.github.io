@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-18T14:34:54Z",
+  "generated_at": "2026-10-19T04:19:59Z",
   "locations": [
     {
       "id": "None",
@@ -1899,8 +1899,16 @@
       ]
     },
     {
-      "id": "None",
+      "id": 153,
       "index": 44,
+      "name": "Siguniangshan, China",
+      "lat": 30.9956,
+      "lng": 102.8309,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 45,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1908,7 +1916,7 @@
     },
     {
       "id": "None",
-      "index": 45,
+      "index": 46,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
