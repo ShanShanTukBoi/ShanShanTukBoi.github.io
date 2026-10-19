@@ -305,15 +305,15 @@
     "index": 43,
     "name": "Chengdu, China",
     "lat": 30.657,
-    "lng": 104.066002,
-    "current": true
+    "lng": 104.066002
   },
   {
     "id": 153,
     "index": 44,
     "name": "Siguniangshan, China",
     "lat": 30.9956,
-    "lng": 102.8309
+    "lng": 102.8309,
+    "current": true
   },
   {
     "id": "None",
