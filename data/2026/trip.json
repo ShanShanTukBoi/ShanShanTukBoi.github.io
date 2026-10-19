@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-19T04:19:59Z",
+  "generated_at": "2026-10-19T08:05:38Z",
   "locations": [
     {
       "id": "None",
@@ -1853,7 +1853,6 @@
       "name": "Chengdu, China",
       "lat": 30.657,
       "lng": 104.066002,
-      "current": true,
       "posts": [
         {
           "id": 150,
@@ -1904,6 +1903,7 @@
       "name": "Siguniangshan, China",
       "lat": 30.9956,
       "lng": 102.8309,
+      "current": true,
       "posts": []
     },
     {
