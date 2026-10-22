@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-19T08:05:38Z",
+  "generated_at": "2026-10-22T05:04:11Z",
   "locations": [
     {
       "id": "None",
@@ -1904,7 +1904,22 @@
       "lat": 30.9956,
       "lng": 102.8309,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 154,
+          "username": "ShanShanTukBoi",
+          "title": "Changping Valley",
+          "text": "Nice autumn colours",
+          "photos": [
+            "https://imgur.com/8v73z1X.jpeg",
+            "https://imgur.com/URObPDS.jpeg",
+            "https://imgur.com/qdLy1LJ.jpeg",
+            "https://imgur.com/qKImNZm.jpeg",
+            "https://imgur.com/D9tsteP.jpeg"
+          ],
+          "date": "2026-10-22T05:04:02Z"
+        }
+      ]
     },
     {
       "id": "None",
