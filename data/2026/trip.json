@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-22T07:35:39Z",
+  "generated_at": "2026-10-23T03:17:32Z",
   "locations": [
     {
       "id": "None",
@@ -1950,8 +1950,16 @@
       ]
     },
     {
-      "id": "None",
+      "id": 157,
       "index": 45,
+      "name": "Danba, China",
+      "lat": 36.66700749980798,
+      "lng": 108.4958363,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 46,
       "name": "Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -1959,7 +1967,7 @@
     },
     {
       "id": "None",
-      "index": 46,
+      "index": 47,
       "name": "Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,

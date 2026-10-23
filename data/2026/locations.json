@@ -316,15 +316,22 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 157,
     "index": 45,
+    "name": "Danba, China",
+    "lat": 36.66700749980798,
+    "lng": 108.4958363
+  },
+  {
+    "id": "None",
+    "index": 46,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 46,
+    "index": 47,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
