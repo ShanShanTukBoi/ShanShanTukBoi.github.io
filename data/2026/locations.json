@@ -330,15 +330,22 @@
     "lng": 101.52129999999998
   },
   {
-    "id": "None",
+    "id": 159,
     "index": 47,
+    "name": "Litang, China",
+    "lat": 29.9942,
+    "lng": 100.2692
+  },
+  {
+    "id": "None",
+    "index": 48,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 48,
+    "index": 49,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
