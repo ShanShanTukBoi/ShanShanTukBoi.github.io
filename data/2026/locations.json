@@ -323,15 +323,22 @@
     "lng": 102.037
   },
   {
-    "id": "None",
+    "id": 158,
     "index": 46,
+    "name": "Tagong, China",
+    "lat": 30.32022019971214,
+    "lng": 101.52129999999998
+  },
+  {
+    "id": "None",
+    "index": 47,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 47,
+    "index": 48,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
