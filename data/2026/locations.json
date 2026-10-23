@@ -312,15 +312,15 @@
     "index": 44,
     "name": "Siguniangshan, China",
     "lat": 30.9956,
-    "lng": 102.8309,
-    "current": true
+    "lng": 102.8309
   },
   {
     "id": 157,
     "index": 45,
     "name": "Danba, China",
     "lat": 30.8795089,
-    "lng": 101.8910607
+    "lng": 101.8910607,
+    "current": true
   },
   {
     "id": 158,
