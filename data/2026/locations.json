@@ -337,15 +337,22 @@
     "lng": 100.2692
   },
   {
-    "id": "None",
+    "id": 160,
     "index": 48,
+    "name": "Daocheng Yading, China",
+    "lat": 28.6167,
+    "lng": 100.2686
+  },
+  {
+    "id": "None",
+    "index": 49,
     "name": "Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 49,
+    "index": 50,
     "name": "Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
