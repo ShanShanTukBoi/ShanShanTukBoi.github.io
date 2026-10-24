@@ -319,15 +319,15 @@
     "index": 45,
     "name": "Danba, China",
     "lat": 30.8795089,
-    "lng": 101.8910607,
-    "current": true
+    "lng": 101.8910607
   },
   {
     "id": 158,
     "index": 46,
     "name": "Tagong, China",
     "lat": 30.32022019971214,
-    "lng": 101.52129999999998
+    "lng": 101.52129999999998,
+    "current": true
   },
   {
     "id": 159,
