@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-23T03:59:52Z",
+  "generated_at": "2026-10-24T05:14:19Z",
   "locations": [
     {
       "id": "None",
@@ -1903,7 +1903,6 @@
       "name": "Siguniangshan, China",
       "lat": 30.9956,
       "lng": 102.8309,
-      "current": true,
       "posts": [
         {
           "id": 154,
@@ -1963,6 +1962,7 @@
       "name": "Tagong, China",
       "lat": 30.32022019971214,
       "lng": 101.52129999999998,
+      "current": true,
       "posts": []
     },
     {
