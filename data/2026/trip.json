@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-29T11:35:25Z",
+  "generated_at": "2026-10-29T12:02:45Z",
   "locations": [
     {
       "id": "None",
@@ -1954,7 +1954,22 @@
       "name": "Danba, China",
       "lat": 30.8795089,
       "lng": 101.8910607,
-      "posts": []
+      "posts": [
+        {
+          "id": 161,
+          "username": "graciemq",
+          "title": "Walk through Jiaju village",
+          "text": "**Grace\u2019s corner** Rushan and I strolled through Jiaju Tibetan village, it was incredibly peaceful and scenic. We both enjoyed spinning the prayer wheels :)",
+          "photos": [
+            "https://imgur.com/pFgz3A5.jpeg",
+            "https://imgur.com/gAcTcgC.jpeg",
+            "https://imgur.com/luBPhxg.jpeg",
+            "https://imgur.com/sWmRA6L.jpeg",
+            "https://imgur.com/6iGtk8c.jpeg"
+          ],
+          "date": "2026-10-29T12:02:36Z"
+        }
+      ]
     },
     {
       "id": 158,
