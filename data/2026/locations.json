@@ -332,28 +332,35 @@
   {
     "id": 159,
     "index": 47,
-    "name": "Litang, China",
-    "lat": 29.9942,
-    "lng": 100.2692
+    "name": "Hanoi, Vietnam",
+    "lat": 21.028511,
+    "lng": 105.804817
   },
   {
     "id": 160,
     "index": 48,
-    "name": "Daocheng Yading, China",
-    "lat": 28.6167,
-    "lng": 100.2686
+    "name": "Ho Chi Minh, Vietnam",
+    "lat": 10.762622,
+    "lng": 106.660172
   },
   {
     "id": "None",
     "index": 49,
-    "name": "Thailand",
+    "name": "Bangkok, Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 50,
-    "name": "Indonesia",
+    "index": 49,
+    "name": "Mumbai, India",
+    "lat": 19.076090,
+    "lng": 72.877426
+  },
+  {
+    "id": "None",
+    "index": 51,
+    "name": "Raja Ampat, Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
   }
