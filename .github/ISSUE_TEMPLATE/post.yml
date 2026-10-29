@@ -56,10 +56,11 @@ body:
     - Siguniangshan, China
     - Danba, China
     - Tagong, China
-    - Litang, China
-    - Daocheng Yading, China
-    - Thailand
-    - Indonesia
+    - Hanoi, Vietnam
+    - Ho Chi Minh, Vietnam
+    - Bangkok, Thailand
+    - Mumbai, India
+    - Raja Ampat, Indonesia
   validations:
     required: true
 - type: input
