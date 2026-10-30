@@ -326,15 +326,15 @@
     "index": 46,
     "name": "Tagong, China",
     "lat": 30.32022019971214,
-    "lng": 101.52129999999998,
-    "current": true
+    "lng": 101.52129999999998
   },
   {
     "id": 159,
     "index": 47,
     "name": "Hanoi, Vietnam",
     "lat": 21.028511,
-    "lng": 105.804817
+    "lng": 105.804817,
+    "current": true
   },
   {
     "id": 160,
