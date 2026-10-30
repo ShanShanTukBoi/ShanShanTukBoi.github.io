@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-30T00:15:06Z",
+  "generated_at": "2026-10-30T08:04:10Z",
   "locations": [
     {
       "id": "None",
@@ -1990,7 +1990,6 @@
       "name": "Tagong, China",
       "lat": 30.32022019971214,
       "lng": 101.52129999999998,
-      "current": true,
       "posts": [
         {
           "id": 163,
@@ -2040,6 +2039,7 @@
       "name": "Hanoi, Vietnam",
       "lat": 21.028511,
       "lng": 105.804817,
+      "current": true,
       "posts": []
     },
     {
