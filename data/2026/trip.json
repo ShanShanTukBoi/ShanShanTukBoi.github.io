@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-10-30T08:04:10Z",
+  "generated_at": "2026-11-02T01:49:10Z",
   "locations": [
     {
       "id": "None",
@@ -2039,12 +2039,20 @@
       "name": "Hanoi, Vietnam",
       "lat": 21.028511,
       "lng": 105.804817,
+      "posts": []
+    },
+    {
+      "id": 159,
+      "index": 48,
+      "name": "Ninh Binh, Vietnam",
+      "lat": 20.2161,
+      "lng": 105.9373,
       "current": true,
       "posts": []
     },
     {
       "id": 160,
-      "index": 48,
+      "index": 49,
       "name": "Ho Chi Minh, Vietnam",
       "lat": 10.762622,
       "lng": 106.660172,
@@ -2052,7 +2060,7 @@
     },
     {
       "id": "None",
-      "index": 49,
+      "index": 50,
       "name": "Bangkok, Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -2060,7 +2068,7 @@
     },
     {
       "id": "None",
-      "index": 49,
+      "index": 51,
       "name": "Mumbai, India",
       "lat": 19.07609,
       "lng": 72.877426,
@@ -2068,7 +2076,7 @@
     },
     {
       "id": "None",
-      "index": 51,
+      "index": 52,
       "name": "Raja Ampat, Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
