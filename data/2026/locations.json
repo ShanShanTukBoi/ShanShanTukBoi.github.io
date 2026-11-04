@@ -340,15 +340,15 @@
     "index": 48,
     "name": "Ninh Binh, Vietnam",
     "lat": 20.2161,
-    "lng": 105.9373,
-    "current": true
+    "lng": 105.9373
   },
   {
     "id": 160,
     "index": 49,
     "name": "Ho Chi Minh, Vietnam",
     "lat": 10.762622,
-    "lng": 106.660172
+    "lng": 106.660172,
+    "current": true
   },
   {
     "id": "None",
