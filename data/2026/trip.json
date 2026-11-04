@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-04T02:18:24Z",
+  "generated_at": "2026-11-04T05:15:28Z",
   "locations": [
     {
       "id": "None",
@@ -2062,7 +2062,6 @@
       "name": "Ninh Binh, Vietnam",
       "lat": 20.2161,
       "lng": 105.9373,
-      "current": true,
       "posts": [
         {
           "id": 167,
@@ -2113,6 +2112,7 @@
       "name": "Ho Chi Minh, Vietnam",
       "lat": 10.762622,
       "lng": 106.660172,
+      "current": true,
       "posts": []
     },
     {
