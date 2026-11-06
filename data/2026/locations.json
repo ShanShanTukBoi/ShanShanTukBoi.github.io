@@ -347,15 +347,15 @@
     "index": 49,
     "name": "Ho Chi Minh, Vietnam",
     "lat": 10.762622,
-    "lng": 106.660172,
-    "current": true
+    "lng": 106.660172
   },
   {
     "id": 170,
     "index": 50,
     "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
     "lat": 10.22409,
-    "lng": 103.97156
+    "lng": 103.97156,
+    "current": true
   },
   {
     "id": "None",
