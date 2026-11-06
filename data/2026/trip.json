@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-06T05:01:17Z",
+  "generated_at": "2026-11-06T12:04:54Z",
   "locations": [
     {
       "id": "None",
@@ -2112,7 +2112,20 @@
       "name": "Ho Chi Minh, Vietnam",
       "lat": 10.762622,
       "lng": 106.660172,
-      "posts": []
+      "posts": [
+        {
+          "id": 171,
+          "username": "graciemq",
+          "title": "Saigon o\u2019clock",
+          "text": "**Grace\u2019s corner** had a lovely few days in Ho Chi Minh - much preferred it to Hanoi, to be honest. I wish I had more photos to post but we took it pretty easy. We did go to the War museum but I don\u2019t want to post photos of me crying. I also lost my new hat (see photo attached) this morning and am quite sad, as I had it less than a week :(",
+          "photos": [
+            "https://imgur.com/JZYPiuv.jpeg",
+            "https://imgur.com/Yc5xyHt.jpeg",
+            "https://imgur.com/KL2r69d.jpeg"
+          ],
+          "date": "2026-11-06T12:04:44Z"
+        }
+      ]
     },
     {
       "id": 170,
