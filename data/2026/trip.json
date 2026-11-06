@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-06T01:56:48Z",
+  "generated_at": "2026-11-06T05:01:17Z",
   "locations": [
     {
       "id": "None",
@@ -2112,7 +2112,6 @@
       "name": "Ho Chi Minh, Vietnam",
       "lat": 10.762622,
       "lng": 106.660172,
-      "current": true,
       "posts": []
     },
     {
@@ -2121,6 +2120,7 @@
       "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
       "lat": 10.22409,
       "lng": 103.97156,
+      "current": true,
       "posts": []
     },
     {
