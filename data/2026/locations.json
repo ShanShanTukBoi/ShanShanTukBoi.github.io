@@ -351,22 +351,29 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 170,
     "index": 50,
+    "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
+    "lat": 10.22409,
+    "lng": 103.97156
+  },
+  {
+    "id": "None",
+    "index": 51,
     "name": "Bangkok, Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": "None",
-    "index": 51,
+    "index": 52,
     "name": "Mumbai, India",
-    "lat": 19.076090,
+    "lat": 19.07609,
     "lng": 72.877426
   },
   {
     "id": "None",
-    "index": 52,
+    "index": 53,
     "name": "Raja Ampat, Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
