@@ -386,8 +386,15 @@
     "lng": 72.877426
   },
   {
-    "id": "None",
+    "id": 174,
     "index": 55,
+    "name": "Bali, Indonesia",
+    "lat": -8.409518,
+    "lng": 115.188919
+  },
+  {
+    "id": "None",
+    "index": 56,
     "name": "Raja Ampat, Indonesia",
     "lat": -0.2333,
     "lng": 130.5167

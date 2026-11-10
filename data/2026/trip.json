@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-10T02:28:41Z",
+  "generated_at": "2026-11-10T02:59:37Z",
   "locations": [
     {
       "id": "None",
@@ -2169,8 +2169,16 @@
       "posts": []
     },
     {
-      "id": "None",
+      "id": 174,
       "index": 55,
+      "name": "Bali, Indonesia",
+      "lat": -8.409518,
+      "lng": 115.188919,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 56,
       "name": "Raja Ampat, Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,

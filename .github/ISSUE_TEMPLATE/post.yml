@@ -64,6 +64,7 @@ body:
     - Bangkok, Thailand
     - Kochi, India
     - Mumbai, India
+    - Bali, Indonesia
     - Raja Ampat, Indonesia
   validations:
     required: true
