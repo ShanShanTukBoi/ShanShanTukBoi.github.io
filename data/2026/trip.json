@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-06T12:04:54Z",
+  "generated_at": "2026-11-10T02:23:44Z",
   "locations": [
     {
       "id": "None",
@@ -2137,8 +2137,16 @@
       "posts": []
     },
     {
-      "id": "None",
+      "id": 172,
       "index": 51,
+      "name": "Ko Samet, Thailand",
+      "lat": 9.512017,
+      "lng": 100.013596,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 52,
       "name": "Bangkok, Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
@@ -2146,7 +2154,7 @@
     },
     {
       "id": "None",
-      "index": 52,
+      "index": 53,
       "name": "Mumbai, India",
       "lat": 19.07609,
       "lng": 72.877426,
@@ -2154,7 +2162,7 @@
     },
     {
       "id": "None",
-      "index": 53,
+      "index": 54,
       "name": "Raja Ampat, Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
