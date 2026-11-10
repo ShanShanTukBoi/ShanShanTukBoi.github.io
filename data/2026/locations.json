@@ -372,15 +372,22 @@
     "lng": 100.5018
   },
   {
-    "id": "None",
+    "id": 173,
     "index": 53,
+    "name": "Kochi, India",
+    "lat": 9.931233,
+    "lng": 76.267303
+  },
+  {
+    "id": "None",
+    "index": 54,
     "name": "Mumbai, India",
     "lat": 19.07609,
     "lng": 72.877426
   },
   {
     "id": "None",
-    "index": 54,
+    "index": 55,
     "name": "Raja Ampat, Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
