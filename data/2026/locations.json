@@ -354,15 +354,15 @@
     "index": 50,
     "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
     "lat": 10.22409,
-    "lng": 103.97156,
-    "current": true
+    "lng": 103.97156
   },
   {
     "id": 172,
     "index": 51,
     "name": "Ko Samet, Thailand",
     "lat": 12.567331064,
-    "lng": 101.452831522
+    "lng": 101.452831522,
+    "current": true
   },
   {
     "id": "None",
