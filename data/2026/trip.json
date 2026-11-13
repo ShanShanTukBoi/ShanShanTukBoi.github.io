@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-11T14:19:06Z",
+  "generated_at": "2026-11-13T11:04:32Z",
   "locations": [
     {
       "id": "None",
@@ -2133,7 +2133,6 @@
       "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
       "lat": 10.22409,
       "lng": 103.97156,
-      "current": true,
       "posts": [
         {
           "id": 175,
@@ -2185,6 +2184,7 @@
       "name": "Ko Samet, Thailand",
       "lat": 12.567331064,
       "lng": 101.452831522,
+      "current": true,
       "posts": []
     },
     {
