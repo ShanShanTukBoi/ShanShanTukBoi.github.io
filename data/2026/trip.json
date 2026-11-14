@@ -1,15 +1,7 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-13T11:04:32Z",
+  "generated_at": "2026-11-14T03:30:26Z",
   "locations": [
-    {
-      "id": "None",
-      "index": 0,
-      "name": "Melbourne, Australia",
-      "lat": -37.8136,
-      "lng": 144.9631,
-      "posts": []
-    },
     {
       "id": "None",
       "index": 1,
@@ -2225,6 +2217,14 @@
       "name": "Raja Ampat, Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 57,
+      "name": "Melbourne, Australia",
+      "lat": -37.8136,
+      "lng": 144.9631,
       "posts": []
     }
   ]

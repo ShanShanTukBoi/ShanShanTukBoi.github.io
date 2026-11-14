@@ -9,7 +9,6 @@ body:
   attributes:
     label: Location
     options:
-    - Melbourne, Australia
     - Istanbul, Turkey
     - "Tiran\xEB, Albania"
     - "Kor\xE7\xEB, Albania"
@@ -66,6 +65,7 @@ body:
     - Mumbai, India
     - Bali, Indonesia
     - Raja Ampat, Indonesia
+    - Melbourne, Australia
   validations:
     required: true
 - type: input
