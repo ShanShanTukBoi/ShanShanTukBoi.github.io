@@ -354,15 +354,15 @@
     "index": 51,
     "name": "Ko Samet, Thailand",
     "lat": 12.567331064,
-    "lng": 101.452831522,
-    "current": true
+    "lng": 101.452831522
   },
   {
     "id": "None",
     "index": 52,
     "name": "Bangkok, Thailand",
     "lat": 13.7563,
-    "lng": 100.5018
+    "lng": 100.5018,
+    "current": true
   },
   {
     "id": 173,
