@@ -361,15 +361,15 @@
     "index": 52,
     "name": "Bangkok, Thailand",
     "lat": 13.7563,
-    "lng": 100.5018,
-    "current": true
+    "lng": 100.5018
   },
   {
     "id": 173,
     "index": 53,
     "name": "Kochi, India",
     "lat": 9.931233,
-    "lng": 76.267303
+    "lng": 76.267303,
+    "current": true
   },
   {
     "id": "None",
