@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-16T02:50:29Z",
+  "generated_at": "2026-11-16T03:20:12Z",
   "locations": [
     {
       "id": "None",
@@ -2176,7 +2176,22 @@
       "name": "Ko Samet, Thailand",
       "lat": 12.567331064,
       "lng": 101.452831522,
-      "posts": []
+      "posts": [
+        {
+          "id": 178,
+          "username": "ShanShanTukBoi",
+          "title": "More beach",
+          "text": "But this time with Pad Thai",
+          "photos": [
+            "https://imgur.com/6xrMFiM.jpeg",
+            "https://imgur.com/7p6lxzy.jpeg",
+            "https://imgur.com/Bwm92DA.jpeg",
+            "https://imgur.com/IzLgEHe.jpeg",
+            "https://imgur.com/LAYPen2.jpeg"
+          ],
+          "date": "2026-11-16T03:20:04Z"
+        }
+      ]
     },
     {
       "id": "None",
