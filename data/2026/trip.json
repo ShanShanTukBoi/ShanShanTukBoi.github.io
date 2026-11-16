@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-15T12:02:06Z",
+  "generated_at": "2026-11-16T02:50:29Z",
   "locations": [
     {
       "id": "None",
@@ -2184,7 +2184,6 @@
       "name": "Bangkok, Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
-      "current": true,
       "posts": []
     },
     {
@@ -2193,6 +2192,7 @@
       "name": "Kochi, India",
       "lat": 9.931233,
       "lng": 76.267303,
+      "current": true,
       "posts": []
     },
     {
