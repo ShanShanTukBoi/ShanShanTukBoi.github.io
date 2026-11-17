@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-17T06:57:48Z",
+  "generated_at": "2026-11-17T12:23:35Z",
   "locations": [
     {
       "id": "None",
@@ -2213,7 +2213,21 @@
       "name": "Bangkok, Thailand",
       "lat": 13.7563,
       "lng": 100.5018,
-      "posts": []
+      "posts": [
+        {
+          "id": 180,
+          "username": "ShanShanTukBoi",
+          "title": "Big Buddhas in Bangkok",
+          "text": "",
+          "photos": [
+            "https://imgur.com/wjQI5xj.jpeg",
+            "https://imgur.com/3pgxZUU.jpeg",
+            "https://imgur.com/kulHFGd.jpeg",
+            "https://imgur.com/6Jnaahl.jpeg"
+          ],
+          "date": "2026-11-17T12:23:26Z"
+        }
+      ]
     },
     {
       "id": 173,
