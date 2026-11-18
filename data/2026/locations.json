@@ -368,15 +368,15 @@
     "index": 52,
     "name": "Kochi, India",
     "lat": 9.931233,
-    "lng": 76.267303,
-    "current": true
+    "lng": 76.267303
   },
   {
     "id": 182,
     "index": 53,
     "name": "Munnar, India",
     "lat": 10.089167,
-    "lng": 77.059723
+    "lng": 77.059723,
+    "current": true
   },
   {
     "id": "None",
