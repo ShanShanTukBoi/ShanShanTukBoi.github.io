@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-18T16:08:03Z",
+  "generated_at": "2026-11-18T16:09:33Z",
   "locations": [
     {
       "id": "None",
@@ -2248,7 +2248,6 @@
       "name": "Kochi, India",
       "lat": 9.931233,
       "lng": 76.267303,
-      "current": true,
       "posts": []
     },
     {
@@ -2257,6 +2256,7 @@
       "name": "Munnar, India",
       "lat": 10.089167,
       "lng": 77.059723,
+      "current": true,
       "posts": []
     },
     {
