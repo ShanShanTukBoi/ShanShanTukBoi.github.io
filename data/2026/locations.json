@@ -1,375 +1,382 @@
 [
   {
     "id": "None",
-    "index": 1,
+    "index": 0,
     "name": "Istanbul, Turkey",
     "lat": 41.0082,
     "lng": 28.9784
   },
   {
     "id": "None",
-    "index": 2,
+    "index": 1,
     "name": "Tiran\u00eb, Albania",
     "lat": 41.3275,
     "lng": 19.8187
   },
   {
     "id": 14,
-    "index": 3,
+    "index": 2,
     "name": "Kor\u00e7\u00eb, Albania",
     "lat": 40.6161,
     "lng": 20.7802
   },
   {
     "id": 20,
-    "index": 4,
+    "index": 3,
     "name": "Berat, Albania",
     "lat": 40.70583,
     "lng": 19.95222
   },
   {
     "id": 26,
-    "index": 5,
+    "index": 4,
     "name": "The Accursed Mountains",
     "lat": 42.4793,
     "lng": 19.8503
   },
   {
     "id": "None",
-    "index": 6,
+    "index": 5,
     "name": "Budva, Montenegro",
     "lat": 42.2911,
     "lng": 18.8403
   },
   {
     "id": 34,
-    "index": 7,
+    "index": 6,
     "name": "Podgorica, Montenegro",
     "lat": 42.4304,
     "lng": 19.2594
   },
   {
     "id": "None",
-    "index": 8,
+    "index": 7,
     "name": "Ljubljana, Slovenia",
     "lat": 46.0569,
     "lng": 14.5058
   },
   {
     "id": 39,
-    "index": 9,
+    "index": 8,
     "name": "Bohinj, Slovenia",
     "lat": 46.2970919,
     "lng": 13.9260094
   },
   {
     "id": 42,
-    "index": 10,
+    "index": 9,
     "name": "Julian Alps, Slovenia",
     "lat": 46.3783,
     "lng": 13.8369
   },
   {
     "id": 47,
-    "index": 11,
+    "index": 10,
     "name": "Vipava Valley, Slovenia",
     "lat": 45.8456,
     "lng": 13.9626
   },
   {
     "id": 49,
-    "index": 12,
+    "index": 11,
     "name": "Trieste, Italy",
     "lat": 45.6508,
     "lng": 13.7674
   },
   {
     "id": 52,
-    "index": 13,
+    "index": 12,
     "name": "Valpolicella, Italy",
     "lat": 45.533,
     "lng": 10.933
   },
   {
     "id": 55,
-    "index": 14,
+    "index": 13,
     "name": "Dolomites, Italy",
     "lat": 46.4102,
     "lng": 11.844
   },
   {
     "id": 61,
-    "index": 15,
+    "index": 14,
     "name": "Munich, Germany",
     "lat": 48.1351,
     "lng": 11.582
   },
   {
     "id": "None",
-    "index": 16,
+    "index": 15,
     "name": "Vienna, Austria",
     "lat": 48.2082,
     "lng": 16.3738
   },
   {
     "id": 62,
-    "index": 17,
+    "index": 16,
     "name": "Tatra Mountains, Slovakia",
     "lat": 49.055187,
     "lng": 20.301434
   },
   {
     "id": "None",
-    "index": 18,
+    "index": 17,
     "name": "Krakow, Poland",
     "lat": 50.0647,
     "lng": 19.945
   },
   {
     "id": 63,
-    "index": 19,
+    "index": 18,
     "name": "Pohoda festival, Slovakia",
     "lat": 48.8849,
     "lng": 18.0335
   },
   {
     "id": "None",
-    "index": 20,
+    "index": 19,
     "name": "Prague, Czechia",
     "lat": 50.0755,
     "lng": 14.4378
   },
   {
     "id": 64,
-    "index": 21,
+    "index": 20,
     "name": "Tupesy, Czechia",
     "lat": 49.0843,
     "lng": 17.3698
   },
   {
     "id": 65,
-    "index": 22,
+    "index": 21,
     "name": "Kutaisi, Georgia",
     "lat": 42.2679,
     "lng": 42.6946
   },
   {
     "id": 66,
-    "index": 23,
+    "index": 22,
     "name": "Svaneti, Georgia",
     "lat": 43.040666504,
     "lng": 42.724497102
   },
   {
     "id": 87,
-    "index": 24,
+    "index": 23,
     "name": "Yerevan, Armenia",
     "lat": 40.1772,
     "lng": 44.5035
   },
   {
     "id": 90,
-    "index": 25,
+    "index": 24,
     "name": "Stepantsminda, Georgia",
     "lat": 42.6567,
     "lng": 44.6433
   },
   {
     "id": "None",
-    "index": 26,
+    "index": 25,
     "name": "Tbilisi, Georgia",
     "lat": 41.7151,
     "lng": 44.8271
   },
   {
     "id": "None",
-    "index": 27,
+    "index": 26,
     "name": "Almaty, Kazakhstan",
     "lat": 43.222,
     "lng": 76.8512
   },
   {
     "id": "None",
-    "index": 28,
+    "index": 27,
     "name": "Karakol, Kyrgyzstan",
     "lat": 42.49068,
     "lng": 78.39362
   },
   {
     "id": 105,
-    "index": 29,
+    "index": 28,
     "name": "Bishkek, Kyrgyzstan",
     "lat": 42.882004,
     "lng": 74.582748
   },
   {
     "id": 110,
-    "index": 30,
+    "index": 29,
     "name": "Cholpon-Ata, Kyrgyzstan",
     "lat": 42.64944,
     "lng": 77.08225
   },
   {
     "id": 111,
-    "index": 31,
+    "index": 30,
     "name": "Pamir-Alay Mountains, Kyrgyzstan",
     "lat": 39.7233,
     "lng": 72.9063
   },
   {
     "id": "None",
-    "index": 32,
+    "index": 31,
     "name": "Kashgar, China",
     "lat": 39.470402,
     "lng": 75.989754
   },
   {
     "id": 122,
-    "index": 33,
+    "index": 32,
     "name": "Tashkurgan, China",
     "lat": 37.77278,
     "lng": 75.22444
   },
   {
     "id": "None",
-    "index": 34,
+    "index": 33,
     "name": "Turpan, China",
     "lat": 42.94769,
     "lng": 89.17886
   },
   {
     "id": "None",
-    "index": 35,
+    "index": 34,
     "name": "Dunhuang, China",
     "lat": 40.142132,
     "lng": 94.66188
   },
   {
     "id": "None",
-    "index": 36,
+    "index": 35,
     "name": "Zhangye, China",
     "lat": 38.913769,
     "lng": 100.13324
   },
   {
     "id": 127,
-    "index": 37,
+    "index": 36,
     "name": "Xi\u2019an, China",
     "lat": 34.274342,
     "lng": 108.889191
   },
   {
     "id": "None",
-    "index": 38,
+    "index": 37,
     "name": "Taipei, Taiwan",
     "lat": 25.033,
     "lng": 121.5654
   },
   {
     "id": 140,
-    "index": 39,
+    "index": 38,
     "name": "Taitung, Taiwan",
     "lat": 22.7583,
     "lng": 121.1444
   },
   {
     "id": 142,
-    "index": 40,
+    "index": 39,
     "name": "Kaohsiung, Taiwan",
     "lat": 22.633333,
     "lng": 120.26667
   },
   {
     "id": "None",
-    "index": 41,
+    "index": 40,
     "name": "Hong Kong",
     "lat": 22.302711,
     "lng": 114.177216
   },
   {
     "id": "None",
-    "index": 42,
+    "index": 41,
     "name": "Chongqing, China",
     "lat": 29.439325,
     "lng": 106.887703
   },
   {
     "id": "None",
-    "index": 43,
+    "index": 42,
     "name": "Chengdu, China",
     "lat": 30.657,
     "lng": 104.066002
   },
   {
     "id": 153,
-    "index": 44,
+    "index": 43,
     "name": "Siguniangshan, China",
     "lat": 30.9956,
     "lng": 102.8309
   },
   {
     "id": 157,
-    "index": 45,
+    "index": 44,
     "name": "Danba, China",
     "lat": 30.8795089,
     "lng": 101.8910607
   },
   {
     "id": 158,
-    "index": 46,
+    "index": 45,
     "name": "Tagong, China",
     "lat": 30.32022019971214,
     "lng": 101.52129999999998
   },
   {
     "id": 159,
-    "index": 47,
+    "index": 46,
     "name": "Hanoi, Vietnam",
     "lat": 21.028511,
     "lng": 105.804817
   },
   {
     "id": 159,
-    "index": 48,
+    "index": 47,
     "name": "Ninh Binh, Vietnam",
     "lat": 20.2161,
     "lng": 105.9373
   },
   {
     "id": 160,
-    "index": 49,
+    "index": 48,
     "name": "Ho Chi Minh, Vietnam",
     "lat": 10.762622,
     "lng": 106.660172
   },
   {
     "id": 170,
-    "index": 50,
+    "index": 49,
     "name": "Ph\u00fa Qu\u1ed1c, Vietnam",
     "lat": 10.22409,
     "lng": 103.97156
   },
   {
     "id": 172,
-    "index": 51,
+    "index": 50,
     "name": "Ko Samet, Thailand",
     "lat": 12.567331064,
     "lng": 101.452831522
   },
   {
     "id": "None",
-    "index": 52,
+    "index": 51,
     "name": "Bangkok, Thailand",
     "lat": 13.7563,
     "lng": 100.5018
   },
   {
     "id": 173,
-    "index": 53,
+    "index": 52,
     "name": "Kochi, India",
     "lat": 9.931233,
     "lng": 76.267303,
     "current": true
+  },
+  {
+    "id": 182,
+    "index": 53,
+    "name": "Munnar, India",
+    "lat": 10.089167,
+    "lng": 77.059723
   },
   {
     "id": "None",

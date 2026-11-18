@@ -34,7 +34,6 @@ body:
     label: Insert After
     description: The new location will be placed after the selected location.
     options:
-    - Melbourne, Australia
     - Istanbul, Turkey
     - "Tiran\xEB, Albania"
     - "Kor\xE7\xEB, Albania"
@@ -88,8 +87,10 @@ body:
     - Ko Samet, Thailand
     - Bangkok, Thailand
     - Kochi, India
+    - Munnar, India
     - Mumbai, India
     - Bali, Indonesia
     - Raja Ampat, Indonesia
+    - Melbourne, Australia
   validations:
     required: true
