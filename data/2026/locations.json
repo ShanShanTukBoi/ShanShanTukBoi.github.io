@@ -379,29 +379,36 @@
     "current": true
   },
   {
-    "id": "None",
+    "id": 184,
     "index": 54,
+    "name": "Alleppey, India",
+    "lat": 9.498067,
+    "lng": 76.338844
+  },
+  {
+    "id": "None",
+    "index": 55,
     "name": "Mumbai, India",
     "lat": 19.07609,
     "lng": 72.877426
   },
   {
     "id": 174,
-    "index": 55,
+    "index": 56,
     "name": "Bali, Indonesia",
     "lat": -8.409518,
     "lng": 115.188919
   },
   {
     "id": "None",
-    "index": 56,
+    "index": 57,
     "name": "Raja Ampat, Indonesia",
     "lat": -0.2333,
     "lng": 130.5167
   },
   {
     "id": "None",
-    "index": 57,
+    "index": 58,
     "name": "Melbourne, Australia",
     "lat": -37.8136,
     "lng": 144.9631
