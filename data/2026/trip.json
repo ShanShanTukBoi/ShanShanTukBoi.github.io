@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-21T07:29:38Z",
+  "generated_at": "2026-11-23T05:14:23Z",
   "locations": [
     {
       "id": "None",
@@ -2272,7 +2272,22 @@
       "lat": 10.089167,
       "lng": 77.059723,
       "current": true,
-      "posts": []
+      "posts": [
+        {
+          "id": 185,
+          "username": "graciemq",
+          "title": "Tea plantation trek",
+          "text": "**Grace\u2019s corner** We went for a lovely 10km hike in a tea plantation in Munnar. Munnar is the third largest producer of tea in India (we learnt lots of tea facts) and our guide, Raja, was so good. The scenery was so nice looking, it almost felt a bit like AI.",
+          "photos": [
+            "https://imgur.com/JBRahsi.jpeg",
+            "https://imgur.com/jwtTWmI.jpeg",
+            "https://imgur.com/ExODoYA.jpeg",
+            "https://imgur.com/0SIbI52.jpeg",
+            "https://imgur.com/r0ecXVr.jpeg"
+          ],
+          "date": "2026-11-23T05:14:09Z"
+        }
+      ]
     },
     {
       "id": 184,
