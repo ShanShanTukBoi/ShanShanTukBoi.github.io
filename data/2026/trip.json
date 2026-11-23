@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-23T05:31:37Z",
+  "generated_at": "2026-11-23T05:37:19Z",
   "locations": [
     {
       "id": "None",
@@ -2320,8 +2320,16 @@
       "posts": []
     },
     {
-      "id": "None",
+      "id": 188,
       "index": 56,
+      "name": "Candolim, India",
+      "lat": 15.515447,
+      "lng": 73.768402,
+      "posts": []
+    },
+    {
+      "id": "None",
+      "index": 57,
       "name": "Mumbai, India",
       "lat": 19.07609,
       "lng": 72.877426,
@@ -2329,7 +2337,7 @@
     },
     {
       "id": 174,
-      "index": 57,
+      "index": 58,
       "name": "Bali, Indonesia",
       "lat": -8.409518,
       "lng": 115.188919,
@@ -2337,7 +2345,7 @@
     },
     {
       "id": "None",
-      "index": 58,
+      "index": 59,
       "name": "Raja Ampat, Indonesia",
       "lat": -0.2333,
       "lng": 130.5167,
@@ -2345,7 +2353,7 @@
     },
     {
       "id": "None",
-      "index": 59,
+      "index": 60,
       "name": "Melbourne, Australia",
       "lat": -37.8136,
       "lng": 144.9631,
