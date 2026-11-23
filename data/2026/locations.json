@@ -375,15 +375,15 @@
     "index": 53,
     "name": "Munnar, India",
     "lat": 10.089167,
-    "lng": 77.059723,
-    "current": true
+    "lng": 77.059723
   },
   {
     "id": 184,
     "index": 54,
     "name": "Alleppey, India",
     "lat": 9.498067,
-    "lng": 76.338844
+    "lng": 76.338844,
+    "current": true
   },
   {
     "id": "None",
