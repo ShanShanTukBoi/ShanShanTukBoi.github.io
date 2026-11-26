@@ -382,15 +382,15 @@
     "index": 54,
     "name": "Alleppey, India",
     "lat": 9.498067,
-    "lng": 76.338844,
-    "current": true
+    "lng": 76.338844
   },
   {
     "id": 187,
     "index": 55,
     "name": "Benaulim, India",
     "lat": 15.250526,
-    "lng": 73.920891
+    "lng": 73.920891,
+    "current": true
   },
   {
     "id": 188,
