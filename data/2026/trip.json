@@ -1,6 +1,6 @@
 {
   "title": "2026",
-  "generated_at": "2026-11-25T08:44:19Z",
+  "generated_at": "2026-11-26T04:19:05Z",
   "locations": [
     {
       "id": "None",
@@ -2321,7 +2321,6 @@
       "name": "Alleppey, India",
       "lat": 9.498067,
       "lng": 76.338844,
-      "current": true,
       "posts": [
         {
           "id": 190,
@@ -2358,6 +2357,7 @@
       "name": "Benaulim, India",
       "lat": 15.250526,
       "lng": 73.920891,
+      "current": true,
       "posts": []
     },
     {
